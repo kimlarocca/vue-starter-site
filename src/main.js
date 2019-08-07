@@ -8,7 +8,6 @@ import './assets/scss/main.scss'
 // register global components
 
 import Hero from './components/Hero.vue'
-import Button from './components/Button.vue'
 
 Vue.component('hero', Hero)
 Vue.component('v-button', Button)
