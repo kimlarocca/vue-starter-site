@@ -35,6 +35,7 @@ a:active {
   transition: $transition;
 
   &:hover {
+    color: $link-color-hover;
     text-decoration: $link-decoration-hover;
     cursor: pointer;
 
@@ -49,6 +50,25 @@ a:active {
     text-transform: uppercase;
     margin-bottom: 20px;
     font-weight: 700;
+  }
+
+  &.caret-right {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '\0203A';
+      margin-left: .25rem;
+    }
+  }
+
+  &.caret-down {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '\0203A';
+      transform: rotate(90deg);
+      margin-left: .5rem;
+    }
   }
 }
 

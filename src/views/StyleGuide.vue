@@ -2,8 +2,10 @@
   <div id="app" class="style-guide">
     <div class="container">
       <div class="white-container">
-        <img src="../../static/images/logo-bw.png" alt="san francisco symphony logo">
-        <p class="subhead6">pattern library</p>
+        <div class="grid-x align-middle">
+          <div class="cell large-2"><img src="../../static/images/logo-bw.png" alt="san francisco symphony logo"></div>
+          <div class="cell large-auto"><div class="subhead6">pattern library</div></div>
+        </div>
       </div>
 
       <section class="orange-border">
@@ -31,6 +33,22 @@
       <section class="orange-border">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p><a>This is an inline link</a></p>
+        <p><a class="caret-right">.caret-right a link with a right caret</a></p>
+        <p><a class="caret-down">.caret-down a link with a down caret</a></p>
+      </section>
+
+      <section class="orange-border">
+        <div class="grid-x grid-margin-x colors">
+          <div class="cell auto bg-yellow"><span>$yellow .bg-yellow</span></div>
+          <div class="cell auto bg-brown"><span>$brown .bg-brown</span></div>
+          <div class="cell auto bg-purple"><span>$purple .bg-purple</span></div>
+          <div class="cell auto bg-blue"><span>$blue .bg-blue</span></div>
+        </div>
+        <div class="grid-x grid-margin-x colors">
+          <div class="cell auto bg-light-gray"><span>$light-gray .bg-light-gray</span></div>
+          <div class="cell auto bg-medium-gray"><span>$medium-gray .bg-medium-gray</span></div>
+          <div class="cell auto bg-dark-gray"><span>$dark-gray .bg-dark-gray</span></div>
+        </div>
       </section>
 
       <section class="orange-border">
@@ -79,6 +97,17 @@
       margin-bottom: 60px;
       padding-left: 38px;
       border-left: solid 2px #ffc373;
+    }
+
+    .colors {
+      margin-bottom: 30px;
+      .cell {
+        height: 100px;
+        span {
+          padding: 10px;
+          background: white;
+        }
+      }
     }
 
     .button {

@@ -24,7 +24,7 @@
       <span slot="colorHeader">music education for everybody</span>
     </hero>
 
-    <hero image="/static/images/hero4.jpg" accentColor="#1870cf">
+    <hero class="smallHeader" image="/static/images/hero4.jpg" accentColor="#1870cf">
       <p slot="preheader" class="subhead5">spotlight</p>
       <span slot="header">MTT 25:<br>A</span>
       <span slot="colorHeader">celebratory season</span>
