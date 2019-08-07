@@ -6,13 +6,13 @@
         <p class="subhead6">pattern library</p>
       </div>
 
-      <section>
+      <section class="orange-border">
         <h1>H1 Headline No. 1</h1>
         <h2>H2 Headline No. 2</h2>
         <h3>H3 Headline No. 3</h3>
       </section>
 
-      <section>
+      <section class="orange-border">
         <p class="subhead1">.subhead4 Subhead No. 1</p>
         <p class="subhead2">.subhead4 Subhead No. 2</p>
         <p class="subhead3">.subhead4 Subhead No. 3</p>
@@ -21,19 +21,19 @@
         <p class="subhead6">.subhead4 Subhead No. 6</p>
       </section>
 
-      <section>
+      <section class="orange-border">
         <p class="bodytext1">.bodytext1 Body Text No. 1</p>
         <p class="bodytext2">.bodytext2 Body Text No. 1</p>
         <p class="bodytext3">.bodytext3 Body Text No. 1</p>
         <p class="bodytext4">.bodytext4 Body Text No. 1</p>
       </section>
 
-      <section>
+      <section class="orange-border">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p><a>This is an inline link</a></p>
       </section>
 
-      <section>
+      <section class="orange-border">
         <p class="subhead5">Buttons</p>
         <div class="black-container">
           <a class="button">view tickets</a>
@@ -47,7 +47,7 @@
 
     </div>
 
-    <hero class="large" image="/static/images/hero1.jpg" accentColor="#ff8f2a">
+    <hero class="large smallHeader" image="/static/images/hero1.jpg" mobileImage="/static/images/hero1mobile.jpg" accentColor="#ff8f2a" hasH1="true">
       <span slot="header">Beethoven<br>Stravinsky<br>Maher<br></span>
       <span slot="colorHeader">and more!</span>
       <p slot="subheader" class="subhead4">2019 Season Now Available</p>
@@ -61,6 +61,7 @@
 <style scoped lang="scss">
   .style-guide {
     background: #f5f3f3;
+    padding-top: 30px;
 
     .white-container {
       background: white;
@@ -74,7 +75,7 @@
       margin-bottom: 60px;
     }
 
-    section {
+    .orange-border {
       margin-bottom: 60px;
       padding-left: 38px;
       border-left: solid 2px #ffc373;

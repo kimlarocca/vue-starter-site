@@ -1,0 +1,62 @@
+.button,
+.button:visited,
+.button:active {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  font-family: $primary-font-family;
+  font-weight: normal;
+  padding: 20px 25px;
+  background-color: white;
+  color: black;
+  font-size: .875rem;
+  text-transform: uppercase;
+  border: 2px solid white;
+  transition: $transition;
+  text-decoration: none;
+
+  @media all and (max-width: $breakpoint-mobile) {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    color: white;
+    background-color: transparent;
+  }
+
+  &.ghost {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: .75rem;
+
+    @media all and (max-width: $breakpoint-mobile) {
+      font-size: 1.25rem;
+    }
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  &.gray {
+    background-color: $light-gray;
+    border: none;
+    font-size: .75rem;
+    padding: 15px 100px;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 5px 0 rgba(234, 233, 233, 1);
+  }
+
+  &.blue {
+    border: none;
+    font-size: .875rem;
+    padding: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    background: #1c70e3; /* fallback for old browsers */
+    background: linear-gradient(to bottom, #1c70e3 0%, #1859b4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+}

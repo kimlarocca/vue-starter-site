@@ -1,0 +1,156 @@
+@import "variables";
+
+@font-face {
+  font-family: 'Beatrice';
+  src: url('../fonts/Beatrice-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Beatrice-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/Beatrice-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/Beatrice-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/Beatrice-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Beatrice';
+  src: url('../fonts/Beatrice-Semibold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Beatrice-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/Beatrice-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/Beatrice-Semibold.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/Beatrice-Semibold.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Beatrice Display';
+  src: url('../fonts/BeatriceDisplay-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/BeatriceDisplay-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/BeatriceDisplay-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Beatrice Display';
+  src: url('../fonts/BeatriceDisplay-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/BeatriceDisplay-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/BeatriceDisplay-Medium.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1,
+.likeH1 {
+  font-size: 4.5rem;
+  line-height: 5.125rem;
+  font-family: $secondary-font-family;
+  font-weight: 700;
+  @media all and (max-width: $breakpoint-mobile) {
+    font-size: 3.5rem;
+    line-height: 4.125rem;
+  }
+}
+
+h2,
+.likeH2 {
+  font-size: 3.5rem;
+  line-height: 4.125rem;
+  font-family: $secondary-font-family;
+  font-weight: normal;
+  @media all and (max-width: $breakpoint-mobile) {
+    font-size: 2rem;
+    line-height: 4.125rem;
+  }
+}
+
+h3 {
+  font-size: 1.6875rem;
+  line-height: 2.125rem;
+  font-family: $secondary-font-family;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-bottom: 1rem;
+}
+
+.subhead1 {
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  @media all and (max-width: $breakpoint-mobile) {
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+  }
+}
+
+.subhead2 {
+  font-size: 2rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  @media all and (max-width: $breakpoint-mobile) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.subhead3 {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  font-weight: normal;
+}
+
+.subhead4 {
+  font-size: 1.375rem;
+  line-height: 2rem;
+  font-weight: normal;
+  @media all and (max-width: $breakpoint-mobile) {
+    font-size: .875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.subhead5 {
+  font-size: .9rem;
+  line-height: .9rem;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  @media all and (max-width: $breakpoint-mobile) {
+    font-size: .8333rem;
+    line-height: 1.25rem;
+  }
+}
+
+.subhead6 {
+  font-size: .75rem;
+  line-height: .75rem;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.bodytext1 {
+  font-size: 1.375rem;
+  line-height: 1.625rem;
+}
+
+.bodytext2 {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.bodytext3 {
+  font-size: .98375rem;
+  line-height: 1.4375rem;
+}
+
+.bodytext4 {
+  font-size: .6875rem;
+  line-height: 1rem;
+}
