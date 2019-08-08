@@ -10,7 +10,6 @@ import './assets/scss/main.scss'
 import Hero from './components/Hero.vue'
 
 Vue.component('hero', Hero)
-Vue.component('v-button', Button)
 
 Vue.config.productionTip = false
 
