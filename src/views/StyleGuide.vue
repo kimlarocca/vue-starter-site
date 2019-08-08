@@ -24,14 +24,14 @@
       </section>
 
       <section class="orange-border">
-        <p class="bodytext1">.bodytext1 Body Text No. 1</p>
-        <p class="bodytext2">.bodytext2 Body Text No. 1</p>
-        <p class="bodytext3">.bodytext3 Body Text No. 1</p>
-        <p class="bodytext4">.bodytext4 Body Text No. 1</p>
+        <p class="body-text1">.body-text1 Body Text No. 1</p>
+        <p class="body-text2">.body-text2 Body Text No. 1</p>
+        <p class="body-text3">.body-text3 Body Text No. 1</p>
+        <p class="body-text4">.body-text4 Body Text No. 1</p>
       </section>
 
       <section class="orange-border">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Normal paragraph text! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p><a>This is an inline link</a></p>
         <p><a class="caret-right">.caret-right a link with a right caret</a></p>
         <p><a class="caret-down">.caret-down a link with a down caret</a></p>

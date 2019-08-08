@@ -6,10 +6,10 @@ import router from './router'
 import './assets/scss/main.scss'
 
 // register global components
-
 import Hero from './components/Hero.vue'
-
+import HeroCarousel from './components/HeroCarousel.vue'
 Vue.component('hero', Hero)
+Vue.component('hero-carousel', HeroCarousel)
 
 Vue.config.productionTip = false
 

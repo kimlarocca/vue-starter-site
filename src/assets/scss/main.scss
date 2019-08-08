@@ -1,8 +1,8 @@
 @import "reset";
 @import "variables";
-@import "colors";
-@import "typography";
-@import "buttons";
+@import "foundation";
+@import "global";
+@import "components/components";
 
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -44,7 +44,7 @@ a:active {
     }
   }
 
-  &.text {
+  &.text-link {
     font-size: .9rem;
     letter-spacing: .125rem;
     text-transform: uppercase;

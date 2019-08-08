@@ -41,7 +41,7 @@
 }
 
 h1,
-.likeH1 {
+.like-h1 {
   font-size: 4.5rem;
   line-height: 5.125rem;
   font-family: $secondary-font-family;
@@ -53,7 +53,7 @@ h1,
 }
 
 h2,
-.likeH2 {
+.like-h2 {
   font-size: 3.5rem;
   line-height: 4.125rem;
   font-family: $secondary-font-family;
@@ -64,7 +64,8 @@ h2,
   }
 }
 
-h3 {
+h3,
+.like-h3 {
   font-size: 1.6875rem;
   line-height: 2.125rem;
   font-family: $secondary-font-family;
@@ -135,22 +136,22 @@ p {
   font-weight: normal;
 }
 
-.bodytext1 {
+.body-text1 {
   font-size: 1.375rem;
   line-height: 1.625rem;
 }
 
-.bodytext2 {
+.body-text2 {
   font-size: 1.25rem;
   line-height: 1.875rem;
 }
 
-.bodytext3 {
+.body-text3 {
   font-size: .98375rem;
   line-height: 1.4375rem;
 }
 
-.bodytext4 {
+.body-text4 {
   font-size: .6875rem;
   line-height: 1rem;
 }

@@ -1,3 +1,14 @@
+@import '~foundation-sites/scss/util/math';
+@import '~foundation-sites/scss/util/unit';
+@import '~foundation-sites/scss/util/value';
+@import '~foundation-sites/scss/util/direction';
+@import '~foundation-sites/scss/util/color';
+@import '~foundation-sites/scss/util/selector';
+@import '~foundation-sites/scss/util/flex';
+@import '~foundation-sites/scss/util/breakpoint';
+@import '~foundation-sites/scss/util/mixins';
+@import '~foundation-sites/scss/util/typography';
+
 $primary-color: #1859b4;
 $success-color: green;
 $warning-color: red;
@@ -460,12 +471,12 @@ $maincontent-class: 'off-canvas-content';
 // 26. Orbit
 // ---------
 
-$orbit-bullet-background: $medium-gray;
-$orbit-bullet-background-active: $dark-gray;
-$orbit-bullet-diameter: 1.2rem;
-$orbit-bullet-margin: 0.1rem;
-$orbit-bullet-margin-top: 0.8rem;
-$orbit-bullet-margin-bottom: 0.8rem;
+$orbit-bullet-background: white;
+$orbit-bullet-background-active: $blue;
+$orbit-bullet-diameter: .65rem;
+$orbit-bullet-margin: 0.25rem;
+$orbit-bullet-margin-top: -3rem;
+$orbit-bullet-margin-bottom: 0;
 $orbit-caption-background: rgba($black, 0.5);
 $orbit-caption-padding: 1rem;
 $orbit-control-background-hover: rgba($black, 0.5);
