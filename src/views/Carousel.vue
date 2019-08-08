@@ -1,5 +1,7 @@
 <template>
   <div>
-    <hero-carousel></hero-carousel>
+
+    <carousel></carousel>
+
   </div>
 </template>

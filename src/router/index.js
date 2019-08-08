@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import StyleGuide from '../views/StyleGuide'
 import Hero from '../views/Hero'
-import HeroCarousel from '../views/HeroCarousel'
+import Carousel from '../views/Carousel'
 
 Vue.use(Router)
 
@@ -20,8 +20,8 @@ export default new Router({
     },
     {
       path: '/Carousel',
-      name: 'HeroCarousel',
-      component: HeroCarousel
+      name: 'Carousel',
+      component: Carousel
     }
   ]
 })

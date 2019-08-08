@@ -7,9 +7,9 @@ import './assets/scss/main.scss'
 
 // register global components
 import Hero from './components/Hero.vue'
-import HeroCarousel from './components/HeroCarousel.vue'
+import Carousel from './components/Carousel.vue'
 Vue.component('hero', Hero)
-Vue.component('hero-carousel', HeroCarousel)
+Vue.component('carousel', Carousel)
 
 Vue.config.productionTip = false
 
