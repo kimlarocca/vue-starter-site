@@ -1,18 +1,36 @@
 <template>
   <div>
     <div class="carousel">
-      <transition-group tag="div" :name="transitionName" class="slides-group">
-        <div v-if="show" :key="current" class="slide" :class="slides[current].className">
-          <p>I'm {{slides[current].className}}!</p>
+      <slot name="slide">
+        <div
+          v-for="(slide, index) in slides"
+          :key="index"
+          v-show="activeIndex === index">
+          {{ slide }}
         </div>
-      </transition-group>
-
-      <div class="buttons">
-        <div class="btn btn-prev" aria-label="Previous slide" @click="slide(-1)">&#10094;</div>
-        <div class="btn btn-next" aria-label="Next slide" @click="slide(1)">&#10095;</div>
-      </div>
-
+      </slot>
     </div>
+
+    <!--    <div class="carousel">-->
+
+    <!--      <transition-group tag="div" :name="transitionName" class="slides-group">-->
+    <!--        <div v-if="show" :key="slides[current].id" class="slide" :class="slides[current].className">-->
+    <!--          <p>I'm {{slides[current].className}}! {{ slides[current].id }}</p>-->
+    <!--        </div>-->
+    <!--      </transition-group>-->
+
+    <!--      <div class="buttons">-->
+    <!--        <div class="btn btn-prev" aria-label="Previous slide" @click="slide(-1)">&#10094;</div>-->
+    <!--        <div class="btn btn-next" aria-label="Next slide" @click="slide(1)">&#10095;</div>-->
+    <!--      </div>-->
+
+    <!--      <div class="dots">-->
+    <!--        <p @click="goToSlide(slides[current].id)">go to slide 1</p>-->
+    <!--      </div>-->
+
+    <!--    </div>-->
+
+    <div class="dots"><p @click="goToIndex(0)">go to index 0</p></div>
 
   </div>
 </template>
@@ -20,34 +38,47 @@
 <script>
     export default {
         name: 'Carousel',
-        data: function () {
+        data () {
             return {
-                current: 0,
-                direction: 1,
-                transitionName: 'fade',
-                show: {
-                    default: false
-                },
-                slides: [
-                    {className: 'blue'},
-                    {className: 'red'},
-                    {className: 'yellow'}
-                ]
+                activeIndex: 0
             }
         },
         methods: {
-            slide (dir) {
-                this.direction = dir
-                dir === 1
-                    ? (this.transitionName = 'slide-next')
-                    : (this.transitionName = 'slide-prev')
-                let len = this.slides.length
-                this.current = (this.current + dir % len + len) % len
+            goToIndex (index) {
+                this.activeIndex = index
             }
-        },
-        mounted () {
-            this.show = true
         }
+        // data: function () {
+        //     return {
+        //         current: 0,
+        //         direction: 1,
+        //         transitionName: 'fade',
+        //         show: {
+        //             default: false
+        //         },
+        //         slides: [
+        //             {className: 'blue', id: 1},
+        //             {className: 'red', id: 2},
+        //             {className: 'yellow', id: 3}
+        //         ]
+        //     }
+        // },
+        // methods: {
+        //     slide (dir) {
+        //         this.direction = dir
+        //         dir === 1
+        //             ? (this.transitionName = 'slide-next')
+        //             : (this.transitionName = 'slide-prev')
+        //         let len = this.slides.length
+        //         this.current = (this.current + dir % len + len) % len
+        //     },
+        //     goToSlide (id) {
+        //         this.current = this.slides[id]
+        //     }
+        // },
+        // mounted () {
+        //     this.show = true
+        // }
     }
 
 </script>
@@ -90,22 +121,13 @@
     transform: translate(100%);
   }
 
-  /* SLIDES CLASSES */
-
-  .blue {
-    background: #4a69bd;
-  }
-
-  .red {
-    background: #e55039;
-  }
-
-  .yellow {
-    background: #f6b93b;
-  }
-
   /* SLIDER STYLES */
 
+  .dots {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+  }
 
   .slide {
     width: 100%;
@@ -118,31 +140,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .btn {
-    z-index: 10;
-    cursor: pointer;
-    border: 3px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    top: calc(50% - 35px);
-    left: 1%;
-    transition: transform 0.3s ease-in-out;
-    user-select: none;
-  }
-
-  .btn-next {
-    left: auto;
-    right: 1%;
-  }
-
-  .btn:hover {
-    transform: scale(1.1);
   }
 
 </style>

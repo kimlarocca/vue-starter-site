@@ -1,0 +1,50 @@
+@import "../variables";
+
+.performances-cards {
+
+  width: 100vw;
+
+  .performances-card {
+    position: relative;
+    text-align: center;
+    height: 33.33vw;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-top: solid 1px white;
+    border-right: solid 1px white;
+
+    @media all and (max-width: $breakpoint-tablet) {
+      height: 50vw;
+    }
+
+    @media all and (max-width: $breakpoint-mobile) {
+      height: 100vw;
+    }
+
+    &:nth-of-type(3n) {
+      border-right: none;
+    }
+
+    .category {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 2.5em;
+      color: $yellow;
+      font-size: 1.125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+    }
+  }
+
+  a,
+  a:visited,
+  a:active {
+    &:hover {
+    }
+  }
+
+}

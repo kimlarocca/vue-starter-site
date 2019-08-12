@@ -1,6 +1,11 @@
 <template>
   <div>
 
+    <div class="container">
+      <h1>hero component</h1>
+      <p class="subhead5 padding"><router-link to="/">&lt; back to style guide</router-link></p>
+    </div>
+
     <hero class="large small-header" image="/static/images/hero1.jpg" mobileImage="/static/images/hero1mobile.jpg" accentColor="#ff8f2a" hasH1="true">
       <span slot="header">Beethoven<br>Stravinsky<br>Maher<br></span>
       <span slot="colorHeader">and more!</span>

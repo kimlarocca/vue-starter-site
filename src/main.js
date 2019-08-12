@@ -8,8 +8,13 @@ import './assets/scss/main.scss'
 // register global components
 import Hero from './components/Hero.vue'
 import Carousel from './components/Carousel.vue'
+import UpcomingShowsCard from './components/UpcomingShowsCard.vue'
+import PerformancesCard from './components/PerformancesCard.vue'
+
 Vue.component('hero', Hero)
 Vue.component('carousel', Carousel)
+Vue.component('upcoming-shows-card', UpcomingShowsCard)
+Vue.component('performances-card', PerformancesCard)
 
 Vue.config.productionTip = false
 

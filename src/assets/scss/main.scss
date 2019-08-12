@@ -55,24 +55,26 @@ a:active {
     margin-bottom: 20px;
     font-weight: 700;
   }
+}
 
-  &.caret-right {
-    position: relative;
-    &:after {
-      position: absolute;
-      content: '\0203A';
-      margin-left: .25rem;
-    }
+.caret-right {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '\0203A';
+    margin-left: .25rem;
   }
+}
 
-  &.caret-down {
-    position: relative;
-    &:after {
-      position: absolute;
-      content: '\0203A';
-      transform: rotate(90deg);
-      margin-left: .5rem;
-    }
+.caret-down {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '\0203A';
+    transform: rotate(90deg);
+    margin-left: .5rem;
   }
 }
 
