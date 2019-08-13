@@ -4,7 +4,6 @@ import StyleGuide from '../views/StyleGuide'
 import Hero from '../views/Hero'
 import Carousel from '../views/Carousel'
 import UpcomingShowsCard from '../views/UpcomingShowsCard'
-import PerformancesCard from '../views/PerformancesCard'
 
 Vue.use(Router)
 
@@ -29,11 +28,6 @@ export default new Router({
       path: '/UpcomingShowsCard',
       name: 'UpcomingShowsCard',
       component: UpcomingShowsCard
-    },
-    {
-      path: '/PerformancesCard',
-      name: 'PerformancesCard',
-      component: PerformancesCard
     }
   ]
 })

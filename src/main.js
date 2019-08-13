@@ -10,11 +10,13 @@ import Hero from './components/Hero.vue'
 import Carousel from './components/Carousel.vue'
 import UpcomingShowsCard from './components/UpcomingShowsCard.vue'
 import PerformancesCard from './components/PerformancesCard.vue'
+import PressReleaseCard from './components/PressReleaseCard.vue'
 
 Vue.component('hero', Hero)
 Vue.component('carousel', Carousel)
 Vue.component('upcoming-shows-card', UpcomingShowsCard)
 Vue.component('performances-card', PerformancesCard)
+Vue.component('press-release-card', PressReleaseCard)
 
 Vue.config.productionTip = false
 

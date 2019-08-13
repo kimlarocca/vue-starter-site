@@ -39,8 +39,8 @@
           esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
           officia deserunt mollit anim id est laborum.</p>
         <p><a>This is an inline link</a></p>
-        <p><a class="caret-right">.caret-right a link with a right caret</a></p>
-        <p><a class="caret-down">.caret-down a link with a down caret</a></p>
+        <p><a class="caret-right">.caret-right</a></p>
+        <p><a class="caret-down">.caret-down</a></p>
       </section>
 
       <section class="section-border">
@@ -59,16 +59,20 @@
 
       <section class="section-border">
         <p class="subhead5">Buttons</p>
+        <p>.button</p>
+        <p>.button ghost</p>
         <div class="black-container">
           <a class="button">view tickets</a>
           <a class="button ghost">browse concerts</a>
         </div>
+        <p>.button gray</p>
+        <p>.button blue</p>
         <a class="button gray">learn more</a>
         <a class="button blue">buy tickets</a>
       </section>
 
-      <p class="subhead5 padding">Hero Component:
-        <router-link to="/Hero">see examples</router-link>
+      <p class="subhead5 padding">
+        Hero Component | <router-link to="/Hero">view examples</router-link>
       </p>
 
     </div>
@@ -83,15 +87,16 @@
     </hero>
 
     <div class="container">
+
       <p class="subhead5 padding">
-        <router-link to="/UpcomingShowsCard">Upcoming Shows Card Component</router-link>
+        Upcoming Shows Card Component | <router-link to="/UpcomingShowsCard">view in a grid</router-link>
       </p>
 
       <div style="width: 300px">
         <upcoming-shows-card
           image="/static/images/upcoming-shows-card-image.png"
           altText="man and woman dancing"
-          ticketLink="htt://www.google.com"
+          ticketLink="http://www.google.com"
           :upcomingDates="[{month:'Feb',day:'27'},{month:'Feb',day:'28'},{month:'Mar',day:'1'}]"
           title="SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera
             Adler Fellows"
@@ -101,7 +106,7 @@
       </div>
 
       <p class="subhead5 padding">
-        <router-link to="/PerformancesCard">Performances Card Component</router-link>
+        Performances Card Component | <router-link to="/PerformancesCard">view in a grid</router-link>
       </p>
 
       <section class="performances-cards" style="width: 33vw; height: 33vw">
@@ -110,10 +115,40 @@
           category="family"
           subtitle="great performances"
           title="Phenomenal artists perform with the SF symphony"
-          learnMoreLink="htt://www.google.com"
+          learnMoreLink="http://www.google.com"
         >
         </performances-card>
       </section>
+
+      <p class="subhead5 padding">Press Release Card Component</p>
+
+      <div class="grid-x grid-margin-x">
+        <div class="cell auto">
+          <press-release-card
+            color="blue"
+            title="MTT inducted into the California Hall of Fame"
+            body="On Tuesday December 5th, San Francisco Symphony Music Director Michael Tilson Thomas (MTT) was inducted into the California Hall of Fame along with fellow inductees Steven Spielberg, Lucille Ball and many others."
+            learnMoreLink="http://www.google.com"
+          >
+          </press-release-card>
+        </div>
+        <div class="cell auto">
+          <press-release-card
+            color="purple"
+            title="June 5, 2018 - San Francisco Symphony announces new Summer With the Symphony performance: actor and hip hop artist Common, August 1 "
+            learnMoreLink="http://www.google.com"
+          >
+          </press-release-card>
+        </div>
+        <div class="cell auto">
+          <press-release-card
+            color="blue"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            learnMoreLink="http://www.google.com"
+          >
+          </press-release-card>
+        </div>
+      </div>
 
     </div>
 
@@ -138,7 +173,7 @@
     }
 
     .padding {
-      padding: 60px 0;
+      padding: 80px 0 30px;
     }
 
     .section-border {
