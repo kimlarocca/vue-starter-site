@@ -6,8 +6,8 @@
       <router-link to="/">&lt; back to style guide</router-link>
     </p>
 
-    <div class="grid-x grid-margin-x">
-      <div class="cell auto">
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="cell large-3 medium-6 small-12">
         <upcoming-shows-card
           image="/static/images/upcoming-shows-card-image.png"
           altText="man and woman dancing"
@@ -19,7 +19,7 @@
         >
         </upcoming-shows-card>
       </div>
-      <div class="cell auto">
+      <div class="cell large-3 medium-6 small-12">
         <upcoming-shows-card
           image="/static/images/upcoming-shows-card-image.png"
           altText="man and woman dancing"
@@ -31,7 +31,7 @@
         >
         </upcoming-shows-card>
       </div>
-      <div class="cell auto">
+      <div class="cell large-3 medium-6 small-12">
         <upcoming-shows-card
           image="/static/images/upcoming-shows-card-image.png"
           altText="man and woman dancing"
@@ -43,7 +43,7 @@
         >
         </upcoming-shows-card>
       </div>
-      <div class="cell auto">
+      <div class="cell large-3 medium-6 small-12">
         <upcoming-shows-card
           image="/static/images/upcoming-shows-card-image.png"
           altText="man and woman dancing"

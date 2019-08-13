@@ -1,0 +1,41 @@
+@import "../variables";
+
+.news-card {
+  width: 100%;
+  opacity: 1;
+  transition: $transition;
+  position: relative;
+
+  &:hover {
+    opacity: .9;
+    cursor: pointer;
+  }
+
+  a,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  img {
+    top: 0;
+    left: 0;
+  }
+
+  .title {
+    background: $medium-gray;
+    padding: 20px;
+    p {
+      margin-bottom: 20px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
