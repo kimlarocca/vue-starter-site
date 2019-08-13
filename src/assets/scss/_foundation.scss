@@ -5,8 +5,9 @@
 
 // Global styles
 @include foundation-global-styles;
-//@include foundation-forms;
+@include foundation-forms;
 //@include foundation-typography;
+@include foundation-text-alignment;
 
 // Grids (choose one)
 @include foundation-xy-grid-classes;

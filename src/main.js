@@ -7,14 +7,14 @@ import './assets/scss/main.scss'
 
 // register global components
 import Hero from './components/Hero.vue'
-import Carousel from './components/Carousel.vue'
+import MiniHero from './components/MiniHero.vue'
 import UpcomingShowsCard from './components/UpcomingShowsCard.vue'
 import PerformancesCard from './components/PerformancesCard.vue'
 import PressReleaseCard from './components/PressReleaseCard.vue'
 import NewsCard from './components/NewsCard.vue'
 
 Vue.component('hero', Hero)
-Vue.component('carousel', Carousel)
+Vue.component('mini-hero', MiniHero)
 Vue.component('upcoming-shows-card', UpcomingShowsCard)
 Vue.component('performances-card', PerformancesCard)
 Vue.component('press-release-card', PressReleaseCard)

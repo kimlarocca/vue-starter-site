@@ -55,6 +55,17 @@ a:active {
     margin-bottom: 20px;
     font-weight: 700;
   }
+
+  &.view-more {
+    color: black;
+    &:hover {
+      color: $blue;
+    }
+
+    @media all and (max-width: $breakpoint-mobile) {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .caret-right {
@@ -81,8 +92,11 @@ a:active {
 hr {
   border: 0;
   height: 1px;
-  background: $light-gray;
+  background: $medium-gray;
   margin: 2rem 0;
+  @media all and (max-width: $breakpoint-mobile) {
+    height: 2px;
+  }
 }
 
 .container {
@@ -92,5 +106,33 @@ hr {
 
   @media all and (max-width: $breakpoint-tablet) {
     width: calc(100% - 4rem);
+    &.small-full-width {
+      width: 100%;
+    }
+  }
+}
+
+.section-padding-100 {
+  padding-top: 100px;
+}
+
+.section-padding-50 {
+  padding-top: 50px;
+}
+
+.section-padding-40 {
+  padding-top: 40px;
+  @media all and (max-width: $breakpoint-mobile) {
+    padding-top: 80px;
+  }
+}
+
+.section-padding-30 {
+  padding-top: 30px;
+}
+
+.small-text-left {
+  @media all and (max-width: $breakpoint-mobile) {
+    text-align: left;
   }
 }

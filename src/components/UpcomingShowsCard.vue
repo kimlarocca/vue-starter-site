@@ -11,11 +11,11 @@
             </li>
           </ul>
         <div class="title">
-          <p class="body-text3">{{ title }}</p>
-          <p class="body-text4">{{ dateRange }}</p>
+          <p>{{ title }}</p>
+          <p class="date-range">{{ dateRange }}</p>
         </div>
         <div class="buy-tickets">
-          <p class="subhead6">buy tickets</p>
+          <p>buy tickets</p>
         </div>
       </a>
     </div>

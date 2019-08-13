@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import StyleGuide from '../views/StyleGuide'
+import HomePage from '../views/HomePage'
 import Hero from '../views/Hero'
-import Carousel from '../views/Carousel'
+import MiniHero from '../views/MiniHero'
 import UpcomingShowsCard from '../views/UpcomingShowsCard'
+import PerformancesCard from '../views/PerformancesCard'
 
 Vue.use(Router)
 
@@ -15,19 +17,29 @@ export default new Router({
       component: StyleGuide
     },
     {
+      path: '/HomePage',
+      name: 'Home Page',
+      component: HomePage
+    },
+    {
       path: '/Hero',
       name: 'Hero',
       component: Hero
     },
     {
-      path: '/Carousel',
-      name: 'Carousel',
-      component: Carousel
+      path: '/MiniHero',
+      name: 'MiniHero',
+      component: MiniHero
     },
     {
       path: '/UpcomingShowsCard',
       name: 'UpcomingShowsCard',
       component: UpcomingShowsCard
+    },
+    {
+      path: '/PerformancesCard',
+      name: 'PerformancesCard',
+      component: PerformancesCard
     }
   ]
 })

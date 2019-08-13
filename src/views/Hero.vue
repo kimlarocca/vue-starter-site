@@ -6,6 +6,20 @@
       <p class="subhead5 padding"><router-link to="/">&lt; back to style guide</router-link></p>
     </div>
 
+    <!-- props:
+    image: the desktop background image
+    mobileImage: the mobile background image. if this is not defined, mobile will display the desktop background image
+    accentColor: hex value (needs to be a hex value e.g., #ffffff)
+    alignment: left or right - left is the default
+    hasH1: set this to true if the header/colorHeader text should be in a H1 tag
+    preheader: the text in this slot will be white
+    header: the text in this slot will be white
+    subheader: the text in this slot will be white
+    colorHeader: the text in this slot will be the color specified in accentColor above
+    cta1 & cta2: these slots will be displayed as buttons
+    textLink: this will be displayed as a text link instead of a button, and will be the color specified in accentColor above
+    -->
+
     <hero class="large small-header" image="/static/images/hero1.jpg" mobileImage="/static/images/hero1mobile.jpg" accentColor="#ff8f2a" hasH1="true">
       <span slot="header">Beethoven<br>Stravinsky<br>Maher<br></span>
       <span slot="colorHeader">and more!</span>

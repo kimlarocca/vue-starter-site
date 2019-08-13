@@ -71,15 +71,30 @@
         <a class="button blue">buy tickets</a>
       </section>
 
-      <p class="subhead5 padding">
+      <h2 class="padding">layouts</h2>
+
+      <p class="subhead5">
+        <router-link to="/HomePage">home page</router-link>
+      </p>
+
+      <h2 class="padding">components</h2>
+
+      <p class="subhead5">
         Hero Component |
         <router-link to="/Hero">view examples</router-link>
       </p>
 
+      <div class="padding-smaller"></div>
+
     </div>
 
-    <hero class="large smallHeader" image="/static/images/hero1.jpg" mobileImage="/static/images/hero1mobile.jpg"
-          accentColor="#ff8f2a" hasH1="true">
+    <hero
+      class="large smallHeader"
+      image="/static/images/hero1.jpg"
+      mobileImage="/static/images/hero1mobile.jpg"
+      accentColor="#ff8f2a"
+      hasH1="true"
+    >
       <span slot="header">Beethoven<br>Stravinsky<br>Maher<br></span>
       <span slot="colorHeader">and more!</span>
       <p slot="subheader" class="subhead4">2019 Season Now Available</p>
@@ -88,6 +103,22 @@
     </hero>
 
     <div class="container">
+
+      <p class="subhead5 padding">
+        Mini Hero Component |
+        <router-link to="/MiniHero">view examples</router-link>
+      </p>
+
+      <mini-hero
+        image="/static/images/mini-hero1.jpg"
+        font="headline"
+        accentColor="#7ecb69"
+        preheader="Education"
+      >
+        <span slot="header" class="like-h3">Music Education for</span>
+        <span slot="colorHeader" class="like-h3">Every Public School Child!</span>
+        <a class="button" href="#" slot="cta">education initiatives</a>
+      </mini-hero>
 
       <p class="subhead5 padding">
         Upcoming Shows Card Component |
@@ -112,10 +143,9 @@
         <router-link to="/PerformancesCard">view in a grid</router-link>
       </p>
 
-      <section class="performances-cards">
-
-        <div class="grid-x grid-margin-x grid-margin-y">
-          <div class="cell large-4 small-12">
+      <div class="performances-cards three">
+        <div class="grid-x">
+          <div class="cell large-4 medium-6 small-12">
             <performances-card
               image="/static/images/performances-card-image.png"
               category="family"
@@ -126,12 +156,12 @@
             </performances-card>
           </div>
         </div>
-      </section>
+      </div>
 
       <p class="subhead5 padding">Press Release Card Component</p>
 
       <div class="grid-x grid-margin-x grid-margin-y">
-        <div class="cell large-4 small-12">
+        <div class="cell large-4 medium-6 small-12">
           <press-release-card
             color="blue"
             title="MTT inducted into the California Hall of Fame"
@@ -140,18 +170,10 @@
           >
           </press-release-card>
         </div>
-        <div class="cell large-4 small-12">
+        <div class="cell large-4 medium-6 small-12">
           <press-release-card
             color="purple"
             title="June 5, 2018 - San Francisco Symphony announces new Summer With the Symphony performance: actor and hip hop artist Common, August 1 "
-            learnMoreLink="http://www.google.com"
-          >
-          </press-release-card>
-        </div>
-        <div class="cell large-4 small-12">
-          <press-release-card
-            color="blue"
-            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             learnMoreLink="http://www.google.com"
           >
           </press-release-card>
@@ -163,29 +185,9 @@
       </p>
 
       <div class="grid-x grid-margin-x grid-margin-y">
-        <div class="cell large-4 small-12">
+        <div class="cell large-4 medium-6 small-12">
           <news-card
-            image="/static/images/news-card-image.png"
-            altText="james hetfield of metallica performing"
-            learnMoreLink="http://www.google.com"
-            subtitle="news"
-            title="Metallica reunites with SF Symphony to open Chase Center"
-          >
-          </news-card>
-        </div>
-        <div class="cell large-4 small-12">
-          <news-card
-            image="/static/images/news-card-image.png"
-            altText="james hetfield of metallica performing"
-            learnMoreLink="http://www.google.com"
-            subtitle="news"
-            title="Metallica reunites with SF Symphony to open Chase Center"
-          >
-          </news-card>
-        </div>
-        <div class="cell large-4 small-12">
-          <news-card
-            image="/static/images/news-card-image.png"
+            image="/static/images/news-card-image.jpg"
             altText="james hetfield of metallica performing"
             learnMoreLink="http://www.google.com"
             subtitle="news"
@@ -203,7 +205,7 @@
 <style scoped lang="scss">
   .style-guide {
     background: white;
-    padding-top: 30px;
+    padding: 30px 0;
 
     .gray-container {
       background: #f0f0f0;
@@ -218,7 +220,11 @@
     }
 
     .padding {
-      padding: 80px 0 30px;
+      padding: 80px 0 20px;
+    }
+
+    .padding-smaller {
+      padding: 20px 0;
     }
 
     .section-border {

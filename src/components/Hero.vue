@@ -3,7 +3,7 @@
 
     <div class="desktop-background" :style="{ backgroundImage: `url('${image}')` }"></div>
 
-    <!-- mobile image is optional, show desktop image if it doesn't exist -->
+    <!-- mobile image is optional, show desktop image if the mobile image doesn't exist -->
     <div class="mobile-background" v-if="mobileImage" :style="{ backgroundImage: `url('${mobileImage}')` }"></div>
     <div class="mobile-background" v-if="!mobileImage" :style="{ backgroundImage: `url('${image}')` }"></div>
 

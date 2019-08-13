@@ -11,7 +11,7 @@
         <upcoming-shows-card
           image="/static/images/upcoming-shows-card-image.png"
           altText="man and woman dancing"
-          ticketLink="htt://www.google.com"
+          ticketLink="http://www.google.com"
           :upcomingDates="[{month:'Feb',day:'27'},{month:'Feb',day:'28'},{month:'Mar',day:'1'}]"
           title="SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera
             Adler Fellows"
@@ -23,7 +23,7 @@
         <upcoming-shows-card
           image="/static/images/upcoming-shows-card-image.png"
           altText="man and woman dancing"
-          ticketLink="htt://www.google.com"
+          ticketLink="http://www.google.com"
           :upcomingDates="[{month:'Feb',day:'27'},{month:'Feb',day:'28'},{month:'Mar',day:'1'}]"
           title="SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera
             Adler Fellows"
@@ -35,7 +35,7 @@
         <upcoming-shows-card
           image="/static/images/upcoming-shows-card-image.png"
           altText="man and woman dancing"
-          ticketLink="htt://www.google.com"
+          ticketLink="http://www.google.com"
           :upcomingDates="[{month:'Feb',day:'27'},{month:'Feb',day:'28'},{month:'Mar',day:'1'}]"
           title="SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera
             Adler Fellows"
@@ -47,7 +47,7 @@
         <upcoming-shows-card
           image="/static/images/upcoming-shows-card-image.png"
           altText="man and woman dancing"
-          ticketLink="htt://www.google.com"
+          ticketLink="http://www.google.com"
           :upcomingDates="[{month:'Feb',day:'27'},{month:'Feb',day:'28'},{month:'Mar',day:'1'}]"
           title="SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera
             Adler Fellows"

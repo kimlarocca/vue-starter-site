@@ -21,10 +21,9 @@
 
     @media all and (max-width: $breakpoint-mobile) {
       height: 100vw;
-    }
-
-    &:nth-of-type(3n) {
+      border-top: none;
       border-right: none;
+      border-bottom: solid 1px white;
     }
 
     .category {
@@ -51,6 +50,9 @@
       align-items: center;
       text-align: left;
       padding: 0 125px 0 100px;
+      @media all and (max-width: $breakpoint-mobile) {
+        padding: 50px;
+      }
 
       .subtitle {
         color: $yellow;
@@ -76,6 +78,15 @@
 
       .category {
         opacity: 0;
+      }
+    }
+  }
+
+  &.two {
+    .performances-card {
+      height: 50vw;
+      @media all and (max-width: $breakpoint-mobile) {
+        height: 100vw;
       }
     }
   }
