@@ -1,0 +1,125 @@
+.hero {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  position: relative;
+
+  .desktop-background,
+  .mobile-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    @media all and (max-width: $breakpoint-mobile) {
+      display: none;
+    }
+  }
+
+  .mobile-background {
+    display: none;
+    @media all and (max-width: $breakpoint-mobile) {
+      display: block;
+    }
+  }
+
+  .container {
+    display: flex;
+    z-index: 1;
+
+    &.right {
+      justify-content: flex-end;
+
+      .content {
+        border-left: none;
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    text-align: left;
+    border-left: solid 1px white;
+    padding: 0 0 0 32px;
+    align-self: flex-start;
+    @media all and (max-width: $breakpoint-mobile) {
+      max-width: 100%;
+      padding: 0 0 0 32px;
+      div {
+        width: 100%;
+      }
+    }
+
+    h1,
+    .like-h1 {
+      color: white;
+      margin-top: -6px; // accounts for empty space in font so it lines up with the white line
+      margin-bottom: .5rem;
+    }
+
+    p {
+      color: white;
+      margin-bottom: 3rem;
+
+      @media all and (max-width: $breakpoint-mobile) {
+        font-weight: 700;
+      }
+
+      &.subhead5 {
+        margin: 0 0 1rem;
+      }
+
+      &.body-text1,
+      &.body-text2,
+      &.body-text3,
+      &.body-text4 {
+        font-weight: 700;
+      }
+    }
+
+    &.right {
+      align-self: flex-end;
+    }
+
+    .button {
+      margin: 0 2rem 0 0;
+      @media all and (max-width: $breakpoint-mobile) {
+        width: calc(100% - 54px); // 54 = 50px padding plus 4px border
+        margin: 0 0 2rem 0;
+      }
+    }
+
+    .text-link {
+      &:hover {
+        color: white !important;
+      }
+    }
+  }
+
+  &.large {
+    height: 900px;
+
+    @media all and (max-width: $breakpoint-mobile) {
+      height: 100vh;
+    }
+
+  }
+
+  &.small-header {
+    h1,
+    .like-h1 {
+      font-size: 3.5rem;
+      line-height: 4.125rem;
+      font-weight: normal;
+      @media all and (max-width: $breakpoint-mobile) {
+        font-weight: 700;
+      }
+    }
+  }
+
+}
