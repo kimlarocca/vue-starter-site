@@ -153,6 +153,10 @@ p {
   font-size: 1.25rem;
   line-height: 1.875rem;
   font-family: $primary-font-family;
+  @media all and (max-width: $breakpoint-mobile) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 }
 
 .body-text3 {

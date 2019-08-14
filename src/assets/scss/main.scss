@@ -58,6 +58,7 @@ a:active {
 
   &.view-more {
     color: black;
+
     &:hover {
       color: $blue;
     }
@@ -94,6 +95,9 @@ hr {
   height: 1px;
   background: $medium-gray;
   margin: 2rem 0;
+  @media all and (max-width: $breakpoint-mobile) {
+    margin: 1rem 0;
+  }
 }
 
 .container {
@@ -111,10 +115,16 @@ hr {
 
 .section-padding-100 {
   padding-top: 100px;
+  @media all and (max-width: $breakpoint-mobile) {
+    padding-top: 40px;
+  }
 }
 
 .section-padding-50 {
   padding-top: 50px;
+  @media all and (max-width: $breakpoint-mobile) {
+    padding-top: 20px;
+  }
 }
 
 .section-padding-40 {
@@ -123,6 +133,9 @@ hr {
 
 .section-padding-30 {
   padding-top: 30px;
+  @media all and (max-width: $breakpoint-mobile) {
+    padding-top: 20px;
+  }
 }
 
 .small-text-left {

@@ -7,6 +7,10 @@
   display: flex;
   position: relative;
 
+  @media all and (max-width: $breakpoint-mobile) {
+    min-height: auto;
+  }
+
   a.container-link {
     position: absolute;
     z-index: 10;
@@ -53,7 +57,7 @@
         padding: 80px 32px;
       }
       @media all and (max-width: $breakpoint-mobile) {
-        padding: 80px 0;
+        padding: 40px 0;
         div {
           width: 100%;
         }
@@ -62,12 +66,22 @@
       p {
         color: white;
         margin-bottom: 25px;
+        @media all and (max-width: $breakpoint-mobile) {
+          margin-bottom: 0;
+          &:last-of-type {
+            margin-bottom: 10px;
+          }
+        }
       }
 
       .subhead5 {
         margin-bottom: 20px;
         font-weight: 700;
         color: white;
+        @media all and (max-width: $breakpoint-mobile) {
+          font-weight: normal;
+          margin-bottom: 10px;
+        }
       }
 
       .button {
@@ -123,7 +137,7 @@
           padding: 80px 32px;
         }
         @media all and (max-width: $breakpoint-mobile) {
-          padding: 80px 0;
+          padding: 40px 0 30px;
         }
 
       }

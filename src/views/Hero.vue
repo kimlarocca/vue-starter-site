@@ -25,6 +25,7 @@
     colorHeader: the text in this slot will be the color specified in accentColor above
     cta1 & cta2: these slots will be displayed as buttons
     textLink: this will be displayed as a text link instead of a button, and will be the color specified in accentColor above
+    dropDownMenu: array of objects containing the option and the value
     -->
 
     <hero class="full-screen small-header" image="/static/images/hero1.jpg" mobileImage="/static/images/hero1mobile.jpg"
@@ -82,7 +83,15 @@
       <span slot="textLink">directions &amp; transportation</span>
     </hero>
 
-    <hero image="/static/images/hero6.jpg" accentColor="#fc6013">
+    <hero
+      image="/static/images/hero6.jpg"
+      accentColor="#fc6013"
+      :dropDownMenu="[
+      {value:'value 1 Tuesday, August 1st, 2019 at 7:00pm',text:'Tuesday, August 1st, 2019 at 7:00pm'},
+      {value:'value2',text:'Wednesday, August 1st, 2019 at 7:00pm'},
+      {value:'value3',text:'Thursday, August 1st, 2019 at 7:00pm'}
+      ]"
+    >
       <span slot="header">Archives<br>&amp; </span>
       <span slot="colorHeader">history</span>
       <p slot="subheader" class="body-text3">We collect, preserve, and provide current and historical records of the San

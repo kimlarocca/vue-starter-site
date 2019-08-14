@@ -1,0 +1,10 @@
+select {
+  &.ghost {
+    border: none;
+    background: transparent;
+    color: white;
+    border-bottom: solid 1px white;
+    width: auto;
+    margin-bottom: 25px;
+  }
+}

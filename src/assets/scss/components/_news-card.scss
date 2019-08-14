@@ -31,8 +31,13 @@
 
   .title {
     padding: 20px;
+
     p {
       margin-bottom: 20px;
+      @media all and (max-width: $breakpoint-mobile) {
+        margin-bottom: 12.5px;
+      }
+
       &:last-of-type {
         margin-bottom: 0;
       }

@@ -27,6 +27,16 @@
           </template>
 
           <slot name="subheader" class="subhead4"></slot>
+
+          <template v-if="hasDropdown">
+            <label for="select1" class="hide-ally-element">choose a date and time</label>
+            <select id="select1" class="ghost">
+              <template v-for="option in dropDownMenu">
+                <option :value="option.value">{{ option.text }}</option>
+              </template>
+            </select>
+          </template>
+
           <slot name="cta1"></slot>
           <slot name="cta2"></slot>
 
@@ -55,11 +65,15 @@
             alignment: String,
             hasH1: {
                 default: false
-            }
+            },
+            dropDownMenu: Array
         },
         computed: {
             hasTextLink () {
                 return !!this.$slots['textLink']
+            },
+            hasDropdown () {
+                return !!this.$props['dropDownMenu']
             }
         }
     }

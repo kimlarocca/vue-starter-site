@@ -34,10 +34,6 @@
     top: 10px;
     left: 10px;
     z-index: 10;
-    @media all and (max-width: $breakpoint-mobile) {
-      top: 20px;
-      left: 20px;
-    }
 
     li {
       background: $blue;
@@ -50,23 +46,12 @@
       text-align: center;
       letter-spacing: .1rem;
 
-      @media all and (max-width: $breakpoint-mobile) {
-        padding: 15px 25px 5px;
-        margin: 0 20px 20px 0;
-      }
-
       .month {
         font-size: .6875rem;
-        @media all and (max-width: $breakpoint-mobile) {
-          font-size: 1.375rem;
-        }
       }
 
       .day {
         font-size: 1.25rem;
-        @media all and (max-width: $breakpoint-mobile) {
-          font-size: 2.25rem;
-        }
       }
     }
 
@@ -75,21 +60,14 @@
   .title {
     background: $medium-gray;
     padding: 20px;
+
     p {
       font-size: .9375rem;
       line-height: 1.375rem;
-      @media all and (max-width: $breakpoint-mobile) {
-        font-size: 1.75rem;
-        line-height: 2.75rem;
-      }
+
       &.date-range {
         font-size: .6875rem;
         line-height: 1.6875rem;
-        @media all and (max-width: $breakpoint-mobile) {
-          font-size: 1.25rem;
-          line-height: 2.25rem;
-          font-weight: 700;
-        }
       }
     }
   }
@@ -98,18 +76,11 @@
     background-color: $light-gray;
     text-align: center;
     height: 40px;
-    @media all and (max-width: $breakpoint-mobile) {
-      height: 75px;
-    }
 
     p {
       line-height: 40px;
       font-size: .75rem;
       text-transform: uppercase;
-      @media all and (max-width: $breakpoint-mobile) {
-        line-height: 75px;
-        font-size: 1.5rem;
-      }
     }
   }
 
