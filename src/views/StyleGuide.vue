@@ -197,6 +197,20 @@
         </div>
       </div>
 
+      <div class="grid-x grid-margin-x grid-margin-y">
+        <div class="cell large-4 medium-6 small-12">
+          <feature-grid
+            image="/static/images/feature-grid1.jpg"
+            altText="The Neighbourhood"
+            title="The Neighbourhood"
+            description="Make the most of your night dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt egestas lectus nec feugiat."
+            learnMoreLink="http://www.google.com"   
+            learnMoreLinkTitle="Learn More"
+          >            
+          </feature-grid>
+        </div>
+      </div>
+
     </div>
 
   </div>

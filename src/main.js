@@ -12,6 +12,7 @@ import UpcomingShowsCard from './components/UpcomingShowsCard.vue'
 import PerformancesCard from './components/PerformancesCard.vue'
 import PressReleaseCard from './components/PressReleaseCard.vue'
 import NewsCard from './components/NewsCard.vue'
+import FeatureGrid from './components/FeatureGrid.vue'
 
 Vue.component('hero', Hero)
 Vue.component('mini-hero', MiniHero)
@@ -19,6 +20,7 @@ Vue.component('upcoming-shows-card', UpcomingShowsCard)
 Vue.component('performances-card', PerformancesCard)
 Vue.component('press-release-card', PressReleaseCard)
 Vue.component('news-card', NewsCard)
+Vue.component('feature-grid', FeatureGrid)
 
 Vue.config.productionTip = false
 
