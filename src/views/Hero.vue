@@ -3,10 +3,17 @@
 
     <div class="container">
       <h1>hero component</h1>
-      <p class="subhead5 padding"><router-link to="/">&lt; back to style guide</router-link></p>
+      <p class="subhead5 padding">
+        <router-link to="/">&lt; back to style guide</router-link>
+      </p>
     </div>
 
-    <!-- props:
+    <!--
+    CLASSES:
+    full-screen: displays the larger 900px tall hero (is 700px tall by default)
+    small-header: displays the hero with smaller header font (displays the larger header font variation by default)
+
+    PROPS:
     image: the desktop background image
     mobileImage: the mobile background image. if this is not defined, mobile will display the desktop background image
     accentColor: hex value (needs to be a hex value e.g., #ffffff)
@@ -20,7 +27,8 @@
     textLink: this will be displayed as a text link instead of a button, and will be the color specified in accentColor above
     -->
 
-    <hero class="large small-header" image="/static/images/hero1.jpg" mobileImage="/static/images/hero1mobile.jpg" accentColor="#ff8f2a" hasH1="true">
+    <hero class="full-screen small-header" image="/static/images/hero1.jpg" mobileImage="/static/images/hero1mobile.jpg"
+          accentColor="#ff8f2a" hasH1="true">
       <span slot="header">Beethoven<br>Stravinsky<br>Maher<br></span>
       <span slot="colorHeader">and more!</span>
       <p slot="subheader" class="subhead4">2019 Season Now Available</p>
@@ -28,7 +36,7 @@
       <a class="button ghost" slot="cta2">Browse Concerts</a>
     </hero>
 
-    <hero class="large small-header" image="/static/images/hero2.jpg" accentColor="#f94d46" alignment="right">
+    <hero class="full-screen small-header" image="/static/images/hero2.jpg" accentColor="#f94d46" alignment="right">
       <span slot="header">Music matters:<br></span>
       <span slot="colorHeader">you make it possible</span>
       <p slot="subheader" class="body-text3">For over a century, the San Francisco Symphony has been a source of pride,
@@ -52,6 +60,12 @@
       <span slot="textLink">read more</span>
     </hero>
 
+    <hero image="/static/images/hero4.jpg" accentColor="#1870cf">
+      <p slot="preheader" class="subhead5">In the 2017/18 season, over</p>
+      <span slot="colorHeader">1800+</span>
+      <p slot="subheader" class="subhead4">People have given over 25,000 hours</p>
+    </hero>
+
     <hero image="/static/images/hero5.jpg" accentColor="#ffc373" alignment="right">
       <span slot="header">SFS </span>
       <span slot="colorHeader">Media</span>
@@ -60,17 +74,27 @@
       <a class="button" slot="cta1">about sfs media</a>
     </hero>
 
+    <hero image="/static/images/hero5.jpg" accentColor="#ffc373" alignment="right">
+      <span slot="header">Getting<br>here</span>
+      <p slot="subheader" class="body-text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a class="button" slot="cta1">getting here details</a>
+      <span slot="textLink">directions &amp; transportation</span>
+    </hero>
+
     <hero image="/static/images/hero6.jpg" accentColor="#fc6013">
       <span slot="header">Archives<br>&amp; </span>
       <span slot="colorHeader">history</span>
-      <p slot="subheader" class="body-text3">We collect, preserve, and provide current and historical records of the San Francisco Symphony.</p>
+      <p slot="subheader" class="body-text3">We collect, preserve, and provide current and historical records of the San
+        Francisco Symphony.</p>
       <a class="button" slot="cta1">archives &amp; history</a>
     </hero>
 
     <hero image="/static/images/hero6.jpg" accentColor="#fc6013">
       <span slot="header">Archives<br>&amp; </span>
       <span slot="colorHeader">history</span>
-      <p slot="subheader" class="body-text3">We collect, preserve, and provide current and historical records of the San Francisco Symphony.</p>
+      <p slot="subheader" class="body-text3">We collect, preserve, and provide current and historical records of the San
+        Francisco Symphony.</p>
       <span slot="textLink">read more</span>
     </hero>
 

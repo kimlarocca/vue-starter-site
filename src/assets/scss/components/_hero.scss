@@ -1,8 +1,15 @@
+@import "../variables";
+
 .hero {
   height: 700px;
   width: 100%;
   display: flex;
   position: relative;
+
+  @media all and (max-width: $breakpoint-mobile) {
+    height: auto;
+    min-height: 475px;
+  }
 
   .desktop-background,
   .mobile-background {
@@ -30,11 +37,16 @@
     display: flex;
     z-index: 1;
 
+    @media all and (max-width: $breakpoint-mobile) {
+      margin: auto 1rem 3rem 1rem;
+    }
+
     &.right {
       justify-content: flex-end;
 
       .content {
         border-left: none;
+        padding-left: 0;
       }
     }
   }
@@ -49,7 +61,7 @@
     align-self: flex-start;
     @media all and (max-width: $breakpoint-mobile) {
       max-width: 100%;
-      padding: 0 0 0 32px;
+      padding: 0 0 0 1rem;
       div {
         width: 100%;
       }
@@ -67,7 +79,7 @@
       margin-bottom: 3rem;
 
       @media all and (max-width: $breakpoint-mobile) {
-        font-weight: 700;
+        margin-bottom: 25px;
       }
 
       &.subhead5 {
@@ -79,6 +91,9 @@
       &.body-text3,
       &.body-text4 {
         font-weight: 700;
+        @media all and (max-width: $breakpoint-mobile) {
+          font-weight: normal;
+        }
       }
     }
 
@@ -87,25 +102,31 @@
     }
 
     .button {
-      margin: 0 2rem 0 0;
+      margin: 0 2rem 2rem 0;
       @media all and (max-width: $breakpoint-mobile) {
-        width: calc(100% - 54px); // 54 = 50px padding plus 4px border
-        margin: 0 0 2rem 0;
+        width: 100%;
+        margin: 0 0 20px 0;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
       }
     }
 
     .text-link {
+      display: block;
+
       &:hover {
         color: white !important;
       }
     }
   }
 
-  &.large {
+  &.full-screen {
     height: 900px;
 
     @media all and (max-width: $breakpoint-mobile) {
-      height: 100vh;
+      height: auto;
+      min-height: 100vh;
     }
 
   }
@@ -117,6 +138,9 @@
       line-height: 4.125rem;
       font-weight: normal;
       @media all and (max-width: $breakpoint-mobile) {
+        font-size: 2rem;
+        line-height: 2.1rem;
+        margin-top: 0;
         font-weight: 700;
       }
     }

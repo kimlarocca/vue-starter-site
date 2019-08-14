@@ -44,23 +44,23 @@
 </template>
 
 <script>
-  export default {
-    name: 'Hero',
-    props: {
-      image: String,
-      mobileImage: {
-        default: false
-      },
-      accentColor: String,
-      alignment: String,
-      hasH1: {
-        default: false
-      }
-    },
-    computed: {
-      hasTextLink () {
-        return !!this.$slots['textLink']
-      }
+    export default {
+        name: 'Hero',
+        props: {
+            image: String,
+            mobileImage: {
+                default: false
+            },
+            accentColor: String,
+            alignment: String,
+            hasH1: {
+                default: false
+            }
+        },
+        computed: {
+            hasTextLink () {
+                return !!this.$slots['textLink']
+            }
+        }
     }
-  }
 </script>

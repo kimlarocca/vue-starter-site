@@ -89,7 +89,7 @@
     </div>
 
     <hero
-      class="large smallHeader"
+      class="full-screen smallHeader"
       image="/static/images/hero1.jpg"
       mobileImage="/static/images/hero1mobile.jpg"
       accentColor="#ff8f2a"

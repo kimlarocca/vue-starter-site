@@ -1,3 +1,5 @@
+@import 'variables';
+
 .button,
 .button:visited,
 .button:active {
@@ -16,7 +18,9 @@
   text-decoration: none;
 
   @media all and (max-width: $breakpoint-mobile) {
-    font-size: 1.5rem;
+    padding: .75rem;
+    font-size: .75rem;
+    letter-spacing: .05rem;
   }
 
   &:hover {
@@ -26,12 +30,13 @@
 
   &.ghost {
     background-color: transparent;
-    border: 2px solid white;
+    border: 1px solid white;
     color: white;
     font-size: .75rem;
 
     @media all and (max-width: $breakpoint-mobile) {
-      font-size: 1.25rem;
+      font-size: .625rem;
+      font-weight: 700;
     }
 
     &:hover {
@@ -47,6 +52,7 @@
     padding: 15px 100px;
     text-transform: uppercase;
     box-shadow: 3px 3px 5px 0 rgba(234, 233, 233, 1);
+
     &:hover {
       color: $blue;
     }
