@@ -7,7 +7,7 @@
   position: relative;
 
   &:hover {
-    opacity: .9;
+    opacity: $opacity-on-hover;
     cursor: pointer;
   }
 

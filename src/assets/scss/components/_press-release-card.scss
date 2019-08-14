@@ -10,7 +10,7 @@
 
   &:hover {
     cursor: pointer;
-    opacity: .9;
+    opacity: $opacity-on-hover;
   }
 
   &.blue {

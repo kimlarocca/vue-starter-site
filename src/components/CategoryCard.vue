@@ -1,6 +1,6 @@
 <template>
 
-  <div class="performances-card" :style="{ backgroundImage: `url('${image}')` }">
+  <div class="category-card" :style="{ backgroundImage: `url('${image}')` }">
     <a :href="learnMoreLink" :aria-label="title">
       <div class="category">{{ category }}</div>
       <div class="overlay">
@@ -17,7 +17,7 @@
 
 <script>
     export default {
-        name: 'PerformancesCard',
+        name: 'CategoryCard',
         props: {
             image: String,
             category: String,
