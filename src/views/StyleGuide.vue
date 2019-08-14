@@ -62,13 +62,13 @@
         <p>.button</p>
         <p>.button ghost</p>
         <div class="black-container">
-          <a class="button">view tickets</a>
-          <a class="button ghost">browse concerts</a>
+          <p><a class="button">view tickets</a></p>
+          <p><a class="button ghost">browse concerts</a></p>
         </div>
         <p>.button gray</p>
         <p>.button blue</p>
-        <a class="button gray">learn more</a>
-        <a class="button blue">buy tickets</a>
+        <p><a class="button gray">learn more</a></p>
+        <p><a class="button blue">buy tickets</a></p>
       </section>
 
       <h2 class="padding">layouts</h2>
@@ -197,6 +197,17 @@
         </div>
       </div>
 
+      <p class="subhead5 padding">
+        Announcement Callout Component
+      </p>
+
+      <announcement-callout>
+        <span slot="title" class="body-text1">Support education in music</span>
+        <span slot="description" class="body-text3">You can help a child get an instrument or an entire class see a performance live, your contribution is critical.</span>
+        <a class="button blue" slot="cta1" href="#">make a gift</a>
+        <a class="button ghost-black" slot="cta2" href="#">other ways to give</a>
+      </announcement-callout>
+
     </div>
 
   </div>
@@ -244,10 +255,6 @@
           background: white;
         }
       }
-    }
-
-    .button {
-      margin-right: 2rem;
     }
   }
 </style>
