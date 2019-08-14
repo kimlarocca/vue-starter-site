@@ -83,6 +83,7 @@
         Hero Component |
         <router-link to="/Hero">view examples</router-link>
       </p>
+      <p>Used for: standard hero, event detail hero, article hero, statement hero, impact hero, feature widget</p>
 
       <div class="padding-smaller"></div>
 
@@ -121,11 +122,24 @@
       </mini-hero>
 
       <p class="subhead5 padding">
-        Event Card Component |
-        <router-link to="/EventCard">view in a grid</router-link>
+        Announcement Callout Component
       </p>
 
-      <div class="grid-x">
+      <!-- backgroundColor can be white or gray - default is white -->
+      <announcement-callout backgroundColor="gray">
+        <span slot="title" class="body-text1">Support education in music</span>
+        <span slot="description" class="body-text3">You can help a child get an instrument or an entire class see a performance live, your contribution is critical.</span>
+        <a class="button blue" slot="cta1" href="#">make a gift</a>
+        <a class="button ghost-black" slot="cta2" href="#">other ways to give</a>
+      </announcement-callout>
+
+      <p class="subhead5 padding">
+        Event Card Component |
+        <router-link to="/EventCard">view examples</router-link>
+      </p>
+      <p>Used for: event grid, story grid, event cards widget, calendar grid, calendar cards</p>
+
+      <div class="grid-x padding-smaller">
         <div class="cell large-3 medium-6 small-12">
           <event-card
             image="/static/images/upcoming-shows-card-image.png"
@@ -199,17 +213,6 @@
           </news-card>
         </div>
       </div>
-
-      <p class="subhead5 padding">
-        Announcement Callout Component
-      </p>
-
-      <announcement-callout>
-        <span slot="title" class="body-text1">Support education in music</span>
-        <span slot="description" class="body-text3">You can help a child get an instrument or an entire class see a performance live, your contribution is critical.</span>
-        <a class="button blue" slot="cta1" href="#">make a gift</a>
-        <a class="button ghost-black" slot="cta2" href="#">other ways to give</a>
-      </announcement-callout>
 
     </div>
 

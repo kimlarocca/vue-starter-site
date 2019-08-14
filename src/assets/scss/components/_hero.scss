@@ -97,6 +97,14 @@
       }
     }
 
+    &.gray {
+      p,
+      h1,
+      .like-h1 {
+        color: $dark-gray;
+      }
+    }
+
     &.right {
       align-self: flex-end;
     }
@@ -118,6 +126,13 @@
       &:hover {
         color: white !important;
       }
+    }
+  }
+
+  &.no-border {
+    .content {
+      border-left: none;
+      padding-left: 0;
     }
   }
 

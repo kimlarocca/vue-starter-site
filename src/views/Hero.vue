@@ -12,10 +12,12 @@
     CLASSES:
     full-screen: displays the larger 900px tall hero (is 700px tall by default)
     small-header: displays the hero with smaller header font (displays the larger header font variation by default)
+    no-border: displays the hero without the white border on the left of the content
 
     PROPS:
     image: the desktop background image
     mobileImage: the mobile background image. if this is not defined, mobile will display the desktop background image
+    fontColor: can be gray or white - white is the default
     accentColor: hex value (needs to be a hex value e.g., #ffffff)
     alignment: left or right - left is the default
     hasH1: set this to true if the header/colorHeader text should be in a H1 tag
@@ -105,6 +107,14 @@
       <p slot="subheader" class="body-text3">We collect, preserve, and provide current and historical records of the San
         Francisco Symphony.</p>
       <span slot="textLink">read more</span>
+    </hero>
+
+    <hero class="full-screen no-border" image="/static/images/hero7.jpg" accentColor="#3c8f9d" fontColor="gray">
+      <span slot="header">Music that<br></span>
+      <span slot="colorHeader">lifts you up</span>
+      <p slot="subheader" class="body-text3">We collect, preserve, and provide current and historical records of the San
+        Francisco Symphony.</p>
+      <a class="button light-gray" slot="cta1">explore ucsf partnership</a>
     </hero>
 
   </div>

@@ -13,6 +13,7 @@
     altText: alt text for the image (optional but highly recommended for SEO and accessibility)
     category
     title
+    description
     dateRange: the dates for the event, displayed at the bottom of the card above the CTA
     cta: the text displayed in the button
     link: the entire card will be clickable and point to this URL
@@ -88,36 +89,20 @@
           <span slot="title" class="body-text2">SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera Adler Fellows</span>
         </event-card>
       </div>
+    </div>
+
+    <div class="section-padding-50"></div>
+
+    <div class="grid-x grid-margin-x grid-margin-y">
       <div class="cell large-3 medium-6 small-12">
         <event-card
           link="http://www.google.com"
-          cta="event details"
-          dateRange="Sunday, March 3"
-          category="free community event"
+          cta="read more"
+          category="news"
+          alignment="left"
         >
           <span slot="title" class="body-text2">SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera Adler Fellows</span>
-        </event-card>
-      </div>
-      <div class="cell large-3 medium-6 small-12">
-        <event-card
-          link="http://www.google.com"
-          cta="event details"
-          dateRange="Sunday, March 3"
-          category="free community event"
-          alignment="center"
-        >
-          <span slot="title" class="body-text2">SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera Adler Fellows</span>
-        </event-card>
-      </div>
-      <div class="cell large-3 medium-6 small-12">
-        <event-card
-          link="http://www.google.com"
-          cta="event details"
-          dateRange="Sunday, March 3"
-          category="free community event"
-          alignment="center"
-        >
-          <span slot="title" class="body-text2">SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera Adler Fellows</span>
+          <span slot="description" class="body-text4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
         </event-card>
       </div>
     </div>

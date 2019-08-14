@@ -15,6 +15,9 @@
         <p>
           <slot name="title"></slot>
         </p>
+        <p>
+          <slot name="description"></slot>
+        </p>
         <p class="date-range">{{ dateRange }}</p>
       </div>
       <div class="buy-tickets">

@@ -8,7 +8,7 @@
     <div class="mobile-background" v-if="!mobileImage" :style="{ backgroundImage: `url('${image}')` }"></div>
 
     <div class="container" :class="alignment">
-      <div class="content">
+      <div class="content" :class="fontColor">
         <div>
           <slot name="preheader" class="subhead5"></slot>
 
@@ -61,6 +61,7 @@
             mobileImage: {
                 default: false
             },
+            fontColor: String,
             accentColor: String,
             alignment: String,
             hasH1: {
