@@ -1,10 +1,10 @@
 @import "../variables";
 
-.performances-cards {
+.category-cards {
 
   width: 100vw;
 
-  .performances-card {
+  .category-card {
     position: relative;
     text-align: center;
     height: 33.33vw;
@@ -87,7 +87,7 @@
   }
 
   &.two {
-    .performances-card {
+    .category-card {
       height: 25vw;
       @media all and (max-width: $breakpoint-mobile) {
         height: 50vw;

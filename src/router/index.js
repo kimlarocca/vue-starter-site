@@ -5,7 +5,7 @@ import HomePage from '../views/HomePage'
 import Hero from '../views/Hero'
 import MiniHero from '../views/MiniHero'
 import EventCard from '../views/EventCard'
-import PerformancesCard from '../views/PerformancesCard'
+import CategoryCard from '../views/CategoryCard'
 
 Vue.use(Router)
 
@@ -37,9 +37,9 @@ export default new Router({
       component: EventCard
     },
     {
-      path: '/PerformancesCard',
-      name: 'PerformancesCard',
-      component: PerformancesCard
+      path: '/CategoryCard',
+      name: 'CategoryCard',
+      component: CategoryCard
     }
   ]
 })

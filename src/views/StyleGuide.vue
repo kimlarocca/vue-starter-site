@@ -141,21 +141,21 @@
       </div>
 
       <p class="subhead5 padding">
-        Performances Card Component |
-        <router-link to="/PerformancesCard">view in a grid</router-link>
+        Category Card Component |
+        <router-link to="/CategoryCard">view in a grid</router-link>
       </p>
 
-      <div class="performances-cards three">
+      <div class="category-cards three">
         <div class="grid-x">
           <div class="cell large-4 medium-6 small-12">
-            <performances-card
-              image="/static/images/performances-card-image.png"
+            <category-card
+              image="/static/images/category-card-image.png"
               category="family"
               subtitle="great performances"
               title="Phenomenal artists perform with the SF symphony"
               learnMoreLink="http://www.google.com"
             >
-            </performances-card>
+            </category-card>
           </div>
         </div>
       </div>
