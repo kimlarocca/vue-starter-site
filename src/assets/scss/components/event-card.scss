@@ -5,6 +5,10 @@
   opacity: 1;
   transition: $transition;
 
+  &.center {
+    text-align: center;
+  }
+
   &:hover {
     opacity: $opacity-on-hover;
     cursor: pointer;

@@ -1,5 +1,5 @@
 <template>
-  <div class="event-card">
+  <div class="event-card" :class="alignment">
     <a :href="link">
       <div v-if="hasImage" class="image">
         <img :src="image" :alt="altText">
@@ -34,7 +34,8 @@
             link: String,
             cta: String,
             category: String,
-            upcomingDates: Array
+            upcomingDates: Array,
+            alignment: String
         },
         computed: {
             hasImage () {

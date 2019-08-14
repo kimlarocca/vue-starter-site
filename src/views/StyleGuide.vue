@@ -132,6 +132,7 @@
             altText="man and woman dancing"
             link="http://www.google.com"
             cta="buy tickets"
+            alignment="left"
             :upcomingDates="[{month:'Feb',day:'27'},{month:'Feb',day:'28'},{month:'Mar',day:'1'}]"
             dateRange="Sunday, March 3"
           >
