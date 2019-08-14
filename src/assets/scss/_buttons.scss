@@ -67,7 +67,7 @@
     opacity: 1;
 
     &:hover {
-      opacity: .9;
+      opacity: $opacity-on-hover;
       color: black;
     }
   }
@@ -87,7 +87,7 @@
     }
 
     &:hover {
-      opacity: .9;
+      opacity: $opacity-on-hover;
     }
   }
 }

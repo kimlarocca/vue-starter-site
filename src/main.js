@@ -12,6 +12,7 @@ import UpcomingShowsCard from './components/UpcomingShowsCard.vue'
 import PerformancesCard from './components/PerformancesCard.vue'
 import PressReleaseCard from './components/PressReleaseCard.vue'
 import NewsCard from './components/NewsCard.vue'
+import EventCard from './components/EventCard.vue'
 import AnnouncementCallout from './components/AnnouncementCallout.vue'
 
 Vue.component('hero', Hero)
@@ -20,6 +21,7 @@ Vue.component('upcoming-shows-card', UpcomingShowsCard)
 Vue.component('performances-card', PerformancesCard)
 Vue.component('press-release-card', PressReleaseCard)
 Vue.component('news-card', NewsCard)
+Vue.component('event-card', EventCard)
 Vue.component('announcement-callout', AnnouncementCallout)
 
 Vue.config.productionTip = false

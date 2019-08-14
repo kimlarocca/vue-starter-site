@@ -17,12 +17,12 @@
       </section>
 
       <section class="section-border">
-        <p class="subhead1">.subhead4 Subhead No. 1</p>
-        <p class="subhead2">.subhead4 Subhead No. 2</p>
-        <p class="subhead3">.subhead4 Subhead No. 3</p>
+        <p class="subhead1">.subhead1 Subhead No. 1</p>
+        <p class="subhead2">.subhead2 Subhead No. 2</p>
+        <p class="subhead3">.subhead3 Subhead No. 3</p>
         <p class="subhead4">.subhead4 Subhead No. 4</p>
-        <p class="subhead5">.subhead4 Subhead No. 5</p>
-        <p class="subhead6">.subhead4 Subhead No. 6</p>
+        <p class="subhead5">.subhead5 Subhead No. 5</p>
+        <p class="subhead6">.subhead6 Subhead No. 6</p>
       </section>
 
       <section class="section-border">
@@ -121,21 +121,23 @@
       </mini-hero>
 
       <p class="subhead5 padding">
-        Upcoming Shows Card Component |
-        <router-link to="/UpcomingShowsCard">view in a grid</router-link>
+        Event Card Component |
+        <router-link to="/EventCard">view in a grid</router-link>
       </p>
 
-      <div style="width: 300px">
-        <upcoming-shows-card
-          image="/static/images/upcoming-shows-card-image.png"
-          altText="man and woman dancing"
-          ticketLink="http://www.google.com"
-          :upcomingDates="[{month:'Feb',day:'27'},{month:'Feb',day:'28'},{month:'Mar',day:'1'}]"
-          title="SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera
-            Adler Fellows"
-          dateRange="Sunday, March 3"
-        >
-        </upcoming-shows-card>
+      <div class="grid-x">
+        <div class="cell large-3 medium-6 small-12">
+          <event-card
+            image="/static/images/upcoming-shows-card-image.png"
+            altText="man and woman dancing"
+            link="http://www.google.com"
+            cta="buy tickets"
+            :upcomingDates="[{month:'Feb',day:'27'},{month:'Feb',day:'28'},{month:'Mar',day:'1'}]"
+            dateRange="Sunday, March 3"
+          >
+            <span slot="title" class="body-text2">SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera Adler Fellows</span>
+          </event-card>
+        </div>
       </div>
 
       <p class="subhead5 padding">

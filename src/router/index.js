@@ -4,7 +4,7 @@ import StyleGuide from '../views/StyleGuide'
 import HomePage from '../views/HomePage'
 import Hero from '../views/Hero'
 import MiniHero from '../views/MiniHero'
-import UpcomingShowsCard from '../views/UpcomingShowsCard'
+import EventCard from '../views/EventCard'
 import PerformancesCard from '../views/PerformancesCard'
 
 Vue.use(Router)
@@ -32,9 +32,9 @@ export default new Router({
       component: MiniHero
     },
     {
-      path: '/UpcomingShowsCard',
-      name: 'UpcomingShowsCard',
-      component: UpcomingShowsCard
+      path: '/EventCard',
+      name: 'EventCard',
+      component: EventCard
     },
     {
       path: '/PerformancesCard',
