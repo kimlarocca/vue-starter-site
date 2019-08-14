@@ -21,6 +21,7 @@
     padding: .75rem;
     font-size: .75rem;
     letter-spacing: .05rem;
+    width: 100%;
   }
 
   &:hover {
@@ -28,7 +29,8 @@
     background-color: transparent;
   }
 
-  &.ghost {
+  &.ghost,
+  &.ghost-black {
     background-color: transparent;
     border: 1px solid white;
     color: white;
@@ -45,6 +47,16 @@
     }
   }
 
+  &.ghost-black {
+    border: 1px solid black;
+    color: black;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
   &.gray {
     background-color: $light-gray;
     border: none;
@@ -52,23 +64,30 @@
     padding: 15px 100px;
     text-transform: uppercase;
     box-shadow: 3px 3px 5px 0 rgba(234, 233, 233, 1);
+    opacity: 1;
 
     &:hover {
-      color: $blue;
+      opacity: .9;
+      color: black;
     }
   }
 
   &.blue {
     border: none;
     font-size: .875rem;
-    padding: 25px;
     text-transform: uppercase;
     color: white;
     font-weight: 700;
-    background: #1c70e3; /* fallback for old browsers */
-    background: linear-gradient(to bottom, #1c70e3 0%, #1859b4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #1c70e3; // fallback for old browsers
+    background: linear-gradient(to bottom, #1c70e3 0%, #1859b4 100%);
+    opacity: 1;
+
+    @media all and (max-width: $breakpoint-mobile) {
+      font-size: .75rem;
+    }
+
     &:hover {
-      color: black;
+      opacity: .9;
     }
   }
 }

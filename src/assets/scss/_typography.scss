@@ -77,6 +77,9 @@ p {
   line-height: 1.625rem;
   margin-bottom: 1rem;
   font-family: $primary-font-family;
+  @media all and (max-width: $breakpoint-mobile) {
+    line-height: 1.25rem;
+  }
 }
 
 .subhead1 {
