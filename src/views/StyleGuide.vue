@@ -133,7 +133,9 @@
         <a class="button ghost-black" slot="cta2" href="#">other ways to give</a>
       </announcement-callout>
 
-      <p class="subhead5 padding">
+      <div class="padding"></div>
+
+      <p class="subhead5">
         Event Card Component |
         <router-link to="/EventCard">view examples</router-link>
       </p>
@@ -214,6 +216,9 @@
         </div>
       </div>
 
+      <p class="subhead5 padding">
+        Feature Grid Card Component
+      </p>
 
       <div class="grid-x grid-margin-x grid-margin-y">
         <div class="cell large-4 medium-6 small-12">
@@ -222,22 +227,29 @@
             altText="The Neighbourhood"
             title="The Neighbourhood"
             description="Make the most of your night dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt egestas lectus nec feugiat."
-            learnMoreLink="http://www.google.com"   
+            learnMoreLink="http://www.google.com"
             learnMoreLinkTitle="Learn More"
-          >            
+          >
           </feature-grid>
         </div>
       </div>
+
       <p class="subhead5 padding">
-        Announcement Callout Component
+        Person Profile Component
       </p>
 
-      <announcement-callout>
-        <span slot="title" class="body-text1">Support education in music</span>
-        <span slot="description" class="body-text3">You can help a child get an instrument or an entire class see a performance live, your contribution is critical.</span>
-        <a class="button blue" slot="cta1" href="#">make a gift</a>
-        <a class="button ghost-black" slot="cta2" href="#">other ways to give</a>
-      </announcement-callout>
+          <person-profile
+            image="/static/images/person-profile-image.jpg"
+            category="concert"
+            link="http://www.google.com"
+            openInNewWindow="true"
+            hasVideo="true"
+            backgroundColor="blue"
+          >
+            <span slot="name" class="body-text2">Jane Doe</span>
+            <span slot="quoteText" class="like-h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            <span slot="description" class="body-text2">Lorem ipsum dolor sit amet, consectetur</span>
+          </person-profile>
 
     </div>
 

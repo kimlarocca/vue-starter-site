@@ -31,9 +31,7 @@
           <template v-if="hasDropdown">
             <label for="select1" class="hide-ally-element">choose a date and time</label>
             <select id="select1" class="ghost">
-              <template v-for="option in dropDownMenu">
-                <option :value="option.value">{{ option.text }}</option>
-              </template>
+                <option v-for="(option, index) in dropDownMenu" :key="index" :value="option.value">{{ option.text }}</option>
             </select>
           </template>
 
