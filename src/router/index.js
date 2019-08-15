@@ -7,6 +7,7 @@ import MiniHero from '../views/MiniHero'
 import EventCard from '../views/EventCard'
 import CategoryCard from '../views/CategoryCard'
 import PersonProfile from '../views/PersonProfile'
+import ContentBlade from '../views/ContentBlade'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/PersonProfile',
       name: 'PersonProfile',
       component: PersonProfile
+    },
+    {
+      path: '/ContentBlade',
+      name: 'ContentBlade',
+      component: ContentBlade
     }
   ]
 })

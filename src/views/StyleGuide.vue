@@ -199,11 +199,14 @@
         </div>
       </div>
 
-      <p class="subhead5 padding">
+      <div class="padding"></div>
+
+      <p class="subhead5">
         News Card Component
       </p>
+      <p>Used for: news mosaic, related content</p>
 
-      <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="grid-x grid-margin-x grid-margin-y padding-smaller">
         <div class="cell large-4 medium-6 small-12">
           <news-card
             image="/static/images/news-card-image.jpg"
@@ -253,7 +256,8 @@
       </person-profile>
 
       <p class="subhead5 padding">
-        Content Blade Component
+        Content Blade Component |
+        <router-link to="/ContentBlade">view examples</router-link>
       </p>
 
     </div>
@@ -302,11 +306,11 @@
     }
 
     .padding {
-      padding: 80px 0 20px;
+      padding: 80px 0 1rem;
     }
 
     .padding-smaller {
-      padding: 20px 0;
+      padding: 1rem 0;
     }
 
     .section-border {

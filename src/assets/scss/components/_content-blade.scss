@@ -5,12 +5,34 @@
 
   .cell {
     &:first-of-type {
-      padding: 100px 50px 1rem 100px;
+      padding: 80px;
       @media all and (max-width: $breakpoint-tablet) {
-        padding: 80px;
+        padding: 40px;
       }
       @media all and (max-width: $breakpoint-mobile) {
         padding: 1rem;
+      }
+
+      .border {
+        border-left: solid 1px black;
+        padding-left: 2rem;
+      }
+    }
+
+    &:last-of-type {
+      text-align: center;
+    }
+  }
+
+  &.black {
+    background: black;
+    color: white;
+
+    .cell {
+      &:first-of-type {
+        .border {
+          border-left: solid 1px white;
+        }
       }
     }
   }
