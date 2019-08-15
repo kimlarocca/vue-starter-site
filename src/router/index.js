@@ -6,6 +6,7 @@ import Hero from '../views/Hero'
 import MiniHero from '../views/MiniHero'
 import EventCard from '../views/EventCard'
 import CategoryCard from '../views/CategoryCard'
+import PersonProfile from '../views/PersonProfile'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/CategoryCard',
       name: 'CategoryCard',
       component: CategoryCard
+    },
+    {
+      path: '/PersonProfile',
+      name: 'PersonProfile',
+      component: PersonProfile
     }
   ]
 })

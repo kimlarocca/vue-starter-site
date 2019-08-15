@@ -235,7 +235,8 @@
       </div>
 
       <p class="subhead5 padding">
-        Person Profile Component
+        Person Profile Component |
+        <router-link to="/PersonProfile">view examples</router-link>
       </p>
 
           <person-profile
@@ -247,7 +248,7 @@
             backgroundColor="blue"
           >
             <span slot="name" class="body-text2">Jane Doe</span>
-            <span slot="quoteText" class="like-h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            <span slot="quoteText" class="like-h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!</span>
             <span slot="description" class="body-text2">Lorem ipsum dolor sit amet, consectetur</span>
           </person-profile>
 
