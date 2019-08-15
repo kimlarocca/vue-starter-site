@@ -74,7 +74,7 @@
       <h2 class="padding">layouts</h2>
 
       <p class="subhead5">
-        <router-link to="/HomePage">home page</router-link>
+        <router-link to="/HomePage">home page with news mosaic</router-link>
       </p>
 
       <h2 class="padding">components</h2>
