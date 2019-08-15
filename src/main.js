@@ -17,6 +17,8 @@ import EventCard from './components/EventCard.vue'
 import AnnouncementCallout from './components/AnnouncementCallout.vue'
 import PersonProfile from './components/PersonProfile.vue'
 import ContentBlade from './components/ContentBlade.vue'
+import Accordion from './components/Accordion.vue'
+import AccordionItem from './components/AccordionItem.vue'
 
 Vue.component('hero', Hero)
 Vue.component('mini-hero', MiniHero)
@@ -29,6 +31,8 @@ Vue.component('event-card', EventCard)
 Vue.component('announcement-callout', AnnouncementCallout)
 Vue.component('person-profile', PersonProfile)
 Vue.component('content-blade', ContentBlade)
+Vue.component('accordion', Accordion)
+Vue.component('accordion-item', AccordionItem)
 
 Vue.config.productionTip = false
 

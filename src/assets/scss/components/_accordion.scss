@@ -1,0 +1,38 @@
+@import "../variables";
+@import "../typography";
+
+//most of the styles are scoped in the accordion components
+//this overrides those styles
+
+.accordion {
+  .accordion-item {
+    border-top: 1px solid $medium-gray;
+
+    &:last-of-type {
+      border-bottom: 1px solid $medium-gray;
+    }
+
+    .accordion-header {
+      padding: 20px 0;
+      @extend .subhead6;
+      h1,
+      h2,
+      h3,
+      .like-h1,
+      .like-h2,
+      .like-h3,
+      p {
+        margin: 0;
+      }
+    }
+
+    .accordion-content {
+      padding-bottom: 20px;
+      p {
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

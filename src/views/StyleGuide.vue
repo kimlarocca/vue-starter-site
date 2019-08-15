@@ -283,6 +283,62 @@
       </template>
     </content-blade>
 
+    <div class="container">
+
+      <p class="subhead5 padding">
+        Event Detail Accordion Component
+      </p>
+
+      <accordion>
+        <accordion-item>
+          <template slot="header">
+            <p>
+              <span class="subhead6"><strong>Schumann</strong></span>
+              <br>
+              <span class="body-text4">Manfred overture | 12 mins</span>
+            </p>
+          </template>
+          <template slot="content">
+            <p class="body-text3">Robert Schumann told Franz Liszt that he considered the Manfred Overture to be one of
+              his “most powerful children.” Schumann’s music for Lord Byron’s dramatic poem Manfred stressed the musical
+              medium most deferential to poetry: the melodrama, in which text is recited over an accompanying score. The
+              result is an odd musical hybrid, and of Schumann’s Manfred music only the Overture has found an enduring
+              place in the repertory. In this somber work we find Schumann at his most demonic, setting the scene for
+              Byron’s tortured hero with music of wide fluctuation, passionately designed melodies, and insistent
+              rhythms.</p>
+            <p class="body-text3"><strong>Listen for:</strong><br>This is a marvelously imagined piece of scoring—hear,
+              for example, the economical and stunningly effective use of the trombones.</p>
+            <p class="body-text3"><a class="caret-right" href="#"><strong>LEARN MORE</strong></a></p>
+          </template>
+        </accordion-item>
+        <accordion-item>
+          <template slot="header">
+            Header 2
+          </template>
+          <template slot="content">
+            <p class="body-text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.</p>
+          </template>
+        </accordion-item>
+        <accordion-item>
+          <template slot="header">
+            Header 3
+          </template>
+          <template slot="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.</p>
+          </template>
+        </accordion-item>
+      </accordion>
+
+      <div class="section-padding-100"></div>
+
+    </div>
+
 
   </div>
 </template>
@@ -332,3 +388,10 @@
     }
   }
 </style>
+<script>
+    import Accordion from '../components/Accordion'
+
+    export default {
+        components: {Accordion}
+    }
+</script>

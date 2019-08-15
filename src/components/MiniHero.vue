@@ -51,7 +51,10 @@
             accentColor: String,
             alignment: String,
             preheader: String,
-            link: String
+            link: String,
+            hasTextLink: {
+                default: false
+            }
         },
         computed: {
             hasLink () {

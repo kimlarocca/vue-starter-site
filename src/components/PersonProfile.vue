@@ -48,8 +48,12 @@
             image: String,
             category: String,
             link: String,
-            openInNewWindow: Boolean,
-            hasVideo: Boolean,
+            openInNewWindow: {
+                default: false
+            },
+            hasVideo: {
+                default: false
+            },
             backgroundColor: String
         },
         computed: {
