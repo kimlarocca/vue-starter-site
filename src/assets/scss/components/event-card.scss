@@ -74,11 +74,21 @@
         margin-bottom: 10px;
       }
 
-      &.date-range {
+      &.small-text {
         font-size: .6875rem;
-        line-height: 1.6875rem;
+        line-height: 1rem;
         font-weight: bold;
+        margin-bottom: 0;
       }
+
+      &.date-range {
+        margin-bottom: 1rem;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
     }
   }
 
