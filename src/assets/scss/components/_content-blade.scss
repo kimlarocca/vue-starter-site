@@ -1,0 +1,21 @@
+@import "../variables";
+
+.content-blade {
+  background: $medium-gray;
+
+  .cell {
+    &:first-of-type {
+      padding: 100px 50px 1rem 100px;
+      @media all and (max-width: $breakpoint-tablet) {
+        padding: 80px;
+      }
+      @media all and (max-width: $breakpoint-mobile) {
+        padding: 1rem;
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 1rem;
+  }
+}
