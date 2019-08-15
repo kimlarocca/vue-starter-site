@@ -4,7 +4,7 @@
   background: $medium-gray;
 
   .cell {
-    &:first-of-type {
+    &.content-cell {
       padding: 80px;
       @media all and (max-width: $breakpoint-tablet) {
         padding: 40px;
@@ -19,7 +19,7 @@
       }
     }
 
-    &:last-of-type {
+    &.image-cell {
       text-align: center;
     }
   }
@@ -29,7 +29,7 @@
     color: white;
 
     .cell {
-      &:first-of-type {
+      &.content-cell {
         .border {
           border-left: solid 1px white;
         }

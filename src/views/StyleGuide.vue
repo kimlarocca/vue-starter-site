@@ -266,10 +266,9 @@
       image="/static/images/content-blade-image.jpg"
       altText="woman playing violin"
     >
-      <template slot="title">
-        <h2 class="body-text1">Event Description</h2>
-      </template>
       <template slot="content">
+        <h2 class="body-text1">Event Description</h2>
+        <div class="section-padding-30"></div>
         <p class="body-text3">
           Chief Conductor of the Netherlands Radio Philharmonic Orchestra Karina Canellakis makes her San Francisco
           Symphony debut in a presentation of music by twoRussian heavyweights: Prokofiev’s ravishingly colorfuland

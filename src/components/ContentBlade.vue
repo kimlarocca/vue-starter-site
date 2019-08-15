@@ -2,17 +2,14 @@
   <div class="content-blade" :class="backgroundColor">
 
     <div class="grid-x">
-      <div class="cell" :class="layoutCell1">
+      <div class="content-cell cell" :class="layoutCell1">
         <div class="content-container" :class="border">
-          <div class="title">
-            <slot name="title"></slot>
-          </div>
           <div class="content">
             <slot name="content"></slot>
           </div>
         </div>
       </div>
-      <div class="cell" :class="layoutCell2">
+      <div class="image-cell cell" :class="layoutCell2">
         <img :src="image" :alt="altText">
       </div>
     </div>
