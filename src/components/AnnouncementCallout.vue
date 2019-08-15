@@ -1,6 +1,6 @@
 <template>
 
-  <div class="announcement-callout">
+  <div class="announcement-callout" :class="backgroundColor">
     <div class="content">
       <p>
         <slot name="title"></slot>
@@ -25,7 +25,8 @@
             cta1: String,
             link1: String,
             cta2: String,
-            link2: String
+            link2: String,
+            backgroundColor: String
         }
     }
 </script>

@@ -2,11 +2,13 @@
 
   <div class="category-card" :style="{ backgroundImage: `url('${image}')` }">
     <a :href="learnMoreLink" :aria-label="title">
-      <div class="category">{{ category }}</div>
+      <div class="category">{{ title }}</div>
       <div class="overlay">
         <div>
-          <p class="subtitle subhead6">{{ subtitle }}</p>
-          <p class="title body-text2">{{ title }}</p>
+          <p class="subtitle subhead6">{{ category }}</p>
+          <p class="title">
+            <slot name="shortDescription"></slot>
+          </p>
           <p class="subhead6 caret-right">learn more</p>
         </div>
       </div>
@@ -21,7 +23,6 @@
         props: {
             image: String,
             category: String,
-            subtitle: String,
             title: String,
             learnMoreLink: String
         }

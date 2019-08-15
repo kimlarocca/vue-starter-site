@@ -10,66 +10,79 @@
       <p class="subhead5 padding">3x3 grid:</p>
     </div>
 
+    <!--
+    STYLES:
+    "category-cards three": for the 3x3 grid option
+    "category-cards two": for the 2x2 grid option
+
+    PROPS:
+    image: the card's background image
+    title: will be displayed over the image
+    category: will be displayed on desktop hover
+    shortDescription: will be displayed on desktop hover
+    learnMoreLink: the entire card will be clickable and point to this URL
+    -->
+
     <div class="category-cards three">
       <div class="grid-x">
         <div class="cell large-4 medium-6 small-12">
           <category-card
             image="/static/images/category-card-image.png"
-            category="family"
-            subtitle="great performances"
-            title="Phenomenal artists perform with the SF symphony"
+            title="family"
+            category="great performances"
             learnMoreLink="http://www.google.com"
           >
+            <span slot="shortDescription" class="body-text2">Phenomenal artists perform with the SF symphony</span>
           </category-card>
         </div>
         <div class="cell large-4 medium-6 small-12">
           <category-card
             image="/static/images/category-card-image.png"
-            category="family"
-            subtitle="great performances"
-            title="Phenomenal artists perform with the SF symphony"
+            title="family"
+            category="great performances"
             learnMoreLink="http://www.google.com"
           >
+            <span slot="shortDescription" class="body-text2">Phenomenal artists perform with the SF symphony</span>
           </category-card>
         </div>
         <div class="cell large-4 medium-6 small-12">
           <category-card
             image="/static/images/category-card-image.png"
-            category="family"
-            subtitle="great performances"
-            title="Phenomenal artists perform with the SF symphony"
+            title="family"
+            category="great performances"
             learnMoreLink="http://www.google.com"
           >
+            <span slot="shortDescription" class="body-text2">Phenomenal artists perform with the SF symphony</span>
           </category-card>
         </div>
         <div class="cell large-4 medium-6 small-12">
           <category-card
             image="/static/images/category-card-image.png"
-            category="family"
-            subtitle="great performances"
-            title="Phenomenal artists perform with the SF symphony"
+            title="family"
+            category="great performances"
             learnMoreLink="http://www.google.com"
           >
+            <span slot="shortDescription" class="body-text2">Phenomenal artists perform with the SF symphony</span>
           </category-card>
         </div>
         <div class="cell large-4 medium-6 small-12">
           <category-card
             image="/static/images/category-card-image.png"
-            category="family"
-            subtitle="great performances"
-            title="Phenomenal artists perform with the SF symphony"
+            title="family"
+            category="great performances"
             learnMoreLink="http://www.google.com"
           >
+            <span slot="shortDescription" class="body-text2">Phenomenal artists perform with the SF symphony</span>
           </category-card>
         </div>
         <div class="cell large-4 medium-6 small-12">
           <category-card
             image="/static/images/category-card-image.png"
-            category="family"
-            subtitle="great performances"
-            title="Phenomenal artists perform with the SF symphony"
+            title="family"
+            category="great performances"
             learnMoreLink="http://www.google.com"
           >
+            <span slot="shortDescription" class="body-text2">Phenomenal artists perform with the SF symphony</span>
           </category-card>
         </div>
       </div>
@@ -86,61 +99,61 @@
         <div class="cell large-6 medium-6 small-12">
           <category-card
             image="/static/images/category-card-image.png"
-            category="family"
-            subtitle="great performances"
-            title="Phenomenal artists perform with the SF symphony"
+            title="family"
+            category="great performances"
             learnMoreLink="http://www.google.com"
           >
+            <span slot="shortDescription" class="body-text2">Phenomenal artists perform with the SF symphony</span>
           </category-card>
         </div>
         <div class="cell large-6 medium-6 small-12">
           <category-card
             image="/static/images/category-card-image.png"
-            category="family"
-            subtitle="great performances"
-            title="Phenomenal artists perform with the SF symphony"
+            title="family"
+            category="great performances"
             learnMoreLink="http://www.google.com"
           >
+            <span slot="shortDescription" class="body-text2">Phenomenal artists perform with the SF symphony</span>
           </category-card>
         </div>
         <div class="cell large-6 medium-6 small-12">
           <category-card
             image="/static/images/category-card-image.png"
-            category="family"
-            subtitle="great performances"
-            title="Phenomenal artists perform with the SF symphony"
+            title="family"
+            category="great performances"
             learnMoreLink="http://www.google.com"
           >
+            <span slot="shortDescription" class="body-text2">Phenomenal artists perform with the SF symphony</span>
           </category-card>
         </div>
         <div class="cell large-6 medium-6 small-12">
           <category-card
             image="/static/images/category-card-image.png"
-            category="family"
-            subtitle="great performances"
-            title="Phenomenal artists perform with the SF symphony"
+            title="family"
+            category="great performances"
             learnMoreLink="http://www.google.com"
           >
+            <span slot="shortDescription" class="body-text2">Phenomenal artists perform with the SF symphony</span>
           </category-card>
         </div>
         <div class="cell large-6 medium-6 small-12">
           <category-card
             image="/static/images/category-card-image.png"
-            category="family"
-            subtitle="great performances"
-            title="Phenomenal artists perform with the SF symphony"
+            title="family"
+            category="great performances"
             learnMoreLink="http://www.google.com"
           >
+            <span slot="shortDescription" class="body-text2">Phenomenal artists perform with the SF symphony</span>
           </category-card>
         </div>
         <div class="cell large-6 medium-6 small-12">
           <category-card
             image="/static/images/category-card-image.png"
-            category="family"
-            subtitle="great performances"
-            title="Phenomenal artists perform with the SF symphony"
+            title="family"
+            category="great performances"
             learnMoreLink="http://www.google.com"
           >
+            <span slot="shortDescription" class="body-text2">Phenomenal artists perform with the SF symphony</span>
           </category-card>
         </div>
       </div>

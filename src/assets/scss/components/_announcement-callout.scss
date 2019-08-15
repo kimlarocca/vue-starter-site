@@ -2,7 +2,10 @@
 
 .announcement-callout {
   padding: 50px 1rem;
-  background-color: $medium-gray;
+
+  &.gray {
+    background-color: $light-gray;
+  }
 
   .content {
     text-align: center;
