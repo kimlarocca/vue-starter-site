@@ -12,6 +12,7 @@ import UpcomingShowsCard from './components/UpcomingShowsCard.vue'
 import CategoryCard from './components/CategoryCard.vue'
 import PressReleaseCard from './components/PressReleaseCard.vue'
 import NewsCard from './components/NewsCard.vue'
+import FeatureGrid from './components/FeatureGrid.vue'
 import EventCard from './components/EventCard.vue'
 import AnnouncementCallout from './components/AnnouncementCallout.vue'
 
@@ -21,6 +22,7 @@ Vue.component('upcoming-shows-card', UpcomingShowsCard)
 Vue.component('category-card', CategoryCard)
 Vue.component('press-release-card', PressReleaseCard)
 Vue.component('news-card', NewsCard)
+Vue.component('feature-grid', FeatureGrid)
 Vue.component('event-card', EventCard)
 Vue.component('announcement-callout', AnnouncementCallout)
 

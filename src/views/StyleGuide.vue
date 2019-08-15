@@ -214,6 +214,31 @@
         </div>
       </div>
 
+
+      <div class="grid-x grid-margin-x grid-margin-y">
+        <div class="cell large-4 medium-6 small-12">
+          <feature-grid
+            image="/static/images/feature-grid1.jpg"
+            altText="The Neighbourhood"
+            title="The Neighbourhood"
+            description="Make the most of your night dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt egestas lectus nec feugiat."
+            learnMoreLink="http://www.google.com"   
+            learnMoreLinkTitle="Learn More"
+          >            
+          </feature-grid>
+        </div>
+      </div>
+      <p class="subhead5 padding">
+        Announcement Callout Component
+      </p>
+
+      <announcement-callout>
+        <span slot="title" class="body-text1">Support education in music</span>
+        <span slot="description" class="body-text3">You can help a child get an instrument or an entire class see a performance live, your contribution is critical.</span>
+        <a class="button blue" slot="cta1" href="#">make a gift</a>
+        <a class="button ghost-black" slot="cta2" href="#">other ways to give</a>
+      </announcement-callout>
+
     </div>
 
   </div>
