@@ -7,6 +7,9 @@
         <div class="title">
           <p class="subhead6">{{ subtitle }}</p>
           <p class="body-text2">{{ title }}</p>
+          <template v-if="hasTextLink">
+            <p class="subhead5 caret-right"><a :href="learnMoreLink" class="learn-more">learn more</a></p>
+          </template>
         </div>
       </a>
     </div>
@@ -22,7 +25,10 @@
             altText: String,
             subtitle: String,
             title: String,
-            learnMoreLink: String
+            learnMoreLink: String,
+            hasTextLink: {
+                default: false
+            }
         }
     }
 </script>

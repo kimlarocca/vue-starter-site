@@ -22,6 +22,11 @@
     &:hover {
       color: black;
     }
+
+    &.learn-more {
+      color: $blue;
+      font-weight: 700;
+    }
   }
 
   img {
