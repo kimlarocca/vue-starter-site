@@ -229,6 +229,7 @@
             description="Make the most of your night dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt egestas lectus nec feugiat."
             learnMoreLink="http://www.google.com"
             learnMoreLinkTitle="Learn More"
+            background-color="gray"
           >
           </feature-grid>
         </div>

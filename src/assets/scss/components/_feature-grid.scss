@@ -3,7 +3,12 @@
 .feature-grid {
   background-color: $medium-gray;
   transition: $transition;
-
+  &.gray {
+    background-color: $medium-gray;
+  }
+  &.white {
+    background-color: $background-color;
+  }
   img {
     &:hover {
       opacity: .9;
