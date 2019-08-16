@@ -6,12 +6,21 @@
 
 <script>
     export default {
-        props: {},
+        props: {
+            allowMultiple: {
+                default: false
+            },
+            mobileOnly: {
+                default: false
+            }
+        },
         data () {
             return {
                 Accordion: {
                     count: 0,
-                    active: null
+                    active: [],
+                    allowMultiple: this.$props.allowMultiple,
+                    mobileOnly: this.$props.mobileOnly
                 }
             }
         },

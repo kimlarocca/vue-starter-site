@@ -1,11 +1,13 @@
 <template>
-  <li class="accordion-item">
+  <li
+    class="accordion-item"
+  >
     <div
       class="accordion-header"
-      :class="{'accordion-header-active': visible}"
-      @click="open">
+      :class="{'accordion-header-active': visible, 'mobile-only': isMobileOnly}"
+      @click="open"
+    >
 
-      <!-- This slot will handle the title/header of the accordion and is the part you click on -->
       <slot name="header"></slot>
       <div class="accordion-icon">
         <svg
@@ -38,7 +40,11 @@
 
 <script>
     export default {
-        props: {},
+        props: {
+            openOnLoad: {
+                Boolean: false
+            }
+        },
         inject: ['Accordion'],
         data () {
             return {
@@ -47,15 +53,32 @@
         },
         computed: {
             visible () {
-                return this.index === this.Accordion.active
+                return this.Accordion.active.includes(this.index)
+            },
+            isMobileOnly () {
+                console.log(this.mobileOnly)
+                return this.mobileOnly
             }
         },
         methods: {
             open () {
-                if (this.visible) {
-                    this.Accordion.active = null
+                if (this.Accordion.allowMultiple) {
+                    // if multiple accordions are allow to be open at once
+                    if (this.visible) {
+                        let itemIndex = this.Accordion.active.indexOf(this.index)
+                        this.Accordion.active.splice(itemIndex, 1)
+                    } else {
+                        this.Accordion.active.push(this.index)
+                    }
                 } else {
-                    this.Accordion.active = this.index
+                    // if only 1 accordion can be open at a time
+                    if (this.visible) {
+                        let itemIndex = this.Accordion.active.indexOf(this.index)
+                        this.Accordion.active.splice(itemIndex, 1)
+                    } else {
+                        this.Accordion.active = []
+                        this.Accordion.active.push(this.index)
+                    }
                 }
             },
             start (el) {
@@ -67,39 +90,66 @@
         },
         created () {
             this.index = this.Accordion.count++
+            this.mobileOnly = false
+            if (this.Accordion.mobileOnly) {
+                this.open()
+                this.mobileOnly = true
+            }
+            if (this.openOnLoad) {
+                this.open()
+            }
         }
     }
 </script>
 
 <style lang="scss" scoped>
 
+  $breakpoint-mobile: 1240px;
+
   .accordion-item {
-    cursor: pointer;
     position: relative;
-  }
 
-  .accordion-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
 
-  .accordion-header-active {
-    .accordion-icon {
-      transform: rotate(180deg);
+      &.mobile-only {
+        pointer-events: none;
+        cursor: default;
+        @media all and (max-width: $breakpoint-mobile) {
+          pointer-events: auto;
+          cursor: pointer;
+        }
+
+        .accordion-icon {
+          display: none;
+          @media all and (max-width: $breakpoint-mobile) {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .accordion-header-active {
+      .accordion-icon {
+        transform: rotate(180deg);
+      }
+    }
+
+    .accordion-enter-active,
+    .accordion-leave-active {
+      will-change: height, opacity;
+      transition: height 0.3s ease, opacity 0.3s ease;
+      overflow: hidden;
+    }
+
+    .accordion-enter,
+    .accordion-leave-to {
+      height: 0 !important;
+      opacity: 0;
     }
   }
 
-  .accordion-enter-active,
-  .accordion-leave-active {
-    will-change: height, opacity;
-    transition: height 0.3s ease, opacity 0.3s ease;
-    overflow: hidden;
-  }
-
-  .accordion-enter,
-  .accordion-leave-to {
-    height: 0 !important;
-    opacity: 0;
-  }
 </style>
