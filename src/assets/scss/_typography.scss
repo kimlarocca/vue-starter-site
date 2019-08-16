@@ -44,6 +44,7 @@ h1,
 .like-h1 {
   font-size: 4.5rem;
   line-height: 5.125rem;
+  text-transform: none;
   font-family: $secondary-font-family;
   font-weight: 700;
   @media all and (max-width: $breakpoint-mobile) {
@@ -56,6 +57,7 @@ h2,
 .like-h2 {
   font-size: 3.5rem;
   line-height: 4.125rem;
+  text-transform: none;
   font-family: $secondary-font-family;
   font-weight: normal;
   @media all and (max-width: $breakpoint-mobile) {
@@ -68,14 +70,16 @@ h3,
 .like-h3 {
   font-size: 1.6875rem;
   line-height: 2.125rem;
+  text-transform: none;
   font-family: $secondary-font-family;
   font-weight: normal;
 }
 
 p {
   font-size: 1rem;
-  line-height: 1rem;
+  line-height: 1.25rem;
   margin-bottom: 1rem;
+  text-transform: none;
   font-family: $primary-font-family;
   @media all and (max-width: $breakpoint-mobile) {
     line-height: 1.25rem;
@@ -92,6 +96,9 @@ p {
     font-size: 1.375rem;
     line-height: 1.375rem;
   }
+  &.no-transform {
+    text-transform: none;
+  }
 }
 
 .subhead2 {
@@ -104,11 +111,15 @@ p {
     font-size: 1rem;
     line-height: 1.25rem;
   }
+  &.no-transform {
+    text-transform: none;
+  }
 }
 
 .subhead3 {
   font-size: 1.5rem;
   line-height: 1.875rem;
+  text-transform: none;
   font-family: $primary-font-family;
   font-weight: normal;
 }
@@ -116,6 +127,7 @@ p {
 .subhead4 {
   font-size: 1.375rem;
   line-height: 2rem;
+  text-transform: none;
   font-family: $primary-font-family;
   font-weight: normal;
   @media all and (max-width: $breakpoint-mobile) {
@@ -135,6 +147,9 @@ p {
     font-size: .8333rem;
     line-height: 1.25rem;
   }
+  &.no-transform {
+    text-transform: none;
+  }
 }
 
 .subhead6 {
@@ -144,17 +159,22 @@ p {
   font-family: $primary-font-family;
   text-transform: uppercase;
   font-weight: normal;
+  &.no-transform {
+    text-transform: none;
+  }
 }
 
 .body-text1 {
   font-size: 1.375rem;
   line-height: 1.625rem;
+  text-transform: none;
   font-family: $primary-font-family;
 }
 
 .body-text2 {
   font-size: 1.25rem;
   line-height: 1.875rem;
+  text-transform: none;
   font-family: $primary-font-family;
   @media all and (max-width: $breakpoint-mobile) {
     font-size: 1rem;
@@ -165,6 +185,7 @@ p {
 .body-text3 {
   font-size: .98375rem;
   line-height: 1.4375rem;
+  text-transform: none;
   font-family: $primary-font-family;
   @media all and (max-width: $breakpoint-mobile) {
     font-size: .75rem;
@@ -175,5 +196,6 @@ p {
 .body-text4 {
   font-size: .6875rem;
   line-height: 1rem;
+  text-transform: none;
   font-family: $primary-font-family;
 }

@@ -18,7 +18,9 @@
         <p>
           <slot name="description"></slot>
         </p>
-        <p class="date-range">{{ dateRange }}</p>
+        <p class="small-text date-range">{{ dateRange }}</p>
+        <p v-if="hasConductor" class="small-text">Conductor: {{ conductor }}</p>
+        <p v-if="hasInstrument" class="small-text">Instrument: {{ instrument }}</p>
       </div>
       <div class="buy-tickets">
         <p>{{ cta }}</p>
@@ -37,6 +39,8 @@
             link: String,
             cta: String,
             category: String,
+            conductor: String,
+            instrument: String,
             upcomingDates: Array,
             alignment: String
         },
@@ -46,6 +50,12 @@
             },
             hasCategory () {
                 return !!this.$props['category']
+            },
+            hasConductor () {
+                return !!this.$props['conductor']
+            },
+            hasInstrument () {
+                return !!this.$props['instrument']
             }
         }
     }

@@ -71,10 +71,19 @@
         <p><a class="button blue">buy tickets</a></p>
       </section>
 
-      <h2 class="padding">layouts</h2>
+      <h2 class="padding">layouts and examples</h2>
 
-      <p class="subhead5">
-        <router-link to="/HomePage">home page with news mosaic</router-link>
+      <p class="subhead5 padding-smaller">
+        <router-link to="/HomePage">home page with the news mosaic</router-link>
+      </p>
+      <p class="subhead5 padding-smaller">
+        <router-link to="/ConcertDetail">concert detail page with "at a glance", "concert extras",  &amp; "related content"</router-link>
+      </p>
+      <p class="subhead5 padding-smaller">
+        <router-link to="/MediaBlocks">media blocks</router-link>
+      </p>
+      <p class="subhead5 padding-smaller">
+        <router-link to="/Accordions">content blinds (accordions)</router-link>
       </p>
 
       <h2 class="padding">components</h2>
@@ -178,8 +187,9 @@
       </div>
 
       <p class="subhead5 padding">Press Release Card Component</p>
+      <p>Used for: news mosaic, related content</p>
 
-      <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="grid-x grid-margin-x grid-margin-y padding-smaller">
         <div class="cell large-4 medium-6 small-12">
           <press-release-card
             color="blue"
@@ -199,16 +209,30 @@
         </div>
       </div>
 
-      <p class="subhead5 padding">
+      <div class="padding"></div>
+
+      <p class="subhead5">
         News Card Component
       </p>
+      <p>Used for: news mosaic, related content, content cards</p>
 
-      <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="grid-x grid-margin-x grid-margin-y padding-smaller">
         <div class="cell large-4 medium-6 small-12">
           <news-card
             image="/static/images/news-card-image.jpg"
             altText="james hetfield of metallica performing"
             learnMoreLink="http://www.google.com"
+            subtitle="news"
+            title="Metallica reunites with SF Symphony to open Chase Center"
+          >
+          </news-card>
+        </div>
+        <div class="cell large-4 medium-6 small-12">
+          <news-card
+            image="/static/images/news-card-image.jpg"
+            altText="james hetfield of metallica performing"
+            learnMoreLink="http://www.google.com"
+            hasTextLink="true"
             subtitle="news"
             title="Metallica reunites with SF Symphony to open Chase Center"
           >
@@ -239,20 +263,53 @@
         <router-link to="/PersonProfile">view examples</router-link>
       </p>
 
-          <person-profile
-            image="/static/images/person-profile-image.jpg"
-            category="concert"
-            link="http://www.google.com"
-            openInNewWindow="true"
-            hasVideo="true"
-            backgroundColor="blue"
-          >
-            <span slot="name" class="body-text2">Jane Doe</span>
-            <span slot="quoteText" class="like-h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!</span>
-            <span slot="description" class="body-text2">Lorem ipsum dolor sit amet, consectetur</span>
-          </person-profile>
+      <person-profile
+        image="/static/images/person-profile-image.jpg"
+        category="concert"
+        link="http://www.google.com"
+        openInNewWindow="true"
+        hasVideo="true"
+        backgroundColor="blue"
+      >
+        <span slot="name" class="body-text2">Jane Doe</span>
+        <span slot="quoteText" class="like-h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!</span>
+        <span slot="description" class="body-text2">Lorem ipsum dolor sit amet, consectetur</span>
+      </person-profile>
+
+      <p class="subhead5 padding">
+        Content Blade Component |
+        <router-link to="/ContentBlade">view examples</router-link>
+      </p>
 
     </div>
+
+    <content-blade
+      image="/static/images/content-blade-image.jpg"
+      altText="woman playing violin"
+    >
+      <template slot="content">
+        <h2 class="body-text1">Event Description</h2>
+        <div class="section-padding-30"></div>
+        <p class="body-text3">
+          Chief Conductor of the Netherlands Radio Philharmonic Orchestra Karina Canellakis makes her San Francisco
+          Symphony debut in a presentation of music by twoRussian heavyweights: Prokofiev’s ravishingly colorfuland
+          percussive Piano Concerto No. 1, played by the Ukranian piano powerhouse Alexander Gavrylyuk (whoalso makes
+          his SF Symphony debut at these concerts),and Shostakovich’s defiant 1941 bombshell, theLeningrad Symphony.</p>
+        <p class="body-text3">In the twilight of Imperial Russia, a brazen 21-year-old pianist submitted his own
+          concerto as a graduation piece. A sassy and whimsical fantasy written for a formidable soloist (himself), the
+          1912 Piano Concerto No. 1 by Prokofiev scandalized the old guard. Less than thirty years later, Shostakovich
+          unveiled his Seventh Symphony, but Russia was a different place. The old guard was all but extinguished;
+          Stalin had prosecuted his Great Terror, and Hitler held Leningrad under siege.
+        </p>
+      </template>
+    </content-blade>
+
+    <div class="container">
+
+      <div class="section-padding-100"></div>
+
+    </div>
+
 
   </div>
 </template>
@@ -275,11 +332,11 @@
     }
 
     .padding {
-      padding: 80px 0 20px;
+      padding: 80px 0 1rem;
     }
 
     .padding-smaller {
-      padding: 20px 0;
+      padding: 1rem 0;
     }
 
     .section-border {
@@ -302,3 +359,10 @@
     }
   }
 </style>
+<script>
+    import Accordion from '../components/Accordion'
+
+    export default {
+        components: {Accordion}
+    }
+</script>

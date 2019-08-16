@@ -1,0 +1,70 @@
+@import "../variables";
+@import "../typography";
+
+// most of the styles are defined inside the accordion components
+// this file overrides / extends those styles
+
+.accordion {
+
+  .accordion-item {
+
+    border-bottom: 1px solid $medium-gray;
+
+    &:first-of-type {
+      border-top: 1px solid $medium-gray;
+    }
+
+    .accordion-header {
+      padding: 20px 0;
+      @extend .subhead6;
+
+      h1,
+      h2,
+      h3,
+      .like-h1,
+      .like-h2,
+      .like-h3,
+      p {
+        margin: 0;
+      }
+    }
+
+    .accordion-content {
+      padding-bottom: 20px;
+
+      p {
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .cell {
+    .accordion-item {
+      border-bottom: none;
+    }
+
+    &:last-of-type {
+      border-bottom: 1px solid $medium-gray;
+    }
+  }
+
+  &.no-border-on-desktop {
+    @media all and (min-width: $breakpoint-tablet+1) {
+      .accordion-item {
+        border: none;
+
+        &:first-of-type {
+          border: none;
+        }
+
+        .cell {
+          &:last-of-type {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
