@@ -165,3 +165,22 @@ hr {
   border-left: solid 1px black;
   padding-left: 1rem;
 }
+
+.play-icon {
+  position: relative;
+  width: fit-content;
+  display: table;
+  color: black;
+
+  &:after {
+    position: absolute;
+    right: -4rem;
+    top: -1rem;
+    bottom: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f144';
+    font-size: 3rem;
+    color: $brown;
+  }
+}

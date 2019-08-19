@@ -48,25 +48,28 @@
     <section>
       <div class="container">
         <div class="grid-x grid-margin-2x grid-margin-y">
-          <div class="cell large-4 medium-4">
-            <p class="subhead1 border-left margin-bottom-3">conductor &amp; performers</p>
+          <div class="cell large-4 medium-12">
+            <p class="subhead1 border-left margin-bottom-3">performers</p>
             <p class="subhead6 margin-bottom-0">conductor</p>
             <p class="subhead4"><a href="#">Manfred Honeck</a></p>
             <p class="subhead6 margin-bottom-0">piano</p>
             <p class="subhead4"><a href="#">TBD</a></p>
             <p class="body-text3">San Francisco Symphony</p>
           </div>
-          <div class="cell large-4 medium-4">
-            <p class="subhead1 border-left margin-bottom-3">program<br>&nbsp;</p>
+          <div class="cell large-4 medium-12">
+            <p class="subhead1 border-left margin-bottom-3">program</p>
             <p class="subhead6 margin-bottom-0">conductor</p>
             <p class="subhead4"><a href="#">Manfred Honeck</a></p>
-            <p class="subhead6 margin-bottom-0">piano</p>
-            <p class="subhead4"><a href="#">TBD</a></p>
-            <i class="fas fa-play-circle text-brown fa-3x"></i>
+            <a href="#">
+              <div class="play-icon">
+                <p class="subhead6 margin-bottom-0">piano</p>
+                <p class="subhead4">TBD</p>
+              </div>
+            </a>
             <p class="body-text3">San Francisco Symphony</p>
           </div>
-          <div class="cell large-4 medium-4">
-            <p class="subhead1 border-left margin-bottom-3">performances<br>&nbsp;</p>
+          <div class="cell large-4 medium-12">
+            <p class="subhead1 border-left margin-bottom-3">performances</p>
             <performance-card
               class="margin-bottom-2"
               location="davies symphony hall"
@@ -260,7 +263,7 @@
         <div class="section-padding-50"></div>
 
         <div class="grid-x grid-margin-y grid-margin-x">
-          <div class="cell large-4 medium-12 small-12">
+          <div class="cell large-4 medium-4 small-12">
             <news-card
               image="assets/images/news-card-image.jpg"
               altText="james hetfield of metallica performing"
@@ -270,7 +273,7 @@
             >
             </news-card>
           </div>
-          <div class="cell large-4 medium-6 small-12">
+          <div class="cell large-4 medium-4 small-12">
             <press-release-card
               color="purple"
               title="June 5, 2018 - San Francisco Symphony announces new Summer With the Symphony performance: actor and hip hop artist Common, August 1 "
@@ -278,7 +281,7 @@
             >
             </press-release-card>
           </div>
-          <div class="cell large-4 medium-12 small-12">
+          <div class="cell large-4 medium-4 small-12">
             <news-card
               image="assets/images/news-card-image.jpg"
               altText="james hetfield of metallica performing"
