@@ -15,6 +15,8 @@
   </section>
 </template>
 
+
+
 <script>
     export default {
         name: 'FeatureGrid',
@@ -25,7 +27,7 @@
             description: String,
             textAlign: String,
             imageAlign: String,
-            backgroundColor: String,            
+            backgroundColor: String,
             numOfCols: [1, 2, 3, 4, 5],
             isMobileCarousel: Boolean,
             learnMoreLink: String,

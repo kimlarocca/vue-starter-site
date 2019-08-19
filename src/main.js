@@ -16,6 +16,8 @@ import FeatureGrid from './components/FeatureGrid.vue'
 import EventCard from './components/EventCard.vue'
 import AnnouncementCallout from './components/AnnouncementCallout.vue'
 import PersonProfile from './components/PersonProfile.vue'
+import Footer from './components/Footer.vue'
+
 
 Vue.component('hero', Hero)
 Vue.component('mini-hero', MiniHero)
@@ -27,6 +29,8 @@ Vue.component('feature-grid', FeatureGrid)
 Vue.component('event-card', EventCard)
 Vue.component('announcement-callout', AnnouncementCallout)
 Vue.component('person-profile', PersonProfile)
+Vue.component('footer-component', Footer)
+
 
 Vue.config.productionTip = false
 

@@ -252,8 +252,21 @@
             <span slot="quoteText" class="like-h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!</span>
             <span slot="description" class="body-text2">Lorem ipsum dolor sit amet, consectetur</span>
           </person-profile>
-
+                    
     </div>
+
+    <footer-component
+      logoAltText="San Fransico Symphony"
+      address="Davies Symphony Hall 201 Van Ness Ave. SF, CA 94102"
+      phoneNumber="(415) 864-6000"
+      copywrite="2018 San Fransisco Symphony"
+      privacy="Privacy & Terms"
+      privacyLink="#"
+      donateCopy="Your gift makes concerts possible."
+      donateButton="#"
+      donateButtonText="Donate Today"
+    >
+    </footer-component>
 
   </div>
 </template>
