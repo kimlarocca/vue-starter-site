@@ -222,7 +222,7 @@
       <div class="grid-x grid-margin-x grid-margin-y padding-smaller">
         <div class="cell large-4 medium-6 small-12">
           <news-card
-            image="static/images/news-card-image.jpg"
+            image="assets/images/news-card-image.jpg"
             altText="james hetfield of metallica performing"
             learnMoreLink="http://www.google.com"
             subtitle="news"
