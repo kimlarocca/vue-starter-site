@@ -1,0 +1,21 @@
+@import "../variables";
+
+.performance-card {
+  position: relative;
+  .icon {
+    float: left;
+    width: 60px;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  .content {
+    position: absolute;
+    left: 60px;
+    top: 0;
+    .location {
+      margin: 5px 0;
+    }
+  }
+}

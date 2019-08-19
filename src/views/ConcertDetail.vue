@@ -62,11 +62,29 @@
             <p class="subhead4"><a href="#">Manfred Honeck</a></p>
             <p class="subhead6 margin-bottom-0">piano</p>
             <p class="subhead4"><a href="#">TBD</a></p>
+            <i class="fas fa-play-circle text-brown fa-3x"></i>
             <p class="body-text3">San Francisco Symphony</p>
           </div>
           <div class="cell large-4 medium-4">
             <p class="subhead1 border-left margin-bottom-3">performances<br>&nbsp;</p>
-            <i class="fas fa-calendar-alt text-brown fa-3x"></i>
+            <performance-card
+              location="davies symphony hall"
+              dateRange="Fri, Feb 22, 2019 at 8:00pm"
+              link="http://www.google.com"
+            >
+            </performance-card>
+            <performance-card
+              location="davies symphony hall"
+              dateRange="Fri, Feb 22, 2019 at 8:00pm"
+              link="http://www.google.com"
+            >
+            </performance-card>
+            <performance-card
+              location="davies symphony hall"
+              dateRange="Fri, Feb 22, 2019 at 8:00pm"
+              link="http://www.google.com"
+            >
+            </performance-card>
           </div>
         </div>
       </div>
