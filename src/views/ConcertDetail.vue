@@ -68,18 +68,21 @@
           <div class="cell large-4 medium-4">
             <p class="subhead1 border-left margin-bottom-3">performances<br>&nbsp;</p>
             <performance-card
+              class="margin-bottom-2"
               location="davies symphony hall"
               dateRange="Fri, Feb 22, 2019 at 8:00pm"
               link="http://www.google.com"
             >
             </performance-card>
             <performance-card
+              class="margin-bottom-2"
               location="davies symphony hall"
               dateRange="Fri, Feb 22, 2019 at 8:00pm"
               link="http://www.google.com"
             >
             </performance-card>
             <performance-card
+              class="margin-bottom-2"
               location="davies symphony hall"
               dateRange="Fri, Feb 22, 2019 at 8:00pm"
               link="http://www.google.com"
