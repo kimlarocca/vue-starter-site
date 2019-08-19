@@ -30,7 +30,7 @@
     dropDownMenu: array of objects containing the option and the value
     -->
 
-    <hero class="full-screen small-header" image="/static/images/hero1.jpg" mobileImage="/static/images/hero1mobile.jpg"
+    <hero class="full-screen small-header" image="static/images/hero1.jpg" mobileImage="static/images/hero1mobile.jpg"
           accentColor="#ff8f2a" hasH1="true">
       <span slot="header">Beethoven<br>Stravinsky<br>Maher<br></span>
       <span slot="colorHeader">and more!</span>
@@ -39,7 +39,7 @@
       <a class="button ghost" slot="cta2">Browse Concerts</a>
     </hero>
 
-    <hero class="full-screen small-header" image="/static/images/hero2.jpg" accentColor="#f94d46" alignment="right">
+    <hero class="full-screen small-header" image="static/images/hero2.jpg" accentColor="#f94d46" alignment="right">
       <span slot="header">Music matters:<br></span>
       <span slot="colorHeader">you make it possible</span>
       <p slot="subheader" class="body-text3">For over a century, the San Francisco Symphony has been a source of pride,
@@ -48,13 +48,13 @@
       <a class="button" slot="cta1">Support The Music</a>
     </hero>
 
-    <hero class="small-header" image="/static/images/hero3.jpg" accentColor="#f37930">
+    <hero class="small-header" image="static/images/hero3.jpg" accentColor="#f37930">
       <p slot="preheader" class="subhead5">we are a non-profit organization</p>
       <span slot="header">Devoted to<br></span>
       <span slot="colorHeader">music education for everybody</span>
     </hero>
 
-    <hero class="small-header" image="/static/images/hero4.jpg" accentColor="#1870cf">
+    <hero class="small-header" image="static/images/hero4.jpg" accentColor="#1870cf">
       <p slot="preheader" class="subhead5">spotlight</p>
       <span slot="header">MTT 25:<br>A</span>
       <span slot="colorHeader">celebratory season</span>
@@ -63,13 +63,13 @@
       <span slot="textLink">read more</span>
     </hero>
 
-    <hero image="/static/images/hero4.jpg" accentColor="#1870cf">
+    <hero image="static/images/hero4.jpg" accentColor="#1870cf">
       <p slot="preheader" class="subhead5">In the 2017/18 season, over</p>
       <span slot="colorHeader">1800+</span>
       <p slot="subheader" class="subhead4">People have given over 25,000 hours</p>
     </hero>
 
-    <hero image="/static/images/hero5.jpg" accentColor="#ffc373" alignment="right">
+    <hero image="static/images/hero5.jpg" accentColor="#ffc373" alignment="right">
       <span slot="header">SFS </span>
       <span slot="colorHeader">Media</span>
       <p slot="subheader" class="body-text3">Recorded live in concert and engineered at Davies Symphony Hall, the audio
@@ -77,7 +77,7 @@
       <a class="button" slot="cta1">about sfs media</a>
     </hero>
 
-    <hero image="/static/images/hero5.jpg" accentColor="#ffc373" alignment="right">
+    <hero image="static/images/hero5.jpg" accentColor="#ffc373" alignment="right">
       <span slot="header">Getting<br>here</span>
       <p slot="subheader" class="body-text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -86,7 +86,7 @@
     </hero>
 
     <hero
-      image="/static/images/hero6.jpg"
+      image="static/images/hero6.jpg"
       accentColor="#fc6013"
       :dropDownMenu="[
       {value:'value 1 Tuesday, August 1st, 2019 at 7:00pm',text:'Tuesday, August 1st, 2019 at 7:00pm'},
@@ -101,7 +101,7 @@
       <a class="button" slot="cta1">archives &amp; history</a>
     </hero>
 
-    <hero image="/static/images/hero6.jpg" accentColor="#fc6013">
+    <hero image="static/images/hero6.jpg" accentColor="#fc6013">
       <span slot="header">Archives<br>&amp; </span>
       <span slot="colorHeader">history</span>
       <p slot="subheader" class="body-text3">We collect, preserve, and provide current and historical records of the San
@@ -109,7 +109,7 @@
       <span slot="textLink">read more</span>
     </hero>
 
-    <hero class="full-screen no-border" image="/static/images/hero7.jpg" accentColor="#3c8f9d" fontColor="gray">
+    <hero class="full-screen no-border" image="static/images/hero7.jpg" accentColor="#3c8f9d" fontColor="gray">
       <span slot="header">Music that<br></span>
       <span slot="colorHeader">lifts you up</span>
       <p slot="subheader" class="body-text3">We collect, preserve, and provide current and historical records of the San

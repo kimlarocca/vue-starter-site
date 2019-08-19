@@ -22,7 +22,7 @@
       -->
 
       <person-profile
-        image="/static/images/person-profile-image.jpg"
+        image="static/images/person-profile-image.jpg"
         category="concert"
         link="http://www.google.com"
         openInNewWindow="true"
@@ -36,7 +36,7 @@
       <div class="section-padding-100"></div>
 
       <person-profile
-        image="/static/images/person-profile-image.jpg"
+        image="static/images/person-profile-image.jpg"
         category="concert"
         link="http://www.google.com"
         backgroundColor="purple"

@@ -91,7 +91,7 @@
             <template slot="content">
               <div class="grid-x grid-margin-x grid-margin-y">
                 <div class="cell large-4 medium-4 small-12">
-                  <img src="/static/images/news-card-image.jpg" alt="alt tag goes here">
+                  <img src="static/images/news-card-image.jpg" alt="alt tag goes here">
                 </div>
                 <div class="cell large-5 medium-5 small-12">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque commodi corporis culpa
@@ -116,7 +116,7 @@
             <template slot="content">
               <div class="grid-x grid-margin-x grid-margin-y">
                 <div class="cell large-4 medium-4 small-12">
-                  <img src="/static/images/news-card-image.jpg" alt="alt tag goes here">
+                  <img src="static/images/news-card-image.jpg" alt="alt tag goes here">
                 </div>
                 <div class="cell large-5 medium-5 small-12">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque commodi corporis culpa
@@ -141,7 +141,7 @@
             <template slot="content">
               <div class="grid-x grid-margin-x grid-margin-y">
                 <div class="cell large-4 medium-4 small-12">
-                  <img src="/static/images/news-card-image.jpg" alt="alt tag goes here">
+                  <img src="static/images/news-card-image.jpg" alt="alt tag goes here">
                 </div>
                 <div class="cell large-5 medium-5 small-12">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque commodi corporis culpa
@@ -166,7 +166,7 @@
             <template slot="content">
               <div class="grid-x grid-margin-x grid-margin-y">
                 <div class="cell large-4 medium-4 small-12">
-                  <img src="/static/images/news-card-image.jpg" alt="alt tag goes here">
+                  <img src="static/images/news-card-image.jpg" alt="alt tag goes here">
                 </div>
                 <div class="cell large-5 medium-5 small-12">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque commodi corporis culpa
@@ -191,7 +191,7 @@
             <template slot="content">
               <div class="grid-x grid-margin-x grid-margin-y">
                 <div class="cell large-4 medium-4 small-12">
-                  <img src="/static/images/news-card-image.jpg" alt="alt tag goes here">
+                  <img src="static/images/news-card-image.jpg" alt="alt tag goes here">
                 </div>
                 <div class="cell large-5 medium-5 small-12">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque commodi corporis culpa
