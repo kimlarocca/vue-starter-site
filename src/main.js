@@ -19,6 +19,7 @@ import PersonProfile from './components/PersonProfile.vue'
 import ContentBlade from './components/ContentBlade.vue'
 import Accordion from './components/Accordion.vue'
 import AccordionItem from './components/AccordionItem.vue'
+import PodcastCard from './components/PodcastCard.vue'
 
 Vue.component('hero', Hero)
 Vue.component('mini-hero', MiniHero)
@@ -33,6 +34,7 @@ Vue.component('person-profile', PersonProfile)
 Vue.component('content-blade', ContentBlade)
 Vue.component('accordion', Accordion)
 Vue.component('accordion-item', AccordionItem)
+Vue.component('podcast-card', PodcastCard)
 
 Vue.config.productionTip = false
 

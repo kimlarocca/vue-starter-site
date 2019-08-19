@@ -306,7 +306,14 @@
 
     <div class="container">
 
-      <div class="section-padding-100"></div>
+    <div class="grid-x grid-margin-x grid-margin-y padding-smaller">
+        <div class="cell large-6 medium-6 small-12 bg-brown">
+          <podcast-card title="Lorem ipsum dolor sit amet con secteur adpisci" link="https://www.youtube.com/watch?v=VhxRrb5ojxk"></podcast-card>
+        </div>
+        <div class="cell large-6 medium-6 small-12 bg-brown">
+          <podcast-card title="Lorem ipsum dolor sit amet con secteur adpisci" link="https://www.youtube.com/watch?v=VhxRrb5ojxk"></podcast-card>
+        </div>
+      </div>
 
     </div>
 
@@ -355,6 +362,11 @@
           padding: 10px;
           background: white;
         }
+      }
+    }
+    .podcast-card {
+      .card {
+        padding: 2rem 1rem;
       }
     }
   }
