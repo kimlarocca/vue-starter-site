@@ -11,8 +11,8 @@
 
     <hero
       class="full-screen smallHeader"
-      image="/static/images/hero1.jpg"
-      mobileImage="/static/images/hero1mobile.jpg"
+      image="static/images/hero1.jpg"
+      mobileImage="static/images/hero1mobile.jpg"
       accentColor="#ff8f2a"
       hasH1="true"
     >
@@ -29,7 +29,7 @@
         <div class="grid-x grid-margin-x grid-margin-y section-padding-50">
           <div class="cell large-3 medium-6 small-12">
             <event-card
-              image="/static/images/upcoming-shows-card-image.png"
+              image="static/images/upcoming-shows-card-image.png"
               altText="man and woman dancing"
               link="http://www.google.com"
               cta="buy tickets"
@@ -42,7 +42,7 @@
           </div>
           <div class="cell large-3 medium-6 small-12">
             <event-card
-              image="/static/images/upcoming-shows-card-image.png"
+              image="static/images/upcoming-shows-card-image.png"
               altText="man and woman dancing"
               link="http://www.google.com"
               cta="buy tickets"
@@ -55,7 +55,7 @@
           </div>
           <div class="cell large-3 medium-6 small-12">
             <event-card
-              image="/static/images/upcoming-shows-card-image.png"
+              image="static/images/upcoming-shows-card-image.png"
               altText="man and woman dancing"
               link="http://www.google.com"
               cta="buy tickets"
@@ -67,7 +67,7 @@
           </div>
           <div class="cell large-3 medium-6 small-12">
             <event-card
-              image="/static/images/upcoming-shows-card-image.png"
+              image="static/images/upcoming-shows-card-image.png"
               altText="man and woman dancing"
               link="http://www.google.com"
               cta="buy tickets"
@@ -92,7 +92,7 @@
         <div class="grid-x">
           <div class="cell large-4 medium-6 small-12">
             <performances-card
-              image="/static/images/performances-card-image.png"
+              image="static/images/performances-card-image.png"
               category="family"
               subtitle="great performances"
               title="Phenomenal artists perform with the SF symphony"
@@ -102,7 +102,7 @@
           </div>
           <div class="cell large-4 medium-6 small-12">
             <performances-card
-              image="/static/images/performances-card-image.png"
+              image="static/images/performances-card-image.png"
               category="family"
               subtitle="great performances"
               title="Phenomenal artists perform with the SF symphony"
@@ -112,7 +112,7 @@
           </div>
           <div class="cell large-4 medium-6 small-12">
             <performances-card
-              image="/static/images/performances-card-image.png"
+              image="static/images/performances-card-image.png"
               category="family"
               subtitle="great performances"
               title="Phenomenal artists perform with the SF symphony"
@@ -122,7 +122,7 @@
           </div>
           <div class="cell large-4 medium-6 small-12">
             <performances-card
-              image="/static/images/performances-card-image.png"
+              image="static/images/performances-card-image.png"
               category="family"
               subtitle="great performances"
               title="Phenomenal artists perform with the SF symphony"
@@ -132,7 +132,7 @@
           </div>
           <div class="cell large-4 medium-6 small-12">
             <performances-card
-              image="/static/images/performances-card-image.png"
+              image="static/images/performances-card-image.png"
               category="family"
               subtitle="great performances"
               title="Phenomenal artists perform with the SF symphony"
@@ -142,7 +142,7 @@
           </div>
           <div class="cell large-4 medium-6 small-12">
             <performances-card
-              image="/static/images/performances-card-image.png"
+              image="static/images/performances-card-image.png"
               category="family"
               subtitle="great performances"
               title="Phenomenal artists perform with the SF symphony"
@@ -155,7 +155,7 @@
     </section>
 
     <section>
-      <hero class="large small-header" image="/static/images/hero2.jpg" accentColor="#f94d46" alignment="right">
+      <hero class="large small-header" image="static/images/hero2.jpg" accentColor="#f94d46" alignment="right">
         <span slot="header">Music matters:<br></span>
         <span slot="colorHeader">you make it possible</span>
         <p slot="subheader" class="body-text3">For over a century, the San Francisco Symphony has been a source of
@@ -175,8 +175,8 @@
         <div class="grid-x grid-margin-x grid-margin-y">
           <div class="cell large-12">
             <mini-hero
-              image="/static/images/mini-hero2.jpg"
-              mobileImage="/static/images/mini-hero2mobile.jpg"
+              image="static/images/mini-hero2.jpg"
+              mobileImage="static/images/mini-hero2mobile.jpg"
               font="regular"
               fontColor="gray"
               alignment="right"
@@ -189,7 +189,7 @@
           </div>
           <div class="cell large-8 medium-12">
             <mini-hero
-              image="/static/images/mini-hero1.jpg"
+              image="static/images/mini-hero1.jpg"
               accentColor="#7ecb69"
               preheader="Education"
             >
@@ -200,7 +200,7 @@
           </div>
           <div class="cell large-4 medium-6 small-12">
             <news-card
-              image="/static/images/news-card-image.jpg"
+              image="static/images/news-card-image.jpg"
               altText="james hetfield of metallica performing"
               learnMoreLink="http://www.google.com"
               subtitle="news"
@@ -210,7 +210,7 @@
           </div>
           <div class="cell large-4 medium-6 small-12">
             <news-card
-              image="/static/images/news-card-image.jpg"
+              image="static/images/news-card-image.jpg"
               altText="james hetfield of metallica performing"
               learnMoreLink="http://www.google.com"
               subtitle="news"
@@ -220,7 +220,7 @@
           </div>
           <div class="cell large-4 medium-6 small-12">
             <news-card
-              image="/static/images/news-card-image.jpg"
+              image="static/images/news-card-image.jpg"
               altText="james hetfield of metallica performing"
               learnMoreLink="http://www.google.com"
               subtitle="news"
@@ -239,7 +239,7 @@
           </div>
           <div class="cell large-4 medium-6 small-12">
             <news-card
-              image="/static/images/news-card-image.jpg"
+              image="static/images/news-card-image.jpg"
               altText="james hetfield of metallica performing"
               learnMoreLink="http://www.google.com"
               subtitle="news"
@@ -257,7 +257,7 @@
           </div>
           <div class="cell large-4 medium-6 small-12">
             <news-card
-              image="/static/images/news-card-image.jpg"
+              image="static/images/news-card-image.jpg"
               altText="james hetfield of metallica performing"
               learnMoreLink="http://www.google.com"
               subtitle="news"

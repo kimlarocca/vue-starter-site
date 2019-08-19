@@ -23,7 +23,7 @@
     -->
 
     <content-blade
-      image="/static/images/content-blade-image.jpg"
+      image="static/images/content-blade-image.jpg"
       altText="conductor leading an orchestra"
     >
       <template slot="content">
@@ -47,7 +47,7 @@
     <div class="section-padding-100"></div>
 
     <content-blade
-      image="/static/images/content-blade-image.jpg"
+      image="static/images/content-blade-image.jpg"
       altText="conductor leading an orchestra"
       background-color="black"
       hasBorder="true"
@@ -73,7 +73,7 @@
     <div class="section-padding-100"></div>
 
     <content-blade
-      image="/static/images/hero3.jpg"
+      image="static/images/hero3.jpg"
       altText="woman playing violin"
       backgroundColor="black"
       layoutOption="2"
@@ -105,7 +105,7 @@
     <div class="section-padding-100"></div>
 
     <content-blade
-      image="/static/images/hero3.jpg"
+      image="static/images/hero3.jpg"
       altText="woman playing violin"
       layoutOption="2"
       hasBorder="true"

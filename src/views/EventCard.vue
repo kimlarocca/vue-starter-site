@@ -24,7 +24,7 @@
     <div class="grid-x grid-margin-x grid-margin-y section-padding-50">
       <div class="cell large-3 medium-6 small-12">
         <event-card
-          image="/static/images/upcoming-shows-card-image.png"
+          image="static/images/upcoming-shows-card-image.png"
           altText="man and woman dancing"
           link="http://www.google.com"
           cta="buy tickets"
@@ -37,7 +37,7 @@
       </div>
       <div class="cell large-3 medium-6 small-12">
         <event-card
-          image="/static/images/upcoming-shows-card-image.png"
+          image="static/images/upcoming-shows-card-image.png"
           altText="man and woman dancing"
           link="http://www.google.com"
           cta="buy tickets"
@@ -50,7 +50,7 @@
       </div>
       <div class="cell large-3 medium-6 small-12">
         <event-card
-          image="/static/images/upcoming-shows-card-image.png"
+          image="static/images/upcoming-shows-card-image.png"
           altText="man and woman dancing"
           link="http://www.google.com"
           cta="buy tickets"
@@ -63,7 +63,7 @@
       </div>
       <div class="cell large-3 medium-6 small-12">
         <event-card
-          image="/static/images/upcoming-shows-card-image.png"
+          image="static/images/upcoming-shows-card-image.png"
           altText="man and woman dancing"
           link="http://www.google.com"
           cta="buy tickets"
