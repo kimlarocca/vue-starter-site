@@ -307,10 +307,13 @@
     <div class="container">
 
     <div class="grid-x grid-margin-x grid-margin-y padding-smaller">
-        <div class="cell large-6 medium-6 small-12 bg-brown">
+        <div class="cell large-4 medium-6 small-12 bg-medium-gray">
           <podcast-card title="Lorem ipsum dolor sit amet con secteur adpisci" link="https://www.youtube.com/watch?v=VhxRrb5ojxk"></podcast-card>
         </div>
-        <div class="cell large-6 medium-6 small-12 bg-brown">
+        <div class="cell large-4 medium-6 small-12 bg-medium-gray">
+          <podcast-card title="Lorem ipsum dolor sit amet con secteur adpisci" link="https://www.youtube.com/watch?v=VhxRrb5ojxk"></podcast-card>
+        </div>
+        <div class="cell large-4 medium-6 small-12 bg-medium-gray">
           <podcast-card title="Lorem ipsum dolor sit amet con secteur adpisci" link="https://www.youtube.com/watch?v=VhxRrb5ojxk"></podcast-card>
         </div>
       </div>
@@ -362,11 +365,6 @@
           padding: 10px;
           background: white;
         }
-      }
-    }
-    .podcast-card {
-      .card {
-        padding: 2rem 1rem;
       }
     }
   }
