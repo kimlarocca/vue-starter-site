@@ -1,8 +1,8 @@
 @import "../variables";
 @import "../typography";
 
-// most of the styles are defined inside the accordion components
-// this file overrides / extends those styles
+// accordion styles are defined inside the accordion components
+// this file overrides & extends those styles
 
 .accordion {
 
@@ -37,6 +37,10 @@
           margin-bottom: 0;
         }
       }
+
+      .cell {
+        border-bottom: none;
+      }
     }
   }
 
@@ -48,6 +52,7 @@
     &:last-of-type {
       border-bottom: 1px solid $medium-gray;
     }
+
   }
 
   &.no-border-on-desktop {
@@ -57,12 +62,6 @@
 
         &:first-of-type {
           border: none;
-        }
-
-        .cell {
-          &:last-of-type {
-            border: none;
-          }
         }
       }
     }

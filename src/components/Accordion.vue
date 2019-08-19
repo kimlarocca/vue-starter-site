@@ -12,15 +12,21 @@
             },
             mobileOnly: {
                 default: false
+            },
+            closeAll: {
+                default: false
             }
         },
         data () {
             return {
                 Accordion: {
+                    id: this._uid,
                     count: 0,
+                    allAccordions: [],
                     active: [],
                     allowMultiple: this.$props.allowMultiple,
-                    mobileOnly: this.$props.mobileOnly
+                    mobileOnly: this.$props.mobileOnly,
+                    closeAll: this.$props.closeAll
                 }
             }
         },
