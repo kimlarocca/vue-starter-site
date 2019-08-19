@@ -7,7 +7,7 @@
           <div class="description">
             <p class="title">{{title}}</p>
             <p class="copy">{{description}}</p>
-            <a class="caret-right" href="#" :aria-label="title">{{learnMoreLinkTitle}}</a>
+            <a class="caret-right" href="#" :aria-label="title"><strong>{{learnMoreLinkTitle}}</strong></a>
           </div>
         </a>
       </div>
