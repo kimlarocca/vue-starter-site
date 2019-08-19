@@ -101,7 +101,7 @@
     <hero
       class="full-screen smallHeader"
       image="assets/images/hero1.jpg"
-      mobileImage="assets/images/hero1mobile.jpg"
+      mobileImage="../src/assets/images/hero1mobile.jpg"
       accentColor="#ff8f2a"
       hasH1="true"
     >
@@ -219,7 +219,7 @@
       <div class="grid-x grid-margin-x grid-margin-y padding-smaller">
         <div class="cell large-4 medium-6 small-12">
           <news-card
-            image="assets/images/news-card-image.jpg"
+            image="static/images/news-card-image.jpg"
             altText="james hetfield of metallica performing"
             learnMoreLink="http://www.google.com"
             subtitle="news"
@@ -284,7 +284,7 @@
     </div>
 
     <content-blade
-      image="assets/images/content-blade-image.jpg"
+      image="../assets/images/content-blade-image.jpg"
       altText="woman playing violin"
     >
       <template slot="content">
