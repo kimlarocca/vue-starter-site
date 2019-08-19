@@ -1,0 +1,19 @@
+.podcast-card {
+    a {
+        color: black !important;
+        .card {
+            padding: 2rem 1rem;
+            .image-cell.center {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              text-align: center;
+            }
+            .content-cell {
+                .title {
+                    padding-right: 5rem;
+                }
+            }
+          }
+    }
+  }

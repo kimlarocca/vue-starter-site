@@ -3,7 +3,8 @@
     <div class="container">
       <div class="gray-container">
         <div class="grid-x grid-margin-x align-middle">
-          <div class="cell large-2 medium-3 small-6"><img src="assets/images/logo-bw.png" alt="san francisco symphony logo"></div>
+          <div class="cell large-2 medium-3 small-6"><img src="assets/images/logo-bw.png"
+                                                          alt="san francisco symphony logo"></div>
           <div class="cell auto">
             <div class="subhead6">pattern library</div>
           </div>
@@ -77,7 +78,9 @@
         <router-link to="/HomePage">home page with the news mosaic</router-link>
       </p>
       <p class="subhead5 padding-smaller">
-        <router-link to="/ConcertDetail">concert detail page with "at a glance", "concert extras",  &amp; "related content"</router-link>
+        <router-link to="/ConcertDetail">concert detail page with "at a glance", "concert extras", &amp; "related
+          content"
+        </router-link>
       </p>
       <p class="subhead5 padding-smaller">
         <router-link to="/MediaBlocks">media blocks</router-link>
@@ -306,10 +309,39 @@
 
     <div class="container">
 
-      <div class="section-padding-100"></div>
+      <p class="subhead5 padding">
+        Misc Components
+      </p>
+
+      <p>Podcast Card</p>
+
+      <div class="grid-x grid-margin-x grid-margin-y">
+        <div class="cell large-4 medium-4 small-12 bg-medium-gray">
+          <podcast-card
+            title="Lorem ipsum dolor sit amet con secteur adpisci"
+            link="https://www.youtube.com/watch?v=VhxRrb5ojxk"
+          >
+          </podcast-card>
+        </div>
+      </div>
+
+      <div class="padding-smaller"></div>
+
+      <p>Performance Card</p>
+
+      <div class="grid-x grid-margin-x grid-margin-y">
+        <div class="cell large-4 medium-4 small-12">
+          <performance-card
+            class="margin-bottom-2"
+            location="davies symphony hall"
+            dateRange="Fri, Feb 22, 2019 at 8:00pm"
+            link="http://www.google.com"
+          >
+          </performance-card>
+        </div>
+      </div>
 
     </div>
-
 
   </div>
 </template>
