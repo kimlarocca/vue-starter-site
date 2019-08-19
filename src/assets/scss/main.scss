@@ -1,6 +1,7 @@
 @import "reset";
 @import "variables";
 @import "foundation";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "global";
 @import "components/components";
 
@@ -142,4 +143,25 @@ hr {
   @media all and (max-width: $breakpoint-mobile) {
     text-align: left;
   }
+}
+
+//extends foundation xy grid to add 2x margin-x gutters option on desktop
+.grid-margin-2x {
+  @media all and (min-width: $breakpoint-tablet+1) {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+
+  .cell {
+    @media all and (min-width: $breakpoint-tablet+1) {
+      width: calc(33.33333% - 4rem);
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+.border-left {
+  border-left: solid 1px black;
+  padding-left: 1rem;
 }

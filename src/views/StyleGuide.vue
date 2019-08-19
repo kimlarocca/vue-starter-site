@@ -3,7 +3,7 @@
     <div class="container">
       <div class="gray-container">
         <div class="grid-x grid-margin-x align-middle">
-          <div class="cell large-2 medium-3 small-6"><img src="static/images/logo-bw.png" alt="san francisco symphony logo"></div>
+          <div class="cell large-2 medium-3 small-6"><img src="assets/images/logo-bw.png" alt="san francisco symphony logo"></div>
           <div class="cell auto">
             <div class="subhead6">pattern library</div>
           </div>
@@ -100,8 +100,8 @@
 
     <hero
       class="full-screen smallHeader"
-      image="static/images/hero1.jpg"
-      mobileImage="static/images/hero1mobile.jpg"
+      image="assets/images/hero1.jpg"
+      mobileImage="assets/images/hero1mobile.jpg"
       accentColor="#ff8f2a"
       hasH1="true"
     >
@@ -120,7 +120,7 @@
       </p>
 
       <mini-hero
-        image="static/images/mini-hero1.jpg"
+        image="assets/images/mini-hero1.jpg"
         font="headline"
         accentColor="#7ecb69"
         preheader="Education"
@@ -153,7 +153,7 @@
       <div class="grid-x padding-smaller">
         <div class="cell large-3 medium-6 small-12">
           <event-card
-            image="static/images/upcoming-shows-card-image.png"
+            image="assets/images/upcoming-shows-card-image.png"
             altText="man and woman dancing"
             link="http://www.google.com"
             cta="buy tickets"
@@ -175,7 +175,7 @@
         <div class="grid-x">
           <div class="cell large-4 medium-6 small-12">
             <category-card
-              image="static/images/category-card-image.png"
+              image="assets/images/category-card-image.png"
               title="family"
               category="great performances"
               learnMoreLink="http://www.google.com"
@@ -219,7 +219,7 @@
       <div class="grid-x grid-margin-x grid-margin-y padding-smaller">
         <div class="cell large-4 medium-6 small-12">
           <news-card
-            image="static/images/news-card-image.jpg"
+            image="assets/images/news-card-image.jpg"
             altText="james hetfield of metallica performing"
             learnMoreLink="http://www.google.com"
             subtitle="news"
@@ -229,7 +229,7 @@
         </div>
         <div class="cell large-4 medium-6 small-12">
           <news-card
-            image="static/images/news-card-image.jpg"
+            image="assets/images/news-card-image.jpg"
             altText="james hetfield of metallica performing"
             learnMoreLink="http://www.google.com"
             hasTextLink="true"
@@ -247,7 +247,7 @@
       <div class="grid-x grid-margin-x grid-margin-y">
         <div class="cell large-4 medium-6 small-12">
           <feature-grid
-            image="static/images/feature-grid1.jpg"
+            image="assets/images/feature-grid1.jpg"
             altText="The Neighbourhood"
             title="The Neighbourhood"
             description="Make the most of your night dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt egestas lectus nec feugiat."
@@ -264,7 +264,7 @@
       </p>
 
       <person-profile
-        image="static/images/person-profile-image.jpg"
+        image="assets/images/person-profile-image.jpg"
         category="concert"
         link="http://www.google.com"
         openInNewWindow="true"
@@ -284,7 +284,7 @@
     </div>
 
     <content-blade
-      image="static/images/content-blade-image.jpg"
+      image="assets/images/content-blade-image.jpg"
       altText="woman playing violin"
     >
       <template slot="content">

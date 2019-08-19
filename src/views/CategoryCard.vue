@@ -27,7 +27,7 @@
       <div class="grid-x">
         <div class="cell large-4 medium-6 small-12">
           <category-card
-            image="static/images/category-card-image.png"
+            image="assets/images/category-card-image.png"
             title="family"
             category="great performances"
             learnMoreLink="http://www.google.com"
@@ -37,7 +37,7 @@
         </div>
         <div class="cell large-4 medium-6 small-12">
           <category-card
-            image="static/images/category-card-image.png"
+            image="assets/images/category-card-image.png"
             title="family"
             category="great performances"
             learnMoreLink="http://www.google.com"
@@ -47,7 +47,7 @@
         </div>
         <div class="cell large-4 medium-6 small-12">
           <category-card
-            image="static/images/category-card-image.png"
+            image="assets/images/category-card-image.png"
             title="family"
             category="great performances"
             learnMoreLink="http://www.google.com"
@@ -57,7 +57,7 @@
         </div>
         <div class="cell large-4 medium-6 small-12">
           <category-card
-            image="static/images/category-card-image.png"
+            image="assets/images/category-card-image.png"
             title="family"
             category="great performances"
             learnMoreLink="http://www.google.com"
@@ -67,7 +67,7 @@
         </div>
         <div class="cell large-4 medium-6 small-12">
           <category-card
-            image="static/images/category-card-image.png"
+            image="assets/images/category-card-image.png"
             title="family"
             category="great performances"
             learnMoreLink="http://www.google.com"
@@ -77,7 +77,7 @@
         </div>
         <div class="cell large-4 medium-6 small-12">
           <category-card
-            image="static/images/category-card-image.png"
+            image="assets/images/category-card-image.png"
             title="family"
             category="great performances"
             learnMoreLink="http://www.google.com"
@@ -98,7 +98,7 @@
       <div class="grid-x">
         <div class="cell large-6 medium-6 small-12">
           <category-card
-            image="static/images/category-card-image.png"
+            image="assets/images/category-card-image.png"
             title="family"
             category="great performances"
             learnMoreLink="http://www.google.com"
@@ -108,7 +108,7 @@
         </div>
         <div class="cell large-6 medium-6 small-12">
           <category-card
-            image="static/images/category-card-image.png"
+            image="assets/images/category-card-image.png"
             title="family"
             category="great performances"
             learnMoreLink="http://www.google.com"
@@ -118,7 +118,7 @@
         </div>
         <div class="cell large-6 medium-6 small-12">
           <category-card
-            image="static/images/category-card-image.png"
+            image="assets/images/category-card-image.png"
             title="family"
             category="great performances"
             learnMoreLink="http://www.google.com"
@@ -128,7 +128,7 @@
         </div>
         <div class="cell large-6 medium-6 small-12">
           <category-card
-            image="static/images/category-card-image.png"
+            image="assets/images/category-card-image.png"
             title="family"
             category="great performances"
             learnMoreLink="http://www.google.com"
@@ -138,7 +138,7 @@
         </div>
         <div class="cell large-6 medium-6 small-12">
           <category-card
-            image="static/images/category-card-image.png"
+            image="assets/images/category-card-image.png"
             title="family"
             category="great performances"
             learnMoreLink="http://www.google.com"
@@ -148,7 +148,7 @@
         </div>
         <div class="cell large-6 medium-6 small-12">
           <category-card
-            image="static/images/category-card-image.png"
+            image="assets/images/category-card-image.png"
             title="family"
             category="great performances"
             learnMoreLink="http://www.google.com"
