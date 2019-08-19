@@ -14,6 +14,7 @@
       PROPS:
       allowMultiple - set to true if multiple accordions are allowed to be open at once
       mobileOnly - set to true to transform content into accordions appear on mobile only
+      closeAll - set to true if all accordions are closed on load (by default the first item is open)
 
       <accordion-item>
       PROPS:
@@ -24,7 +25,7 @@
 
       <div class="section-padding-50"></div>
 
-      <accordion allowMultiple="true">
+      <accordion>
         <accordion-item>
           <template slot="header">
             <p>
@@ -46,7 +47,7 @@
             <p class="body-text3"><a class="caret-right" href="#"><strong>LEARN MORE</strong></a></p>
           </template>
         </accordion-item>
-        <accordion-item openOnLoad="true">
+        <accordion-item>
           <template slot="header">
             Header 2
           </template>
@@ -82,7 +83,57 @@
       <div class="container section-padding-50">
         <h3 class="subhead3 text-center">VOLUNTEER LEAGUES</h3>
         <div class="section-padding-50"></div>
-        <accordion>
+        <accordion allowMultiple="true">
+          <accordion-item>
+            <template slot="header">
+              <p>Marin League</p>
+            </template>
+            <template slot="content">
+              <div class="grid-x grid-margin-x grid-margin-y">
+                <div class="cell large-4 medium-4 small-12">
+                  <img src="/static/images/news-card-image.jpg" alt="alt tag goes here">
+                </div>
+                <div class="cell large-5 medium-5 small-12">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque commodi corporis culpa
+                    delectus ea et fugit impedit incidunt inventore laborum magnam natus neque, quidem quisquam sapiente
+                    tempora temporibus voluptatibus!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque commodi corporis culpa
+                    delectus ea et fugit impedit incidunt inventore laborum magnam natus neque, quidem quisquam sapiente
+                    tempora temporibus voluptatibus!</p>
+                </div>
+                <div class="cell large-3 medium-3 small-12">
+                  <p class="body-text4"><strong>Chair</strong><br>Jane Doe</p>
+                  <p class="body-text4"><strong>Vice Chair</strong><br>John Doe</p>
+                  <p class="body-text4"><a class="caret-right" href="#"><strong>CONTACT US TO JOIN</strong></a></p>
+                </div>
+              </div>
+            </template>
+          </accordion-item>
+          <accordion-item>
+            <template slot="header">
+              <p>Marin League</p>
+            </template>
+            <template slot="content">
+              <div class="grid-x grid-margin-x grid-margin-y">
+                <div class="cell large-4 medium-4 small-12">
+                  <img src="/static/images/news-card-image.jpg" alt="alt tag goes here">
+                </div>
+                <div class="cell large-5 medium-5 small-12">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque commodi corporis culpa
+                    delectus ea et fugit impedit incidunt inventore laborum magnam natus neque, quidem quisquam sapiente
+                    tempora temporibus voluptatibus!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque commodi corporis culpa
+                    delectus ea et fugit impedit incidunt inventore laborum magnam natus neque, quidem quisquam sapiente
+                    tempora temporibus voluptatibus!</p>
+                </div>
+                <div class="cell large-3 medium-3 small-12">
+                  <p class="body-text4"><strong>Chair</strong><br>Jane Doe</p>
+                  <p class="body-text4"><strong>Vice Chair</strong><br>John Doe</p>
+                  <p class="body-text4"><a class="caret-right" href="#"><strong>CONTACT US TO JOIN</strong></a></p>
+                </div>
+              </div>
+            </template>
+          </accordion-item>
           <accordion-item>
             <template slot="header">
               <p>Marin League</p>
@@ -208,11 +259,7 @@
                 Header 2
               </template>
               <template slot="content">
-                <p class="body-text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex
-                  ea commodo consequat.</p>
+                <p class="body-text1">header 2 content</p>
               </template>
             </accordion-item>
           </div>
