@@ -11,8 +11,8 @@
 
     <hero
       class="full-screen smallHeader"
-      image="static/images/hero1.jpg"
-      mobileImage="static/images/hero1mobile.jpg"
+      image="assets/images/hero1.jpg"
+      mobileImage="assets/images/hero1mobile.jpg"
       accentColor="#ff8f2a"
       hasH1="true"
       :dropDownMenu="[
@@ -30,7 +30,7 @@
 
     <section class="section-padding-100">
       <content-blade
-        image="static/images/content-blade-image.jpg"
+        image="assets/images/content-blade-image.jpg"
         altText="woman playing violin"
       >
         <template slot="content">
@@ -100,7 +100,7 @@
         <div class="grid-x grid-margin-y grid-margin-x">
           <div class="cell large-4 medium-12 small-12">
             <news-card
-              image="static/images/news-card-image.jpg"
+              image="assets/images/news-card-image.jpg"
               altText="james hetfield of metallica performing"
               learnMoreLink="http://www.google.com"
               subtitle="news"
@@ -118,7 +118,7 @@
           </div>
           <div class="cell large-4 medium-12 small-12">
             <news-card
-              image="static/images/news-card-image.jpg"
+              image="assets/images/news-card-image.jpg"
               altText="james hetfield of metallica performing"
               learnMoreLink="http://www.google.com"
               subtitle="news"

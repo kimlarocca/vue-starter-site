@@ -25,7 +25,7 @@
       -->
 
       <mini-hero
-        image="static/images/mini-hero1.jpg"
+        image="assets/images/mini-hero1.jpg"
         accentColor="#7ecb69"
         preheader="Education"
       >
@@ -37,7 +37,7 @@
       <br>
 
       <mini-hero
-        image="static/images/mini-hero1.jpg"
+        image="assets/images/mini-hero1.jpg"
         font="regular"
         accentColor="#7ecb69"
       >
@@ -49,8 +49,8 @@
       <br>
 
       <mini-hero
-        image="static/images/mini-hero2.jpg"
-        mobileImage="static/images/mini-hero2mobile.jpg"
+        image="assets/images/mini-hero2.jpg"
+        mobileImage="assets/images/mini-hero2mobile.jpg"
         font="regular"
         fontColor="gray"
         alignment="right"
