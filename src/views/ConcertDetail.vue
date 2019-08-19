@@ -28,10 +28,56 @@
       <a class="button ghost" slot="cta2">Browse Concerts</a>
     </hero>
 
-    <section class="section-padding-100">
+    <section class="bg-medium-gray">
+      <div class="container padding-2">
+        <div class="grid-x grid-margin-x align-middle text-center flex-dir-row">
+          <div class="cell auto">
+            <div class="subhead6 text-brown"><strong>brought to you by</strong></div>
+          </div>
+          <div class="cell auto"><img src="https://via.placeholder.com/100x30" alt="placeholder image"/></div>
+          <div class="cell auto"><img src="https://via.placeholder.com/40x30" alt="placeholder image"/></div>
+          <div class="cell auto"><img src="https://via.placeholder.com/100x30" alt="placeholder image"/></div>
+          <div class="cell auto"><img src="https://via.placeholder.com/40x30" alt="placeholder image"/></div>
+          <div class="cell auto"><img src="https://via.placeholder.com/100x30" alt="placeholder image"/></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-padding-100"></div>
+
+    <section>
+      <div class="container">
+        <div class="grid-x grid-margin-2x grid-margin-y">
+          <div class="cell large-4 medium-4">
+            <p class="subhead1 border-left margin-bottom-3">conductor &amp; performers</p>
+            <p class="subhead6 margin-bottom-0">conductor</p>
+            <p class="subhead4"><a href="#">Manfred Honeck</a></p>
+            <p class="subhead6 margin-bottom-0">piano</p>
+            <p class="subhead4"><a href="#">TBD</a></p>
+            <p class="body-text3">San Francisco Symphony</p>
+          </div>
+          <div class="cell large-4 medium-4">
+            <p class="subhead1 border-left margin-bottom-3">program<br>&nbsp;</p>
+            <p class="subhead6 margin-bottom-0">conductor</p>
+            <p class="subhead4"><a href="#">Manfred Honeck</a></p>
+            <p class="subhead6 margin-bottom-0">piano</p>
+            <p class="subhead4"><a href="#">TBD</a></p>
+            <p class="body-text3">San Francisco Symphony</p>
+          </div>
+          <div class="cell large-4 medium-4">
+            <p class="subhead1 border-left margin-bottom-3">performances<br>&nbsp;</p>
+            <i class="fas fa-calendar-alt text-brown fa-3x"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-padding-100"></div>
+
+    <section>
       <content-blade
         image="assets/images/content-blade-image.jpg"
-        altText="woman playing violin"
+        altText="man conducting the san francisco symphony"
       >
         <template slot="content">
           <h2 class="subhead1 no-transform">Event Description</h2>
@@ -58,6 +104,101 @@
     <section>
       <div class="container">
         <h2 class="subhead1 no-transform">At a glance</h2>
+        <div class="section-padding-50"></div>
+        <accordion mobileOnly="true" class="no-border-on-desktop">
+          <div class="grid-x grid-margin-2x">
+            <div class="cell large-4 medium-12 small-12">
+              <accordion-item>
+                <template slot="header">
+                  <p>
+                    <span class="subhead6"><strong>Schumann</strong></span>
+                    <br>
+                    <span class="body-text4">Manfred overture | 12 mins</span>
+                  </p>
+                </template>
+                <template slot="content">
+                  <p class="body-text3">Robert Schumann told Franz Liszt that he considered the Manfred Overture to be
+                    one
+                    of
+                    his “most powerful children.” Schumann’s music for Lord Byron’s dramatic poem Manfred stressed the
+                    musical
+                    medium most deferential to poetry: the melodrama, in which text is recited over an accompanying
+                    score.
+                    The
+                    result is an odd musical hybrid, and of Schumann’s Manfred music only the Overture has found an
+                    enduring
+                    place in the repertory. In this somber work we find Schumann at his most demonic, setting the scene
+                    for
+                    Byron’s tortured hero with music of wide fluctuation, passionately designed melodies, and insistent
+                    rhythms.</p>
+                  <p class="body-text3"><strong>Listen for:</strong><br>This is a marvelously imagined piece of
+                    scoring—hear,
+                    for example, the economical and stunningly effective use of the trombones.</p>
+                  <p class="body-text3"><a class="caret-right" href="#"><strong>LEARN MORE</strong></a></p>
+                </template>
+              </accordion-item>
+            </div>
+            <div class="cell large-4 medium-12 small-12">
+              <accordion-item>
+                <template slot="header">
+                  <p>
+                    <span class="subhead6"><strong>Schumann</strong></span>
+                    <br>
+                    <span class="body-text4">Manfred overture | 12 mins</span>
+                  </p>
+                </template>
+                <template slot="content">
+                  <p class="body-text3">Robert Schumann told Franz Liszt that he considered the Manfred Overture to be
+                    one
+                    of
+                    his “most powerful children.” Schumann’s music for Lord Byron’s dramatic poem Manfred stressed the
+                    musical
+                    medium most deferential to poetry: the melodrama, in which text is recited over an accompanying
+                    score.
+                    The
+                    result is an odd musical hybrid, and of Schumann’s Manfred music only the Overture has found an
+                    enduring
+                    place in the repertory. In this somber work we find Schumann at his most demonic, setting the scene
+                    for
+                    Byron’s tortured hero with music of wide fluctuation, passionately designed melodies, and insistent
+                    rhythms.</p>
+                  <p class="body-text3"><strong>Listen for:</strong><br>This is a marvelously imagined piece of
+                    scoring—hear,
+                    for example, the economical and stunningly effective use of the trombones.</p>
+                  <p class="body-text3"><a class="caret-right" href="#"><strong>LEARN MORE</strong></a></p>
+                </template>
+              </accordion-item>
+            </div>
+            <div class="cell large-4 medium-12 small-12">
+              <accordion-item>
+                <template slot="header">
+                  <p>
+                    <span class="subhead6"><strong>Schumann</strong></span>
+                    <br>
+                    <span class="body-text4">Manfred overture | 12 mins</span>
+                  </p>
+                </template>
+                <template slot="content">
+                  <p class="body-text3">Robert Schumann told Franz Liszt that he considered the Manfred Overture to be
+                    one
+                    of
+                    his “most powerful children.” Schumann’s music for Lord Byron’s dramatic poem Manfred stressed the
+                    musical
+                    medium most deferential to poetry: the melodrama, in which text is recited over an accompanying
+                    score.
+                    The
+                    result is an odd musical hybrid, and of Schumann’s Manfred music only the Overture has found an
+                    enduring
+                    place in the repertory. In this somber work we find Schumann at his most demonic, setting the scene
+                    for
+                    Byron’s tortured hero with music of wide fluctuation, passionately designed melodies, and insistent
+                    rhythms.</p>
+                  <p class="body-text3"><a class="caret-right" href="#"><strong>LEARN MORE</strong></a></p>
+                </template>
+              </accordion-item>
+            </div>
+          </div>
+        </accordion>
       </div>
     </section>
 
