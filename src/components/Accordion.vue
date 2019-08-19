@@ -20,10 +20,6 @@
         data () {
             return {
                 Accordion: {
-                    id: this._uid,
-                    count: 0,
-                    allAccordions: [],
-                    active: [],
                     allowMultiple: this.$props.allowMultiple,
                     mobileOnly: this.$props.mobileOnly,
                     closeAll: this.$props.closeAll

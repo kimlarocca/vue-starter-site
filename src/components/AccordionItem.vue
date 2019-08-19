@@ -48,9 +48,10 @@
         inject: ['Accordion'],
         data () {
             return {
-                index: null,
                 active: false,
-                accordionID: null
+                window: {
+                    width: 0
+                }
             }
         },
         computed: {
@@ -63,11 +64,10 @@
         },
         methods: {
             open () {
+                // check if multiple accordions are allowed to be open at once
                 if (this.Accordion.allowMultiple) {
-                    // if multiple accordions are allowed to be open at once
                     this.active = !this.visible
                 } else {
-                    // if only 1 accordion can be open at a time
                     if (this.visible) {
                         this.active = false
                     } else {
@@ -76,31 +76,59 @@
                     }
                 }
             },
+            openAll () {
+                for (let i = 0; i < this.$parent.$children.length; i++) {
+                    this.$parent.$children[i].$data.active = true
+                }
+            },
             closeAll () {
                 for (let i = 0; i < this.$parent.$children.length; i++) {
                     this.$parent.$children[i].$data.active = false
                 }
+            },
+            openFirst () {
+                this.closeAll()
+                this.$parent.$children[0].$data.active = true
             },
             start (el) {
                 el.style.height = el.scrollHeight + 'px'
             },
             end (el) {
                 el.style.height = ''
+            },
+            handleResize () {
+                this.window.width = window.innerWidth
+                if (this.window.width < 1240) {
+                    if (this.Accordion.mobileOnly) {
+                        this.openFirst()
+                    }
+                } else {
+                    if (this.Accordion.mobileOnly) {
+                        this.openAll()
+                    }
+                }
             }
         },
         created () {
-            this.index = this.Accordion.count++
-            this.accordionID = this.Accordion.id
             this.mobileOnly = false
 
-            // open all accordions on desktop
-            if (this.Accordion.mobileOnly) {
-                this.open()
-                this.mobileOnly = true
-            }
-
             // open the first item in each accordion
-            this.$parent.$children[0].$data.active = true
+            this.openFirst()
+
+            // open all accordions on desktop
+            // open only the first accordion on mobile
+            window.addEventListener('resize', this.handleResize)
+            this.handleResize()
+            if (this.Accordion.mobileOnly) {
+                this.active = true
+                this.mobileOnly = true
+                if (this.window.width < 1240) {
+                    this.closeAll()
+                    this.openFirst()
+                } else {
+                    this.openAll()
+                }
+            }
 
             // close all accordions if closeAll prop is true
             if (this.Accordion.closeAll) {
@@ -111,6 +139,9 @@
             if (this.openOnLoad) {
                 this.open()
             }
+        },
+        destroyed () {
+            window.removeEventListener('resize', this.handleResize)
         }
     }
 </script>
