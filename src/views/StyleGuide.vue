@@ -342,30 +342,35 @@
         </div>
       </div>
 
-       <div class="grid-x grid-margin-x grid-margin-y sponsorship">
+      <div class="padding-smaller"></div>
+
+      <p>Sponsorship Callout</p>
+      <div class="padding-smaller"></div>
+
+      <div class="grid-x grid-margin-x grid-margin-y sponsorship">
         <div class="cell large-3 small-12 sponsorship-text">
           <p class="text-brown">BROUGHT TO YOU BY</p>
         </div>
         <div class="cell large-9 sponsorship-container">
           <sponsorship-callout
-                  image="https://i.ibb.co/rkqb4SV/neiman-marcus.png"
-                  altText="Neiman Marcus Logo">
+            image="https://i.ibb.co/rkqb4SV/neiman-marcus.png"
+            altText="Neiman Marcus Logo">
           </sponsorship-callout>
           <sponsorship-callout
-                  image="https://i.ibb.co/GFG4Wwy/chase.png"
-                  altText="Chase Logo">
+            image="https://i.ibb.co/GFG4Wwy/chase.png"
+            altText="Chase Logo">
           </sponsorship-callout>
           <sponsorship-callout
-                  image="https://i.ibb.co/XVB8KRW/chevron.png"
-                  altText="Chevron Logo">
+            image="https://i.ibb.co/XVB8KRW/chevron.png"
+            altText="Chevron Logo">
           </sponsorship-callout>
           <sponsorship-callout
-                  image="https://i.ibb.co/4msnjPx/first-republic-bank.png"
-                  altText="First Republic Bank">
+            image="https://i.ibb.co/4msnjPx/first-republic-bank.png"
+            altText="First Republic Bank">
           </sponsorship-callout>
           <sponsorship-callout
-                  image="https://i.ibb.co/CsfRDXx/air-bnb.png"
-                  altText="Airbnb Logo">
+            image="https://i.ibb.co/CsfRDXx/air-bnb.png"
+            altText="Airbnb Logo">
           </sponsorship-callout>
 
         </div>
