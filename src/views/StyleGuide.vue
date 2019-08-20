@@ -367,6 +367,10 @@
                   image="https://i.ibb.co/CsfRDXx/air-bnb.png"
                   altText="Airbnb Logo">
           </sponsorship-callout>
+          <sponsorship-callout
+                  hasText="LOREM IPSUM DOLOR SIT AT MET"
+          >
+          </sponsorship-callout>
 
         </div>
       </div>
