@@ -4,9 +4,16 @@
   background-color: $medium-gray;
   opacity: 1;
   transition: $transition;
-
-  &:hover {
-    opacity: $opacity-on-hover;
+  &.gray {
+    background-color: $medium-gray;
+  }
+  &.white {
+    background-color: $background-color;
+  }
+  img {
+    &:hover {
+      opacity: .9;
+    }
   }
 
   .description {

@@ -256,6 +256,7 @@
             description="Make the most of your night dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt egestas lectus nec feugiat."
             learnMoreLink="http://www.google.com"
             learnMoreLinkTitle="Learn More"
+            background-color="gray"
           >
           </feature-grid>
         </div>
@@ -342,6 +343,19 @@
       </div>
 
     </div>
+
+    <footer-component
+      logoAltText="San Fransico Symphony"
+      address="Davies Symphony Hall 201 Van Ness Ave. SF, CA 94102"
+      phoneNumber="(415) 864-6000"
+      copywrite="2018 San Fransisco Symphony"
+      privacy="Privacy & Terms"
+      privacyLink="#"
+      donateCopy="Your gift makes concerts possible."
+      donateButton="#"
+      donateButtonText="Donate Today"
+    >
+    </footer-component>
 
   </div>
 </template>

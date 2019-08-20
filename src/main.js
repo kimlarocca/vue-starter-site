@@ -22,6 +22,7 @@ import AccordionItem from './components/AccordionItem.vue'
 import PerformanceCard from './components/PerformanceCard.vue'
 import PodcastCard from './components/PodcastCard.vue'
 
+
 Vue.component('hero', Hero)
 Vue.component('mini-hero', MiniHero)
 Vue.component('upcoming-shows-card', UpcomingShowsCard)
@@ -37,6 +38,7 @@ Vue.component('accordion', Accordion)
 Vue.component('accordion-item', AccordionItem)
 Vue.component('performance-card', PerformanceCard)
 Vue.component('podcast-card', PodcastCard)
+
 
 Vue.config.productionTip = false
 

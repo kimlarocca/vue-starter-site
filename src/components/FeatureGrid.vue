@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="feature-grid">
+    <div class="feature-grid" :class="backgroundColor">
       <div class="feature">
         <a :href="learnMoreLink" :aria-label="title">
           <img :src="image" :alt="altText"/>
@@ -15,6 +15,8 @@
   </section>
 </template>
 
+
+
 <script>
     export default {
         name: 'FeatureGrid',
@@ -23,14 +25,9 @@
             altText: String,
             title: String,
             description: String,
-            textAlign: {
-                left: 'left',
-                center: 'center'
-            },
-            imageAlign: {
-                top: 'top',
-                side: 'side'
-            },
+            textAlign: String,
+            imageAlign: String,
+            backgroundColor: String,
             numOfCols: [1, 2, 3, 4, 5],
             isMobileCarousel: Boolean,
             learnMoreLink: String,
