@@ -3,8 +3,9 @@
     <div class="container">
       <div class="gray-container">
         <div class="grid-x grid-margin-x align-middle">
-          <div class="cell large-2 medium-3 small-6"><img src="assets/images/logo-bw.png"
-                                                          alt="san francisco symphony logo"></div>
+          <div class="cell large-2 medium-3 small-6">
+            <img src="assets/images/logo-bw.png" alt="san francisco symphony logo">
+          </div>
           <div class="cell auto">
             <div class="subhead6">pattern library</div>
           </div>
@@ -443,10 +444,3 @@
     }
   }
 </style>
-<script>
-    import Accordion from '../components/Accordion'
-
-    export default {
-        components: {Accordion}
-    }
-</script>
