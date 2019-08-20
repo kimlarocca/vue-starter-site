@@ -72,31 +72,31 @@
                 socialMediaNetworks: [
                     {
                         'id': 1,
-                        'icon': 'facebook',
+                        'icon': 'fab fa-facebook-f',
                         'link': 'https://www.facebook.com/sfsymphony',
                         'altText': 'Facebook'
                     },
                     {
                         'id': 2,
-                        'icon': 'twitter',
+                        'icon': 'fab fa-twitter',
                         'link': 'https://twitter.com/sfsymphony',
                         'altText': 'Twitter'
                     },
                     {
                         'id': 3,
-                        'icon': 'youtube',
+                        'icon': 'fab fa-youtube',
                         'link': 'https://www.youtube.com/user/sfsymphony',
                         'altText': 'Youtube'
                     },
                     {
                         'id': 4,
-                        'icon': 'spotify',
+                        'icon': 'fab fa-spotify',
                         'link': 'https://open.spotify.com/artist/1qHStDLIc8uV7hvTG6FGRJ',
                         'altText': 'Spotify'
                     },
                     {
                         'id': 5,
-                        'icon': 'instagram',
+                        'icon': 'fab fa-instagram',
                         'link': 'https://www.instagram.com/sfsymphony/',
                         'altText': 'Instagram'
                     }

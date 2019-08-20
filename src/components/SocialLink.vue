@@ -2,7 +2,7 @@
   <li>
     <a :href="link">
       <!-- <img :src="image" :alt="altText" /> -->
-      <i class="fa fa-" :class="icon">&nbsp;</i>
+      <i :class="icon">&nbsp;</i>
     </a>
   </li>
 </template>
@@ -15,10 +15,6 @@ export default {
     icon: String,
     link: String,
     altText: String
-  },
-  methods: {
-    return () {
-    }
   }
 }
 </script>

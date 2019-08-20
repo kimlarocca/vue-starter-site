@@ -395,7 +395,6 @@
       donateButtonText="Donate Today"
     >
     </footer-component>
-
   </div>
 </template>
 
