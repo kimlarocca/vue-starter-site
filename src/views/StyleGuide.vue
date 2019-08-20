@@ -60,16 +60,16 @@
 
       <section class="section-border">
         <p class="subhead5">Buttons</p>
-        <p>.button</p>
-        <p>.button ghost</p>
+        <p>.button | .button ghost</p>
         <div class="black-container">
           <p><a class="button">view tickets</a></p>
           <p><a class="button ghost">browse concerts</a></p>
         </div>
-        <p>.button gray</p>
-        <p>.button blue</p>
+        <p>.button gray | .button blue | .button light-gray | .button ghost-black</p>
         <p><a class="button gray">learn more</a></p>
         <p><a class="button blue">buy tickets</a></p>
+        <p><a class="button light-gray">view tickets</a></p>
+        <p><a class="button ghost-black">view tickets</a></p>
       </section>
 
       <h2 class="padding">layouts and examples</h2>
@@ -287,8 +287,8 @@
     </div>
 
     <content-blade
-      image="../assets/images/content-blade-image.jpg"
-      altText="woman playing violin"
+      image="assets/images/content-blade-image.jpg"
+      altText="man conducting the san francisco symphony"
     >
       <template slot="content">
         <h2 class="body-text1">Event Description</h2>
