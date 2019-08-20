@@ -184,17 +184,3 @@ hr {
     color: $brown;
   }
 }
-
-.show-desktop {
-  display: block;
-  @media all and (max-width: $breakpoint-mobile) {
-    display: none;
-  }
-}
-
-.show-mobile {
-  display: none;
-  @media all and (max-width: $breakpoint-mobile) {
-    display: block;
-  }
-}

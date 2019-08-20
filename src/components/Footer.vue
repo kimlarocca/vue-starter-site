@@ -16,7 +16,7 @@
             >
             </footer-social-link>
           </ul>
-          <div class="copywrite show-desktop">
+          <div class="copywrite show-for-medium">
             <p>{{copywrite}}</p>
             <a :href="privacyLink">{{privacy}}</a>
           </div>
@@ -37,7 +37,7 @@
             <p class="donate-copy">{{donateCopy}}</p>
             <a class="button" :href="donateButton">{{donateButtonText}}</a>
           </div>
-          <div class="copywrite show-mobile">
+          <div class="copywrite show-for-small-only">
             <p>{{copywrite}}</p>
             <a :href="privacyLink">{{privacy}}</a>
           </div>
