@@ -1,7 +1,6 @@
 <template>
   <li>
     <a :href="link">
-      <!-- <img :src="image" :alt="altText" /> -->
       <i :class="icon">&nbsp;</i>
     </a>
   </li>
