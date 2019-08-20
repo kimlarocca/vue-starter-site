@@ -9,6 +9,14 @@
     opacity: $opacity-on-hover;
   }
 
+  &.gray {
+    background-color: $medium-gray;
+  }
+
+  &.white {
+    background-color: $background-color;
+  }
+
   .description {
     padding: 10px 20px 40px 20px;
 
