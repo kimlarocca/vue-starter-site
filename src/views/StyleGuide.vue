@@ -342,10 +342,14 @@
         </div>
       </div>
 
+      <p class="subhead5 padding">Footer</p>
+      <div class="padding-smaller"></div>
+
+
     </div>
 
     <footer-component
-      logoAltText="San Fransico Symphony"
+      logoAltText="San Francisco Symphony"
       address="Davies Symphony Hall 201 Van Ness Ave. SF, CA 94102"
       phoneNumber="(415) 864-6000"
       copywrite="2018 San Fransisco Symphony"

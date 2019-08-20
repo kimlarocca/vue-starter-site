@@ -21,6 +21,7 @@ import Accordion from './components/Accordion.vue'
 import AccordionItem from './components/AccordionItem.vue'
 import PerformanceCard from './components/PerformanceCard.vue'
 import PodcastCard from './components/PodcastCard.vue'
+import Footer from './components/Footer.vue'
 
 
 Vue.component('hero', Hero)
@@ -38,7 +39,7 @@ Vue.component('accordion', Accordion)
 Vue.component('accordion-item', AccordionItem)
 Vue.component('performance-card', PerformanceCard)
 Vue.component('podcast-card', PodcastCard)
-
+Vue.component('footer-component', Footer)
 
 Vue.config.productionTip = false
 
