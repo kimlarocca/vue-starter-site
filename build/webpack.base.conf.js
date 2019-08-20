@@ -52,11 +52,21 @@ module.exports = {
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        test: /\.(png|jpe?g|gif)(\?.*)?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+          // name: utils.assetsPath('img/[name].[hash:7].[ext]')
+          name: utils.assetsPath('img/[name].[ext]')
+        }
+      },
+      {
+        test: /\.(svg)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          // name: utils.assetsPath('svg/[name].[hash:7].[ext]')
+          name: utils.assetsPath('svg/[name].[ext]')
         }
       },
       {
@@ -64,16 +74,18 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: utils.assetsPath('media/[name].[hash:7].[ext]')
+          // name: utils.assetsPath('media/[name].[hash:7].[ext]')
+          name: utils.assetsPath('media/[name].[ext]')
         }
       },
       {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        // test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        test: /\.(woff|woff2|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
           // name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
-          name: ('fonts/[name].[ext]')
+          name: ('assets/fonts/[name].[ext]')
         }
       }
     ]

@@ -1,0 +1,34 @@
+.sponsorship {
+    padding: 2rem;
+    background-color: #e9e7e0;
+    @media all and (max-width: $breakpoint-mobile) {
+        overflow-x: scroll;
+    }
+    .sponsorship-text {
+        display: flex;
+        align-items: center;
+        p.text-brown {
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+    }
+    .sponsorship-container {
+        display: flex;
+        justify-content: space-between;
+        @media all and (max-width: $breakpoint-mobile) {
+            width: 150%;
+        }
+        .sponsorship-callout {
+            display: inline-block;
+            margin: 0 2rem;
+            @media all and (max-width: $breakpoint-mobile) {
+                margin: 0 0.5rem;
+            }
+            &:first-child {
+                @media all and (max-width: $breakpoint-mobile) {
+                    margin-left: 0px !important;
+                }
+            }
+        }
+    }
+}
