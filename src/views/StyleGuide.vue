@@ -76,25 +76,23 @@
       <h2 class="padding">layouts and examples</h2>
 
       <p class="subhead5 padding-smaller">
-        <router-link to="/HomePage">home page with the news mosaic</router-link>
+        <!--        <router-link to="/HomePage">home page with the news mosaic</router-link>-->
       </p>
       <p class="subhead5 padding-smaller">
-        <router-link to="/ConcertDetail">concert detail page with "at a glance", "concert extras", &amp; "related
-          content"
-        </router-link>
+        <!--        <router-link to="/ConcertDetail">concert detail page with "at a glance", "concert extras", &amp; "related content"</router-link>-->
       </p>
       <p class="subhead5 padding-smaller">
-        <router-link to="/MediaBlocks">media blocks</router-link>
+        <!--        <router-link to="/MediaBlocks">media blocks</router-link>-->
       </p>
       <p class="subhead5 padding-smaller">
-        <router-link to="/Accordions">content blinds (accordions)</router-link>
+        <!--        <router-link to="/Accordions">content blinds (accordions)</router-link>-->
       </p>
 
       <h2 class="padding">components</h2>
 
       <p class="subhead5">
         Hero Component |
-        <router-link to="/Hero">view examples</router-link>
+        <!--        <router-link to="/Hero">view examples</router-link>-->
       </p>
       <p>Used for: standard hero, event detail hero, article hero, statement hero, impact hero, feature widget</p>
 
@@ -120,7 +118,7 @@
 
       <p class="subhead5 padding">
         Mini Hero Component |
-        <router-link to="/MiniHero">view examples</router-link>
+        <!--        <router-link to="/MiniHero">view examples</router-link>-->
       </p>
 
       <mini-hero
@@ -138,7 +136,16 @@
         Announcement Callout Component
       </p>
 
-      <!-- backgroundColor can be white or gray - default is white -->
+      <!--
+      PROPS:
+      backgroundColor: can be white or gray - default is white
+
+      SLOTS:
+      title
+      description
+      cta1 (optional)
+      cta2 (optional)
+      -->
       <announcement-callout backgroundColor="gray">
         <span slot="title" class="body-text1">Support education in music</span>
         <span slot="description" class="body-text3">You can help a child get an instrument or an entire class see a performance live, your contribution is critical.</span>
@@ -150,7 +157,7 @@
 
       <p class="subhead5">
         Event Card Component |
-        <router-link to="/EventCard">view examples</router-link>
+        <!--        <router-link to="/EventCard">view examples</router-link>-->
       </p>
       <p>Used for: event grid, story grid, event cards widget, calendar grid, calendar cards</p>
 
@@ -172,7 +179,7 @@
 
       <p class="subhead5 padding">
         Category Card Component |
-        <router-link to="/CategoryCard">view in a grid</router-link>
+        <!--        <router-link to="/CategoryCard">view in a grid</router-link>-->
       </p>
 
       <div class="category-cards three">
@@ -186,6 +193,23 @@
             >
               <span slot="shortDescription" class="body-text2">Phenomenal artists perform with the SF symphony</span>
             </category-card>
+          </div>
+        </div>
+      </div>
+
+      <p class="subhead5 padding">Media Blocks</p>
+
+      <div class="grid-x grid-margin-x">
+        <div class="cell large-6 medium-6">
+          <div class="responsive-embed widescreen">
+            <iframe width="1240" height="700" src="https://www.youtube.com/embed/krCiR04u8Ig" frameborder="0"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="cell large-6 medium-6">
+          <div class="responsive-embed widescreen">
+            <iframe src="https://player.vimeo.com/video/42325868" width="1240" height="700" frameborder="0"
+                    allow="autoplay; fullscreen" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -220,6 +244,16 @@
       </p>
       <p>Used for: news mosaic, related content, content cards</p>
 
+      <!--
+      PROPS:
+      image
+      altText
+      subtitle
+      title
+      learnMoreLink - entire card will be clickable
+      hasTextLink - if set to true, the card will display a "learn more" link (the default is false)
+      -->
+
       <div class="grid-x grid-margin-x grid-margin-y padding-smaller">
         <div class="cell large-4 medium-6 small-12">
           <news-card
@@ -248,6 +282,17 @@
         Feature Grid Card Component
       </p>
 
+      <!--
+      PROPS:
+      image
+      altText
+      title
+      description
+      learnMoreLink
+      learnMoreTitle
+      background-color: can be gray or white (gray by default)
+      -->
+
       <div class="grid-x grid-margin-x grid-margin-y">
         <div class="cell large-4 medium-6 small-12">
           <feature-grid
@@ -265,7 +310,7 @@
 
       <p class="subhead5 padding">
         Person Profile Component |
-        <router-link to="/PersonProfile">view examples</router-link>
+        <!--        <router-link to="/PersonProfile">view examples</router-link>-->
       </p>
 
       <person-profile
@@ -283,7 +328,7 @@
 
       <p class="subhead5 padding">
         Content Blade Component |
-        <router-link to="/ContentBlade">view examples</router-link>
+        <!--        <router-link to="/ContentBlade">view examples</router-link>-->
       </p>
 
     </div>
@@ -317,6 +362,12 @@
 
       <p>Podcast Card</p>
 
+      <!--
+      PROPS:
+      title
+      link
+      -->
+
       <div class="grid-x grid-margin-x grid-margin-y">
         <div class="cell large-4 medium-4 small-12 bg-medium-gray">
           <podcast-card
@@ -330,6 +381,14 @@
       <div class="padding-smaller"></div>
 
       <p>Performance Card</p>
+
+      <!--
+      PROPS:
+      class - can be any class but the intent is to set the desired bottom margin
+      location
+      dateRange
+      link - the link for the "buy tickets" button
+      -->
 
       <div class="grid-x grid-margin-x grid-margin-y">
         <div class="cell large-4 medium-4 small-12">
@@ -348,6 +407,13 @@
       <p>Sponsorship Callout</p>
       <div class="padding-smaller"></div>
 
+      <!--
+      PROPS:
+      image
+      altText
+      hasText - if this is set, plain text will display
+      -->
+
       <div class="grid-x grid-margin-x grid-margin-y sponsorship">
         <div class="cell large-3 small-12 sponsorship-text">
           <p class="text-brown">BROUGHT TO YOU BY</p>
@@ -355,26 +421,31 @@
         <div class="cell large-9 sponsorship-container">
           <sponsorship-callout
             image="https://i.ibb.co/rkqb4SV/neiman-marcus.png"
-            altText="Neiman Marcus Logo">
+            altText="Neiman Marcus Logo"
+          >
           </sponsorship-callout>
           <sponsorship-callout
             image="https://i.ibb.co/GFG4Wwy/chase.png"
-            altText="Chase Logo">
+            altText="Chase Logo"
+          >
           </sponsorship-callout>
           <sponsorship-callout
             image="https://i.ibb.co/XVB8KRW/chevron.png"
-            altText="Chevron Logo">
+            altText="Chevron Logo"
+          >
           </sponsorship-callout>
           <sponsorship-callout
             image="https://i.ibb.co/4msnjPx/first-republic-bank.png"
-            altText="First Republic Bank">
+            altText="First Republic Bank"
+          >
           </sponsorship-callout>
           <sponsorship-callout
             image="https://i.ibb.co/CsfRDXx/air-bnb.png"
-            altText="Airbnb Logo">
+            altText="Airbnb Logo"
+          >
           </sponsorship-callout>
           <sponsorship-callout
-                  hasText="LOREM IPSUM DOLOR SIT AT MET"
+            hasText="LOREM IPSUM DOLOR SIT AT MET"
           >
           </sponsorship-callout>
 

@@ -30,15 +30,42 @@
 
     <section class="bg-medium-gray">
       <div class="container padding-2">
-        <div class="grid-x grid-margin-x align-middle text-center flex-dir-row">
-          <div class="cell auto">
-            <div class="subhead6 text-brown"><strong>brought to you by</strong></div>
+        <div class="grid-x grid-margin-x grid-margin-y sponsorship">
+          <div class="cell large-3 small-12 sponsorship-text">
+            <p class="text-brown">BROUGHT TO YOU BY</p>
           </div>
-          <div class="cell auto"><img src="https://via.placeholder.com/100x30" alt="placeholder image"/></div>
-          <div class="cell auto"><img src="https://via.placeholder.com/40x30" alt="placeholder image"/></div>
-          <div class="cell auto"><img src="https://via.placeholder.com/100x30" alt="placeholder image"/></div>
-          <div class="cell auto"><img src="https://via.placeholder.com/40x30" alt="placeholder image"/></div>
-          <div class="cell auto"><img src="https://via.placeholder.com/100x30" alt="placeholder image"/></div>
+          <div class="cell large-9 sponsorship-container">
+            <sponsorship-callout
+              image="https://i.ibb.co/rkqb4SV/neiman-marcus.png"
+              altText="Neiman Marcus Logo"
+            >
+            </sponsorship-callout>
+            <sponsorship-callout
+              image="https://i.ibb.co/GFG4Wwy/chase.png"
+              altText="Chase Logo"
+            >
+            </sponsorship-callout>
+            <sponsorship-callout
+              image="https://i.ibb.co/XVB8KRW/chevron.png"
+              altText="Chevron Logo"
+            >
+            </sponsorship-callout>
+            <sponsorship-callout
+              image="https://i.ibb.co/4msnjPx/first-republic-bank.png"
+              altText="First Republic Bank"
+            >
+            </sponsorship-callout>
+            <sponsorship-callout
+              image="https://i.ibb.co/CsfRDXx/air-bnb.png"
+              altText="Airbnb Logo"
+            >
+            </sponsorship-callout>
+            <sponsorship-callout
+              hasText="LOREM IPSUM DOLOR SIT AT MET"
+            >
+            </sponsorship-callout>
+
+          </div>
         </div>
       </div>
     </section>
