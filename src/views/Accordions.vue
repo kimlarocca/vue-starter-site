@@ -19,6 +19,10 @@
       <accordion-item>
       PROPS:
       openOnLoad - set to true if you want this item to be open - only the first item is open by default
+
+      SLOTS:
+      header
+      content
       -->
 
       <p class="subhead5">Standard Accordion Example 1:</p>

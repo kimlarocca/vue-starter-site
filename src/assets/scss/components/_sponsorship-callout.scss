@@ -1,0 +1,44 @@
+.sponsorship {
+    padding: 2rem;
+    background-color: #e9e7e0;
+    @media all and (max-width: $breakpoint-mobile) {
+        overflow-x: scroll;
+        padding: 1rem 0.5rem;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+    .sponsorship-text {
+        display: flex;
+        align-items: center;
+        p.text-brown {
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+    }
+    .sponsorship-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media all and (max-width: $breakpoint-mobile) {
+            width: 225%;
+            margin: 0 1rem;
+        }
+        .sponsorship-callout {
+            display: inline-block;
+            margin: 0 2rem;
+            @media all and (max-width: $breakpoint-mobile) {
+                margin: 0 0.5rem;
+            }
+            &:first-child {
+                @media all and (max-width: $breakpoint-mobile) {
+                    margin-left: 0px !important;
+                }
+            }
+            .text-logo-cell p {
+                margin-bottom: 0;
+                font-weight: bold;
+            }
+        }
+    }
+}

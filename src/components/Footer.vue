@@ -7,16 +7,16 @@
           <p class="address">{{address}}</p>
           <p class="phone-number">{{phoneNumber}}</p>
           <ul class="social-media-icons">
-            <footer-social-link
+            <social-link
               v-for="network in socialMediaNetworks"
               :key="network.id"
-              :image="network.image"
+              :icon="network.icon"
               :link="network.link"
               :altText="network.altText"
             >
-            </footer-social-link>
+            </social-link>
           </ul>
-          <div class="copywrite show-desktop">
+          <div class="copywrite show-for-medium">
             <p>{{copywrite}}</p>
             <a :href="privacyLink">{{privacy}}</a>
           </div>
@@ -37,7 +37,7 @@
             <p class="donate-copy">{{donateCopy}}</p>
             <a class="button" :href="donateButton">{{donateButtonText}}</a>
           </div>
-          <div class="copywrite show-mobile">
+          <div class="copywrite show-for-small-only">
             <p>{{copywrite}}</p>
             <a :href="privacyLink">{{privacy}}</a>
           </div>
@@ -48,7 +48,7 @@
 </template>
 
 <script>
-    import FooterSocialLink from './FooterSocialLink'
+    import SocialLink from './SocialLink'
     import FooterLinks from './FooterLink'
 
     export default {
@@ -72,31 +72,31 @@
                 socialMediaNetworks: [
                     {
                         'id': 1,
-                        'image': 'assets/images/footer-facebook.png',
+                        'icon': 'fab fa-facebook-f',
                         'link': 'https://www.facebook.com/sfsymphony',
                         'altText': 'Facebook'
                     },
                     {
                         'id': 2,
-                        'image': 'assets/images/footer-twitter.png',
+                        'icon': 'fab fa-twitter',
                         'link': 'https://twitter.com/sfsymphony',
                         'altText': 'Twitter'
                     },
                     {
                         'id': 3,
-                        'image': 'assets/images/footer-youtube.png',
+                        'icon': 'fab fa-youtube',
                         'link': 'https://www.youtube.com/user/sfsymphony',
                         'altText': 'Youtube'
                     },
                     {
                         'id': 4,
-                        'image': 'assets/images/footer-spotify.png',
+                        'icon': 'fab fa-spotify',
                         'link': 'https://open.spotify.com/artist/1qHStDLIc8uV7hvTG6FGRJ',
                         'altText': 'Spotify'
                     },
                     {
                         'id': 5,
-                        'image': 'assets/images/footer-instagram.png',
+                        'icon': 'fab fa-instagram',
                         'link': 'https://www.instagram.com/sfsymphony/',
                         'altText': 'Instagram'
                     }
@@ -196,7 +196,7 @@
             }
         },
         components: {
-            footerSocialLink: FooterSocialLink,
+            socialLink: SocialLink,
             footerLinks: FooterLinks
         }
     }

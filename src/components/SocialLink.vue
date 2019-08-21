@@ -1,17 +1,17 @@
 <template>
   <li>
     <a :href="link">
-      <img :src="image" :alt="altText" />
+      <i :class="icon">&nbsp;</i>
     </a>
   </li>
 </template>
 
 <script>
 export default {
-  name: 'FooterSocialLink',
+  name: 'SocialLink',
   props: {
     id: Number,
-    image: String,
+    icon: String,
     link: String,
     altText: String
   }

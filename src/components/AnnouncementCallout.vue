@@ -23,9 +23,7 @@
             title: String,
             description: String,
             cta1: String,
-            link1: String,
             cta2: String,
-            link2: String,
             backgroundColor: String
         }
     }

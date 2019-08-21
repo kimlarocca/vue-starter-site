@@ -20,7 +20,7 @@
     fontColor: can be gray or white - white is the default
     accentColor: hex value (needs to be a hex value e.g., #ffffff)
     alignment: left or right - left is the default
-    hasH1: set this to true if the header/colorHeader text should be in a H1 tag
+    hasH1: set this to true if the header/colorHeader text should be in an H1 tag
     preheader: the text in this slot will be white
     header: the text in this slot will be white
     subheader: the text in this slot will be white
