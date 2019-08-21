@@ -19,7 +19,7 @@
 
     <section>
       <div class="container">
-        <h2 class="subhead1 text-center small-text-left">who we are</h2>
+        <h2 class="subhead1 text-center">who we are</h2>
         <div class="grid-x grid-margin-x grid-margin-y section-padding-50">
           <div class="cell large-6 medium-6 small-12">
             <div class="margin-bottom-2"><img src="../assets/images/who-we-are-image.jpg" alt="MTT"></div>
@@ -126,7 +126,7 @@
 
     <section>
       <div class="container">
-        <h2 class="subhead1 text-center small-text-left">over 100 years of music for all</h2>
+        <h2 class="subhead1 text-center">over 100 years of music for all</h2>
         <div class="category-cards two section-padding-50">
           <div class="grid-x">
             <div class="cell large-6 medium-6 small-12">
