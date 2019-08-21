@@ -27,6 +27,10 @@ import PodcastCard from './components/PodcastCard.vue'
 import SponsorshipCallout from './components/SponsorshipCallout.vue'
 import Footer from './components/Footer.vue'
 
+import VueCarousel from 'vue-carousel'
+
+Vue.use(VueCarousel)
+
 Vue.component('style-guide', StyleGuide)
 Vue.component('hero', Hero)
 Vue.component('mini-hero', MiniHero)
@@ -52,6 +56,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {App},
   template: '<App/>'
 })

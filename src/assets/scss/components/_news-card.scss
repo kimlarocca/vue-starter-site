@@ -6,7 +6,6 @@
   opacity: 1;
   transition: $transition;
   position: relative;
-  background: $medium-gray;
 
   &:hover {
     opacity: $opacity-on-hover;
@@ -36,6 +35,7 @@
 
   .title {
     padding: 20px;
+    background: $medium-gray;
 
     p {
       margin-bottom: 20px;

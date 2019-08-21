@@ -68,6 +68,12 @@ a:active {
       font-size: .75rem;
     }
   }
+
+  &.learn-more {
+    @extend .subhead5;
+    @extend .caret-right;
+    font-weight: 700;
+  }
 }
 
 .caret-right {
@@ -106,11 +112,12 @@ hr {
   max-width: $breakpoint-tablet;
   margin: auto;
 
+  &.smaller {
+    max-width: 850px;
+  }
+
   @media all and (max-width: $breakpoint-tablet) {
     width: calc(100% - 2rem);
-    &.small-full-width {
-      width: 100%;
-    }
   }
 }
 

@@ -11,6 +11,8 @@ import ContentBlade from '../views/ContentBlade'
 import ConcertDetail from '../views/ConcertDetail'
 import MediaBlocks from '../views/MediaBlocks'
 import Accordions from '../views/Accordions'
+import AboutPage from '../views/AboutPage'
+import Carousel from '../views/Carousel'
 
 Vue.use(Router)
 
@@ -70,6 +72,16 @@ export default new Router({
       path: '/Accordions',
       name: 'Accordions',
       component: Accordions
+    },
+    {
+      path: '/AboutPage',
+      name: 'AboutPage',
+      component: AboutPage
+    },
+    {
+      path: '/Carousel',
+      name: 'Carousel',
+      component: Carousel
     }
   ]
 })

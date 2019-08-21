@@ -2,12 +2,12 @@
 
 .category-cards {
 
-  width: 100vw;
+  width: 100%;
 
   .category-card {
     position: relative;
     text-align: center;
-    height: 33.33vw;
+    height: 260px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,12 +15,8 @@
     border-top: solid 1px white;
     border-right: solid 1px white;
 
-    @media all and (max-width: $breakpoint-tablet) {
-      height: 50vw;
-    }
-
     @media all and (max-width: $breakpoint-mobile) {
-      height: 100vw;
+      height: 50vw;
       border-top: none;
       border-right: none;
       border-bottom: solid 1px white;
@@ -86,10 +82,28 @@
     }
   }
 
+  &.square {
+    .category-card {
+      height: 33vw;
+      @media all and (max-width: $breakpoint-tablet) {
+        height: 50vw;
+      }
+      @media all and (max-width: $breakpoint-mobile) {
+        height: 100vw;
+      }
+    }
+  }
+
   &.two {
     .category-card {
       height: 25vw;
       @media all and (max-width: $breakpoint-mobile) {
+        height: 50vw;
+      }
+    }
+
+    &.square {
+      .category-card {
         height: 50vw;
       }
     }
