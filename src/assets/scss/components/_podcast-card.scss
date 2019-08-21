@@ -24,3 +24,13 @@
     }
   }
 }
+
+.inlinePlayer {
+  .content-cell {
+    display: flex;
+    align-items: center;
+    .subhead6 {
+      margin-bottom: 0;
+    }
+  }
+}

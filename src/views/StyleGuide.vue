@@ -389,6 +389,18 @@
         </div>
       </div>
 
+      <div class="grid-x grid-margin-x grid-margin-y">
+        <div class="cell large-4 medium-4 small-12">
+          <podcast-card
+            inlinePlayer
+            title="Lorem ipsum dolor sit amet con secteur adpisci"
+            link="https://www.youtube.com/watch?v=VhxRrb5ojxk"
+            audioFile="https://s3.amazonaws.com/podcasts.sfsymphony.org/Bet6mix.mp3"
+          >
+          </podcast-card>
+        </div>
+      </div>
+
       <div class="padding-smaller"></div>
 
       <p>Performance Card</p>
