@@ -2,12 +2,15 @@
   <div id="app" class="style-guide">
     <div class="container">
       <div class="gray-container">
-        <div class="grid-x grid-margin-x align-middle">
-          <div class="cell large-2 medium-3 small-6">
+        <div class="grid-x grid-margin-x grid-margin-y align-middle">
+          <div class="cell large-2 medium-3">
             <img src="assets/images/logo-bw.png" alt="san francisco symphony logo">
           </div>
-          <div class="cell auto">
+          <div class="cell large-2 medium-3">
             <div class="subhead6">pattern library</div>
+          </div>
+          <div class="cell auto large-text-right medium-text-right">
+            <div class="subhead6"><a href="#layouts">Layouts</a> | <a href="#components">components</a></div>
           </div>
         </div>
       </div>
@@ -73,7 +76,7 @@
         <p><a class="button ghost-black">view tickets</a></p>
       </section>
 
-      <h2 class="padding">layouts and examples</h2>
+      <h2 class="padding" id="layouts">layouts and examples</h2>
 
       <p class="subhead5 padding-smaller">
                 <router-link to="/HomePage">home page with the news mosaic</router-link>
@@ -88,9 +91,9 @@
                 <router-link to="/Accordions">content blinds (accordions)</router-link>
       </p>
 
-      <h2 class="padding">components</h2>
+      <h2 class="padding" id="components">components</h2>
 
-      <p class="subhead5">
+      <p class="subhead5 padding-smaller">
         Hero Component |
                 <router-link to="/Hero">view examples</router-link>
       </p>
