@@ -68,6 +68,12 @@ a:active {
       font-size: .75rem;
     }
   }
+
+  &.learn-more {
+    @extend .subhead5;
+    @extend .caret-right;
+    font-weight: 700;
+  }
 }
 
 .caret-right {

@@ -82,6 +82,9 @@
                 <router-link to="/HomePage">home page with the news mosaic</router-link>
       </p>
       <p class="subhead5 padding-smaller">
+                <router-link to="/AboutPage">about page</router-link>
+      </p>
+      <p class="subhead5 padding-smaller">
                 <router-link to="/ConcertDetail">concert detail page with "at a glance", "concert extras", &amp; "related content"</router-link>
       </p>
       <p class="subhead5 padding-smaller">

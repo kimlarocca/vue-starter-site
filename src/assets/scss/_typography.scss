@@ -110,14 +110,11 @@ h3,
 }
 
 p {
-  font-size: 1rem;
+  font-size: .9375rem;
   line-height: 1.25rem;
   margin-bottom: 1rem;
   text-transform: none;
   font-family: $primary-font-family;
-  @media all and (max-width: $breakpoint-mobile) {
-    line-height: 1.25rem;
-  }
 }
 
 .subhead1 {
