@@ -371,12 +371,14 @@
         Misc Components
       </p>
 
-      <p>Podcast Card</p>
+      <p>Podcast Card / Media Player</p>
 
       <!--
       PROPS:
       title
-      link
+      link: external link
+      inlinePlayer: true or false (default is false)
+      audioFile: link to audio file which will play inline if inlinePlayer is true
       -->
 
       <div class="grid-x grid-margin-x grid-margin-y">
@@ -401,7 +403,7 @@
         </div>
       </div>
 
-      <div class="padding-smaller"></div>
+      <div class="padding-smaller margin-bottom-2"></div>
 
       <p>Performance Card</p>
 
