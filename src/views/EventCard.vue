@@ -17,65 +17,29 @@
     conductor
     instrument
     dateRange: the dates for the event, displayed at the bottom of the card above the CTA
-    cta: the text displayed in the button
     link: the entire card will be clickable and point to this URL
+    cta: the text displayed in the button
+    ctaLink: only the cta button is clickable to this link
     -->
 
-    <div class="grid-x grid-margin-x grid-margin-y section-padding-50">
-      <div class="cell large-3 medium-6 small-12">
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <div :key="index" v-for="index in eventsToShow" class="cell large-3 medium-6 small-12">
         <event-card
-          image="assets/images/upcoming-shows-card-image.png"
-          altText="man and woman dancing"
           link="http://www.google.com"
-          cta="buy tickets"
-          :upcomingDates="[{month:'Feb',day:'27'},{month:'Feb',day:'28'},{month:'Mar',day:'1'}]"
-          dateRange="Sunday, March 3"
+          cta="learn more"
+          category="performance"
+          alignment="left"
+          dateRange="Sunday, March 3 | 8:00PM"
+          conductor="Jane Doe"
+          instrument="Piano"
         >
-          <span slot="title" class="body-text2">SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera Adler Fellows</span>
-
-        </event-card>
-      </div>
-      <div class="cell large-3 medium-6 small-12">
-        <event-card
-          image="assets/images/upcoming-shows-card-image.png"
-          altText="man and woman dancing"
-          link="http://www.google.com"
-          cta="buy tickets"
-          :upcomingDates="[{month:'Feb',day:'27'}]"
-          dateRange="Sunday, March 3"
-        >
-          <span slot="title" class="body-text2">SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera Adler Fellows</span>
-
-        </event-card>
-      </div>
-      <div class="cell large-3 medium-6 small-12">
-        <event-card
-          image="assets/images/upcoming-shows-card-image.png"
-          altText="man and woman dancing"
-          link="http://www.google.com"
-          cta="buy tickets"
-          dateRange="Sunday, March 3"
-          alignment="center"
-        >
-          <span slot="title" class="body-text2">SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera Adler Fellows</span>
-
-        </event-card>
-      </div>
-      <div class="cell large-3 medium-6 small-12">
-        <event-card
-          image="assets/images/upcoming-shows-card-image.png"
-          altText="man and woman dancing"
-          link="http://www.google.com"
-          cta="buy tickets"
-          :upcomingDates="[{month:'Feb',day:'27'},{month:'Feb',day:'28'}]"
-          dateRange="Sunday, March 3"
-          alignment="center"
-        >
-          <span slot="title" class="body-text2">SF Symphony Youth Orchestra plays Mozart and Debussy featuring SF Opera Adler Fellows</span>
-
+          <span slot="title"
+                class="body-text2">Close Encounters of the Third Kind - feature file with the SF Symphony</span>
         </event-card>
       </div>
     </div>
+    <hr class="margin-bottom-0">
+    <div class="text-center"><a tabindex="0" class="button view-more caret-down" @click="eventsToShow += 4">view more</a></div>
 
     <div class="section-padding-50"></div>
 
@@ -128,5 +92,17 @@
       </div>
     </div>
 
+
+
   </div>
 </template>
+
+<script>
+    export default {
+        data: function () {
+            return {
+                eventsToShow: 4
+            }
+        }
+    }
+</script>

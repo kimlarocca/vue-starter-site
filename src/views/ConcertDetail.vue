@@ -29,7 +29,7 @@
     </hero>
 
     <section class="bg-medium-gray">
-      <div class="container padding-2">
+      <div class="container smaller">
         <div class="grid-x grid-margin-x grid-margin-y sponsorship">
           <div class="cell large-3 small-12 sponsorship-text">
             <p class="text-brown">BROUGHT TO YOU BY</p>
@@ -61,7 +61,7 @@
             >
             </sponsorship-callout>
             <sponsorship-callout
-              hasText="LOREM IPSUM DOLOR SIT AT MET"
+              hasText="LOREM IPSUM"
             >
             </sponsorship-callout>
 

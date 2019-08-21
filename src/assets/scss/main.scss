@@ -106,11 +106,12 @@ hr {
   max-width: $breakpoint-tablet;
   margin: auto;
 
+  &.smaller {
+    max-width: 850px;
+  }
+
   @media all and (max-width: $breakpoint-tablet) {
     width: calc(100% - 2rem);
-    &.small-full-width {
-      width: 100%;
-    }
   }
 }
 

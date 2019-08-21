@@ -22,7 +22,12 @@
         <p v-if="hasConductor" class="small-text">Conductor: {{ conductor }}</p>
         <p v-if="hasInstrument" class="small-text">Instrument: {{ instrument }}</p>
       </div>
-      <div class="buy-tickets">
+      <a v-if="hasCtaLink" :href="ctaLink">
+        <div class="buy-tickets">
+          <p>{{ cta }}</p>
+        </div>
+      </a>
+      <div v-else class="buy-tickets">
         <p>{{ cta }}</p>
       </div>
     </a>
@@ -38,6 +43,7 @@
             dateRange: String,
             link: String,
             cta: String,
+            ctaLink: String,
             category: String,
             conductor: String,
             instrument: String,
@@ -56,6 +62,9 @@
             },
             hasInstrument () {
                 return !!this.$props['instrument']
+            },
+            hasCtaLink () {
+                return !!this.$props['ctaLink']
             }
         }
     }
