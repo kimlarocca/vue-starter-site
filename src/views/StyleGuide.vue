@@ -4,7 +4,7 @@
       <div class="gray-container">
         <div class="grid-x grid-margin-x grid-margin-y align-middle">
           <div class="cell large-2 medium-3">
-            <img src="assets/images/logo-bw.png" alt="san francisco symphony logo">
+            <img src="../assets/images/logo-bw.png" alt="san francisco symphony logo">
           </div>
           <div class="cell large-2 medium-3">
             <div class="subhead6">pattern library</div>
@@ -79,26 +79,31 @@
       <h2 class="padding" id="layouts">layouts and examples</h2>
 
       <p class="subhead5 padding-smaller">
-                <router-link to="/HomePage">home page with the news mosaic</router-link>
+        <router-link to="/HomePage">home page with the news mosaic</router-link>
       </p>
       <p class="subhead5 padding-smaller">
-                <router-link to="/AboutPage">about page</router-link>
+        <router-link to="/AboutPage">about page</router-link>
       </p>
       <p class="subhead5 padding-smaller">
-                <router-link to="/ConcertDetail">concert detail page with "at a glance", "concert extras", &amp; "related content"</router-link>
+        <router-link to="/ConcertDetail">concert detail page with "at a glance", "concert extras", &amp; "related
+          content"
+        </router-link>
       </p>
       <p class="subhead5 padding-smaller">
-                <router-link to="/MediaBlocks">media blocks</router-link>
+        <router-link to="/MediaBlocks">media blocks</router-link>
       </p>
       <p class="subhead5 padding-smaller">
-                <router-link to="/Accordions">content blinds (accordions)</router-link>
+        <router-link to="/Accordions">content blinds (accordions)</router-link>
+      </p>
+      <p class="subhead5 padding-smaller">
+        <router-link to="/Carousel">carousels</router-link>
       </p>
 
       <h2 class="padding" id="components">components</h2>
 
       <p class="subhead5 padding-smaller">
         Hero Component |
-                <router-link to="/Hero">view examples</router-link>
+        <router-link to="/Hero">view examples</router-link>
       </p>
       <p>Used for: standard hero, event detail hero, article hero, statement hero, impact hero, feature widget</p>
 
@@ -108,8 +113,8 @@
 
     <hero
       class="full-screen smallHeader"
-      image="assets/images/hero1.jpg"
-      mobileImage="../src/assets/images/hero1mobile.jpg"
+      image="../assets/images/hero1.jpg"
+      mobileImage="assets/images/hero1mobile.jpg"
       accentColor="#ff8f2a"
       hasH1="true"
     >
@@ -124,7 +129,7 @@
 
       <p class="subhead5 padding">
         Mini Hero Component |
-                <router-link to="/MiniHero">view examples</router-link>
+        <router-link to="/MiniHero">view examples</router-link>
       </p>
 
       <mini-hero
@@ -163,7 +168,7 @@
 
       <p class="subhead5">
         Event Card Component |
-                <router-link to="/EventCard">view examples</router-link>
+        <router-link to="/EventCard">view examples</router-link>
       </p>
       <p>Used for: event grid, story grid, event cards widget, calendar grid, calendar cards</p>
 
@@ -185,7 +190,7 @@
 
       <p class="subhead5 padding">
         Category Card Component |
-                <router-link to="/CategoryCard">view in a grid</router-link>
+        <router-link to="/CategoryCard">view in a grid</router-link>
       </p>
 
       <div class="category-cards three">
@@ -316,7 +321,7 @@
 
       <p class="subhead5 padding">
         Person Profile Component |
-                <router-link to="/PersonProfile">view examples</router-link>
+        <router-link to="/PersonProfile">view examples</router-link>
       </p>
 
       <person-profile
@@ -334,7 +339,7 @@
 
       <p class="subhead5 padding">
         Content Blade Component |
-                <router-link to="/ContentBlade">view examples</router-link>
+        <router-link to="/ContentBlade">view examples</router-link>
       </p>
 
     </div>
@@ -366,12 +371,14 @@
         Misc Components
       </p>
 
-      <p>Podcast Card</p>
+      <p>Podcast Card / Media Player</p>
 
       <!--
       PROPS:
       title
-      link
+      link: external link
+      inlinePlayer: true or false (default is false)
+      audioFile: link to audio file which will play inline if inlinePlayer is true
       -->
 
       <div class="grid-x grid-margin-x grid-margin-y">
@@ -384,7 +391,19 @@
         </div>
       </div>
 
-      <div class="padding-smaller"></div>
+      <div class="grid-x grid-margin-x grid-margin-y">
+        <div class="cell large-4 medium-4 small-12">
+          <podcast-card
+            inlinePlayer
+            title="Lorem ipsum dolor sit amet con secteur adpisci"
+            link="https://www.youtube.com/watch?v=VhxRrb5ojxk"
+            audioFile="https://s3.amazonaws.com/podcasts.sfsymphony.org/Bet6mix.mp3"
+          >
+          </podcast-card>
+        </div>
+      </div>
+
+      <div class="padding-smaller margin-bottom-2"></div>
 
       <p>Performance Card</p>
 
@@ -420,42 +439,146 @@
       hasText - if this is set, plain text will display
       -->
 
-      <div class="grid-x grid-margin-x grid-margin-y sponsorship">
-        <div class="cell large-3 small-12 sponsorship-text">
-          <p class="text-brown">BROUGHT TO YOU BY</p>
-        </div>
-        <div class="cell large-9 sponsorship-container">
-          <sponsorship-callout
-            image="https://i.ibb.co/rkqb4SV/neiman-marcus.png"
-            altText="Neiman Marcus Logo"
-          >
-          </sponsorship-callout>
-          <sponsorship-callout
-            image="https://i.ibb.co/GFG4Wwy/chase.png"
-            altText="Chase Logo"
-          >
-          </sponsorship-callout>
-          <sponsorship-callout
-            image="https://i.ibb.co/XVB8KRW/chevron.png"
-            altText="Chevron Logo"
-          >
-          </sponsorship-callout>
-          <sponsorship-callout
-            image="https://i.ibb.co/4msnjPx/first-republic-bank.png"
-            altText="First Republic Bank"
-          >
-          </sponsorship-callout>
-          <sponsorship-callout
-            image="https://i.ibb.co/CsfRDXx/air-bnb.png"
-            altText="Airbnb Logo"
-          >
-          </sponsorship-callout>
-          <sponsorship-callout
-            hasText="LOREM IPSUM DOLOR SIT AT MET"
-          >
-          </sponsorship-callout>
+    </div>
 
+    <section class="bg-medium-gray">
+      <div class="container smaller">
+        <div class="grid-x grid-margin-x grid-margin-y sponsorship">
+          <div class="cell large-3 small-12 sponsorship-text">
+            <p class="text-brown">BROUGHT TO YOU BY</p>
+          </div>
+          <div class="cell large-9 sponsorship-container">
+            <sponsorship-callout
+              image="https://i.ibb.co/rkqb4SV/neiman-marcus.png"
+              altText="Neiman Marcus Logo"
+            >
+            </sponsorship-callout>
+            <sponsorship-callout
+              image="https://i.ibb.co/GFG4Wwy/chase.png"
+              altText="Chase Logo"
+            >
+            </sponsorship-callout>
+            <sponsorship-callout
+              image="https://i.ibb.co/XVB8KRW/chevron.png"
+              altText="Chevron Logo"
+            >
+            </sponsorship-callout>
+            <sponsorship-callout
+              image="https://i.ibb.co/4msnjPx/first-republic-bank.png"
+              altText="First Republic Bank"
+            >
+            </sponsorship-callout>
+            <sponsorship-callout
+              image="https://i.ibb.co/CsfRDXx/air-bnb.png"
+              altText="Airbnb Logo"
+            >
+            </sponsorship-callout>
+            <sponsorship-callout
+              hasText="LOREM IPSUM"
+            >
+            </sponsorship-callout>
+
+          </div>
         </div>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <p class="subhead5 padding">Social Links</p>
+
+      <!--
+      PROPS:
+      icon: the font awesome class name e.g. "fab fa-facebook-f"
+      link
+      altText
+      iconColor: will set the icon color as inline css - use keywords or hex values (default is black)
+      backgroundColor: will set the background color as inline css - use keywords or hex values (default is transparent)
+      -->
+
+      <ul class="social-links">
+        <social-link
+          icon="fab fa-facebook-f"
+          link="https://www.facebook.com/sfsymphony"
+          altText="facebook"
+          color="black"
+        >
+        </social-link>
+        <social-link
+          icon="fab fa-twitter"
+          link="https://www.facebook.com/sfsymphony"
+          altText="facebook"
+          color="black"
+        >
+        </social-link>
+        <social-link
+          icon="fab fa-youtube"
+          link="https://www.facebook.com/sfsymphony"
+          altText="facebook"
+          color="black"
+        >
+        </social-link>
+        <social-link
+          icon="fab fa-spotify"
+          link="https://www.facebook.com/sfsymphony"
+          altText="facebook"
+          color="black"
+        >
+        </social-link>
+        <social-link
+          icon="fab fa-instagram"
+          link="https://www.facebook.com/sfsymphony"
+          altText="facebook"
+          color="black"
+        >
+        </social-link>
+      </ul>
+
+      <div class="padding-smaller"></div>
+
+      <div class="black-container">
+        <ul class="social-links">
+          <social-link
+            icon="fab fa-facebook-f"
+            link="https://www.facebook.com/sfsymphony"
+            altText="facebook"
+            color="black"
+            backgroundColor="white"
+          >
+          </social-link>
+          <social-link
+            icon="fab fa-twitter"
+            link="https://www.facebook.com/sfsymphony"
+            altText="facebook"
+            color="black"
+            backgroundColor="white"
+          >
+          </social-link>
+          <social-link
+            icon="fab fa-youtube"
+            link="https://www.facebook.com/sfsymphony"
+            altText="facebook"
+            color="black"
+            backgroundColor="white"
+          >
+          </social-link>
+          <social-link
+            icon="fab fa-spotify"
+            link="https://www.facebook.com/sfsymphony"
+            altText="facebook"
+            color="black"
+            backgroundColor="white"
+          >
+          </social-link>
+          <social-link
+            icon="fab fa-instagram"
+            link="https://www.facebook.com/sfsymphony"
+            altText="facebook"
+            color="black"
+            backgroundColor="white"
+          >
+          </social-link>
+        </ul>
       </div>
 
       <p class="subhead5 padding">Footer</p>

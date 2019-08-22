@@ -27,4 +27,16 @@ npm run e2e
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Staging / Admin Environment
+
+Add the following entry to your host file:
+ 
+40.71.218.168   sfs.imediainc.com
+ 
+Once you do that, you can get to the admin here:
+ 
+http://sfs.imediainc.com/kentico12_admin
+ 
+u: administrator
+
+p: (NO PASSWORD)

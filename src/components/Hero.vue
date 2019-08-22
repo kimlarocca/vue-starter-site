@@ -31,7 +31,8 @@
           <template v-if="hasDropdown">
             <label for="select1" class="hide-ally-element">choose a date and time</label>
             <select id="select1" class="ghost">
-                <option v-for="(option, index) in dropDownMenu" :key="index" :value="option.value">{{ option.text }}</option>
+              <option v-for="(option, index) in dropDownMenu" :key="index" :value="option.value">{{ option.text }}
+              </option>
             </select>
           </template>
 
@@ -44,6 +45,20 @@
               <slot name="textLink"></slot>
             </a>
           </template>
+
+          <!-- check if socialLinks are provided -->
+          <ul v-if="hasSocialLinks" class="social-links">
+            <social-link
+              v-for="(link, index) in socialLinks"
+              :key="index"
+              :icon="link.icon"
+              :link="link.link"
+              :altText="link.altText"
+              color="black"
+              backgroundColor="white"
+            >
+            </social-link>
+          </ul>
 
         </div>
       </div>
@@ -65,7 +80,8 @@
             hasH1: {
                 default: false
             },
-            dropDownMenu: Array
+            dropDownMenu: Array,
+            socialLinks: Array
         },
         computed: {
             hasTextLink () {
@@ -73,6 +89,9 @@
             },
             hasDropdown () {
                 return !!this.$props['dropDownMenu']
+            },
+            hasSocialLinks () {
+                return !!this.$props['socialLinks']
             }
         }
     }
