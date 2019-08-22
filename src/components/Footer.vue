@@ -3,7 +3,7 @@
     <div class="container">
       <div class="grid-x grid-padding-x">
         <div class="cell small-12 medium-6">
-          <a href="#"><img class="logo" src="assets/images/logo-footer.png" :alt="logoAltText"/></a>
+          <a href="#"><img class="logo" src="../assets/images/logo-footer.png" :alt="logoAltText"/></a>
           <p class="address">{{address}}</p>
           <p class="phone-number">{{phoneNumber}}</p>
           <ul class="social-links">
