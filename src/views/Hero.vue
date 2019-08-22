@@ -28,6 +28,7 @@
     cta1 & cta2: these slots will be displayed as buttons
     textLink: this will be displayed as a text link instead of a button, and will be the color specified in accentColor above
     dropDownMenu: array of objects containing the option and the value
+    socialLinks: array of objects containing the social media links' icon, link and altText
     -->
 
     <hero class="full-screen small-header" image="assets/images/hero1.jpg" mobileImage="assets/images/hero1mobile.jpg"
@@ -93,6 +94,33 @@
       {value:'value2',text:'Wednesday, August 1st, 2019 at 7:00pm'},
       {value:'value3',text:'Thursday, August 1st, 2019 at 7:00pm'}
       ]"
+      :socialLinks="[
+                    {
+                        'icon': 'fab fa-facebook-f',
+                        'link': 'https://www.facebook.com/sfsymphony',
+                        'altText': 'Facebook'
+                    },
+                    {
+                        'icon': 'fab fa-twitter',
+                        'link': 'https://twitter.com/sfsymphony',
+                        'altText': 'Twitter'
+                    },
+                    {
+                        'icon': 'fab fa-youtube',
+                        'link': 'https://www.youtube.com/user/sfsymphony',
+                        'altText': 'Youtube'
+                    },
+                    {
+                        'icon': 'fab fa-spotify',
+                        'link': 'https://open.spotify.com/artist/1qHStDLIc8uV7hvTG6FGRJ',
+                        'altText': 'Spotify'
+                    },
+                    {
+                        'icon': 'fab fa-instagram',
+                        'link': 'https://www.instagram.com/sfsymphony/',
+                        'altText': 'Instagram'
+                    }
+                ]"
     >
       <span slot="header">Archives<br>&amp; </span>
       <span slot="colorHeader">history</span>

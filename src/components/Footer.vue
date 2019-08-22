@@ -3,16 +3,18 @@
     <div class="container">
       <div class="grid-x grid-padding-x">
         <div class="cell small-12 medium-6">
-          <img class="logo" src="assets/images/logo-footer.png" :alt="logoAltText"/>
+          <a href="#"><img class="logo" src="assets/images/logo-footer.png" :alt="logoAltText"/></a>
           <p class="address">{{address}}</p>
           <p class="phone-number">{{phoneNumber}}</p>
-          <ul class="social-media-icons">
+          <ul class="social-links">
             <social-link
-              v-for="network in socialMediaNetworks"
-              :key="network.id"
+              v-for="(network,index) in socialMediaNetworks"
+              :key="index"
               :icon="network.icon"
               :link="network.link"
               :altText="network.altText"
+              color="black"
+              backgroundColor="white"
             >
             </social-link>
           </ul>
@@ -71,31 +73,26 @@
             return {
                 socialMediaNetworks: [
                     {
-                        'id': 1,
                         'icon': 'fab fa-facebook-f',
                         'link': 'https://www.facebook.com/sfsymphony',
                         'altText': 'Facebook'
                     },
                     {
-                        'id': 2,
                         'icon': 'fab fa-twitter',
                         'link': 'https://twitter.com/sfsymphony',
                         'altText': 'Twitter'
                     },
                     {
-                        'id': 3,
                         'icon': 'fab fa-youtube',
                         'link': 'https://www.youtube.com/user/sfsymphony',
                         'altText': 'Youtube'
                     },
                     {
-                        'id': 4,
                         'icon': 'fab fa-spotify',
                         'link': 'https://open.spotify.com/artist/1qHStDLIc8uV7hvTG6FGRJ',
                         'altText': 'Spotify'
                     },
                     {
-                        'id': 5,
                         'icon': 'fab fa-instagram',
                         'link': 'https://www.instagram.com/sfsymphony/',
                         'altText': 'Instagram'

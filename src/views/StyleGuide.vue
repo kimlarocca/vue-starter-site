@@ -485,6 +485,102 @@
 
     <div class="container">
 
+      <p class="subhead5 padding">Social Links</p>
+
+      <!--
+      PROPS:
+      icon: the font awesome class name e.g. "fab fa-facebook-f"
+      link
+      altText
+      iconColor: will set the icon color as inline css - use keywords or hex values (default is black)
+      backgroundColor: will set the background color as inline css - use keywords or hex values (default is transparent)
+      -->
+
+      <ul class="social-links">
+        <social-link
+          icon="fab fa-facebook-f"
+          link="https://www.facebook.com/sfsymphony"
+          altText="facebook"
+          color="black"
+        >
+        </social-link>
+        <social-link
+          icon="fab fa-twitter"
+          link="https://www.facebook.com/sfsymphony"
+          altText="facebook"
+          color="black"
+        >
+        </social-link>
+        <social-link
+          icon="fab fa-youtube"
+          link="https://www.facebook.com/sfsymphony"
+          altText="facebook"
+          color="black"
+        >
+        </social-link>
+        <social-link
+          icon="fab fa-spotify"
+          link="https://www.facebook.com/sfsymphony"
+          altText="facebook"
+          color="black"
+        >
+        </social-link>
+        <social-link
+          icon="fab fa-instagram"
+          link="https://www.facebook.com/sfsymphony"
+          altText="facebook"
+          color="black"
+        >
+        </social-link>
+      </ul>
+
+      <div class="padding-smaller"></div>
+
+      <div class="black-container">
+        <ul class="social-links">
+          <social-link
+            icon="fab fa-facebook-f"
+            link="https://www.facebook.com/sfsymphony"
+            altText="facebook"
+            color="black"
+            backgroundColor="white"
+          >
+          </social-link>
+          <social-link
+            icon="fab fa-twitter"
+            link="https://www.facebook.com/sfsymphony"
+            altText="facebook"
+            color="black"
+            backgroundColor="white"
+          >
+          </social-link>
+          <social-link
+            icon="fab fa-youtube"
+            link="https://www.facebook.com/sfsymphony"
+            altText="facebook"
+            color="black"
+            backgroundColor="white"
+          >
+          </social-link>
+          <social-link
+            icon="fab fa-spotify"
+            link="https://www.facebook.com/sfsymphony"
+            altText="facebook"
+            color="black"
+            backgroundColor="white"
+          >
+          </social-link>
+          <social-link
+            icon="fab fa-instagram"
+            link="https://www.facebook.com/sfsymphony"
+            altText="facebook"
+            color="black"
+            backgroundColor="white"
+          >
+          </social-link>
+        </ul>
+      </div>
+
       <p class="subhead5 padding">Footer</p>
       <div class="padding-smaller"></div>
 

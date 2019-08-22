@@ -26,6 +26,7 @@ import PerformanceCard from './components/PerformanceCard.vue'
 import PodcastCard from './components/PodcastCard.vue'
 import SponsorshipCallout from './components/SponsorshipCallout.vue'
 import Footer from './components/Footer.vue'
+import SocialLink from './components/SocialLink.vue'
 
 import VueCarousel from 'vue-carousel'
 
@@ -49,6 +50,7 @@ Vue.component('performance-card', PerformanceCard)
 Vue.component('podcast-card', PodcastCard)
 Vue.component('sponsorship-callout', SponsorshipCallout)
 Vue.component('footer-component', Footer)
+Vue.component('social-link', SocialLink)
 
 Vue.config.productionTip = false
 
