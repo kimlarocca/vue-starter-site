@@ -7,7 +7,7 @@
             <img src="../assets/images/logo-bw.png" alt="san francisco symphony logo">
           </div>
           <div class="cell large-2 medium-3">
-            <div class="subhead6">pattern library222</div>
+            <div class="subhead6">pattern library</div>
           </div>
           <div class="cell auto large-text-right medium-text-right">
             <div class="subhead6"><a href="#layouts">Layouts</a> | <a href="#components">components</a></div>
