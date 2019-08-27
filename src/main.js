@@ -28,9 +28,8 @@ import SponsorshipCallout from './components/SponsorshipCallout.vue'
 import Footer from './components/Footer.vue'
 import SocialLink from './components/SocialLink.vue'
 
-import VueCarousel from 'vue-carousel'
-
-Vue.use(VueCarousel)
+// import VueCarousel from 'vue-carousel'
+// Vue.use(VueCarousel)
 
 Vue.component('style-guide', StyleGuide)
 Vue.component('hero', Hero)
