@@ -27,9 +27,8 @@ import PodcastCard from './components/PodcastCard.vue'
 import SponsorshipCallout from './components/SponsorshipCallout.vue'
 import Footer from './components/Footer.vue'
 import SocialLink from './components/SocialLink.vue'
-
-// import VueCarousel from 'vue-carousel'
-// Vue.use(VueCarousel)
+import Carousel from './components/Carousel/Carousel'
+import Slide from './components/Carousel/Slide'
 
 Vue.component('style-guide', StyleGuide)
 Vue.component('hero', Hero)
@@ -50,6 +49,8 @@ Vue.component('podcast-card', PodcastCard)
 Vue.component('sponsorship-callout', SponsorshipCallout)
 Vue.component('footer-component', Footer)
 Vue.component('social-link', SocialLink)
+Vue.component('carousel', Carousel)
+Vue.component('slide', Slide)
 
 Vue.config.productionTip = false
 
