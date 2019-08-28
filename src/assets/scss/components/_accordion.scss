@@ -55,6 +55,26 @@
 
   }
 
+  &.no-border {
+
+    .accordion-item {
+      border: none;
+
+      &:first-of-type {
+        border: none;
+      }
+    }
+
+    .cell {
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+    }
+
+  }
+
   &.no-border-on-desktop {
     @media all and (min-width: $breakpoint-tablet+1) {
 

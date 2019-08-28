@@ -10,7 +10,7 @@
           </li>
         </ul>
       </div>
-      <div class="title">
+      <div v-if="hasTitle" class="title">
         <p v-if="hasCategory" class="subhead6 category">{{ category }}</p>
         <p>
           <slot name="title"></slot>
@@ -22,13 +22,15 @@
         <p v-if="hasConductor" class="small-text">Conductor: {{ conductor }}</p>
         <p v-if="hasInstrument" class="small-text">Instrument: {{ instrument }}</p>
       </div>
-      <a v-if="hasCtaLink" :href="ctaLink">
-        <div class="buy-tickets">
+      <div v-if="hasCta">
+        <a v-if="hasCtaLink" :href="ctaLink">
+          <div class="buy-tickets">
+            <p>{{ cta }}</p>
+          </div>
+        </a>
+        <div v-else class="buy-tickets">
           <p>{{ cta }}</p>
         </div>
-      </a>
-      <div v-else class="buy-tickets">
-        <p>{{ cta }}</p>
       </div>
     </a>
   </div>
@@ -65,6 +67,12 @@
             },
             hasCtaLink () {
                 return !!this.$props['ctaLink']
+            },
+            hasCta () {
+                return !!this.$props['cta']
+            },
+            hasTitle () {
+                return !!this.$slots['title']
             }
         }
     }

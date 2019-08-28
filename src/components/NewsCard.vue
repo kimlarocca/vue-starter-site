@@ -1,7 +1,7 @@
 <template>
   <section class="news-card">
 
-    <div class="card">
+    <div class="card" @mouseover="hello">
       <a :href="learnMoreLink" :aria-label="title">
         <img :src="image" :alt="altText">
         <div class="title">
@@ -28,6 +28,11 @@
             learnMoreLink: String,
             hasTextLink: {
                 default: false
+            }
+        },
+        methods: {
+            hello () {
+                console.log('hello')
             }
         }
     }
