@@ -285,6 +285,33 @@
 
       </accordion>
 
+      <div class="section-padding-100"></div>
+
+      <p class="subhead5">Event Blinds:</p>
+
+      <div class="section-padding-50"></div>
+
+      <accordion class="no-border">
+        <accordion-item>
+          <template slot="header">
+            <div class="grid-x">
+              <div class="cell large-4 medium-5">
+                <event-card
+                  image="assets/images/upcoming-shows-card-image.png"
+                  link="http://www.google.com"
+                  :upcomingDates="[{month:'Feb',day:'27'},{month:'Feb',day:'28'},{month:'Mar',day:'1'}]"
+                >
+                </event-card>
+              </div>
+              <div class="cell large-auto medium-auto"></div>
+            </div>
+          </template>
+          <template slot="content">
+
+          </template>
+        </accordion-item>
+      </accordion>
+
     </div>
 
   </div>

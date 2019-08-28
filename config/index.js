@@ -50,7 +50,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'assets',
-    assetsPublicPath: '/',
+    assetsPublicPath: 'http://fesandbox.tihuma.net/san-francisco-symphony-redesign/dist/',
 
     /**
      * Source Maps

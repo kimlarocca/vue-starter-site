@@ -11,6 +11,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const PrerenderSpaPlugin = require('prerender-spa-plugin')
+const HtmlBeautifyPlugin = require('html-beautify-webpack-plugin')
 
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -37,12 +38,14 @@ const webpackConfig = merge(baseWebpackConfig, {
     new webpack.DefinePlugin({
       'process.env': env
     }),
-    new PrerenderSpaPlugin(
+    new PrerenderSpaPlugin({
       // Path to compiled app
-      path.join(__dirname, '../dist'),
+      // path.join(__dirname, '../dist'),
+      staticDir: path.join(__dirname, '../dist'),
       // List of endpoints you wish to prerender
-      [ '/','/HomePage','/Hero','/MiniHero','/EventCard','/CategoryCard','/PersonProfile','/ContentBlade','/ConcertDetail','/MediaBlocks','/Accordions','/AboutPage','/Carousel' ]
-    ),
+      // [ '/','/HomePage','/Hero','/MiniHero','/EventCard','/CategoryCard','/PersonProfile','/ContentBlade','/ConcertDetail','/MediaBlocks','/Accordions','/AboutPage' ]
+      routes: [ '/','/HomePage','/Hero','/MiniHero','/EventCard','/CategoryCard','/PersonProfile','/ContentBlade','/ConcertDetail','/MediaBlocks','/Accordions','/AboutPage' ]
+    }),
     new UglifyJsPlugin({
       uglifyOptions: {
         compress: {
@@ -88,6 +91,9 @@ const webpackConfig = merge(baseWebpackConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
     }),
+
+    new HtmlBeautifyPlugin(),
+
     // keep module.id stable when vendor modules does not change
     new webpack.HashedModuleIdsPlugin(),
     // enable scope hoisting
@@ -122,11 +128,16 @@ const webpackConfig = merge(baseWebpackConfig, {
       minChunks: 3
     }),
 
-    // copy custom static assets
+    // copy custom assets
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, '../static'),
         to: config.build.assetsSubDirectory,
+        ignore: ['.*']
+      },
+      {
+        from: 'src/assets/images',
+        to: 'assets/images',
         ignore: ['.*']
       }
     ])

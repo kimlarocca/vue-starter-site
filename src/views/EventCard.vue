@@ -25,12 +25,14 @@
     <div class="grid-x grid-margin-x grid-margin-y">
       <div :key="index" v-for="index in eventsToShow" class="cell large-3 medium-6 small-12">
         <event-card
+          image="assets/images/upcoming-shows-card-image.png"
           link="http://www.google.com"
           cta="learn more"
           category="performance"
           alignment="left"
           dateRange="Sunday, March 3 | 8:00PM"
           conductor="Jane Doe"
+          :upcomingDates="[{month:'Feb',day:'27'},{month:'Feb',day:'28'},{month:'Mar',day:'1'}]"
           instrument="Piano"
         >
           <span slot="title"
@@ -88,6 +90,19 @@
         >
           <span slot="title"
                 class="body-text2">Close Encounters of the Third Kind - feature file with the SF Symphony</span>
+        </event-card>
+      </div>
+    </div>
+
+    <div class="section-padding-50"></div>
+
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="cell large-3 medium-6 small-12">
+        <event-card
+          image="assets/images/upcoming-shows-card-image.png"
+          link="http://www.google.com"
+          :upcomingDates="[{month:'Feb',day:'27'},{month:'Feb',day:'28'},{month:'Mar',day:'1'}]"
+        >
         </event-card>
       </div>
     </div>
