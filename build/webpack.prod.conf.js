@@ -44,7 +44,11 @@ const webpackConfig = merge(baseWebpackConfig, {
       staticDir: path.join(__dirname, '../dist'),
       // List of endpoints you wish to prerender
       // [ '/','/HomePage','/Hero','/MiniHero','/EventCard','/CategoryCard','/PersonProfile','/ContentBlade','/ConcertDetail','/MediaBlocks','/Accordions','/AboutPage' ]
-      routes: [ '/','/HomePage','/Hero','/MiniHero','/EventCard','/CategoryCard','/PersonProfile','/ContentBlade','/ConcertDetail','/MediaBlocks','/Accordions','/AboutPage' ]
+      routes: [ '/','/HomePage','/Hero','/MiniHero','/EventCard','/CategoryCard','/PersonProfile','/ContentBlade','/ConcertDetail','/MediaBlocks','/Accordions','/AboutPage' ],
+      postProcess(context) {
+        context.html = context.html.replace('id="app"', 'id="app" data-server-rendered="true"');
+        return context;
+      }
     }),
     new UglifyJsPlugin({
       uglifyOptions: {
