@@ -11,7 +11,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const PrerenderSpaPlugin = require('prerender-spa-plugin')
-const HtmlBeautifyPlugin = require('html-beautify-webpack-plugin');
+const HtmlBeautifyPlugin = require('html-beautify-webpack-plugin')
 
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
