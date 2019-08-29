@@ -34,42 +34,21 @@
   font-family: 'Font Awesome 5 Brands';
 }
 
-@font-face {
-  font-family: 'Beatrice';
-  src: url('../fonts/Beatrice-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Beatrice-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/Beatrice-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/Beatrice-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/Beatrice-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
-  font-weight: normal;
-  font-style: normal;
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: none;
+  font-family: $primary-font-family;
 }
 
-@font-face {
-  font-family: 'Beatrice';
-  src: url('../fonts/Beatrice-Semibold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Beatrice-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/Beatrice-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/Beatrice-Semibold.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/Beatrice-Semibold.ttf') format('truetype'); /* Safari, Android, iOS */
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Beatrice Display';
-  src: url('../fonts/BeatriceDisplay-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/BeatriceDisplay-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Beatrice Display';
-  src: url('../fonts/BeatriceDisplay-Medium.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/BeatriceDisplay-Medium.ttf') format('truetype'); /* Safari, Android, iOS */
-  font-weight: 700;
-  font-style: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 h1,
@@ -107,100 +86,16 @@ h3,
   font-weight: normal;
 }
 
-p {
-  font-size: .9375rem;
-  line-height: 1.25rem;
-  margin-bottom: 1rem;
-  text-transform: none;
-  font-family: $primary-font-family;
-}
-
-.subhead1 {
-  font-size: 2.25rem;
-  line-height: 2.25rem;
-  text-transform: uppercase;
-  font-family: $primary-font-family;
-  font-weight: normal;
-  @media all and (max-width: $breakpoint-mobile) {
-    font-size: 1.375rem;
-    line-height: 1.375rem;
-  }
-  &.no-transform {
-    text-transform: none;
-  }
-}
-
-.subhead2 {
-  font-size: 2rem;
-  line-height: 2rem;
-  text-transform: uppercase;
-  font-family: $primary-font-family;
-  font-weight: normal;
-  @media all and (max-width: $breakpoint-mobile) {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-  &.no-transform {
-    text-transform: none;
-  }
-}
-
-.subhead3 {
-  font-size: 1.5rem;
-  line-height: 1.875rem;
-  text-transform: none;
-  font-family: $primary-font-family;
-  font-weight: normal;
-}
-
-.subhead4 {
-  font-size: 1.375rem;
-  line-height: 2rem;
-  text-transform: none;
-  font-family: $primary-font-family;
-  font-weight: normal;
-  @media all and (max-width: $breakpoint-mobile) {
-    font-size: .875rem;
-    line-height: 1.25rem;
-  }
-}
-
-.subhead5 {
-  font-size: .9rem;
-  line-height: .9rem;
-  letter-spacing: .1rem;
-  font-family: $primary-font-family;
-  text-transform: uppercase;
-  font-weight: normal;
-  @media all and (max-width: $breakpoint-mobile) {
-    font-size: .8333rem;
-    line-height: 1.25rem;
-  }
-  &.no-transform {
-    text-transform: none;
-  }
-}
-
-.subhead6 {
-  font-size: .75rem;
-  line-height: .75rem;
-  letter-spacing: .1rem;
-  font-family: $primary-font-family;
-  text-transform: uppercase;
-  font-weight: normal;
-  &.no-transform {
-    text-transform: none;
-  }
-}
-
-.body-text1 {
+h4,
+.like-h4 {
   font-size: 1.375rem;
   line-height: 1.625rem;
   text-transform: none;
   font-family: $primary-font-family;
 }
 
-.body-text2 {
+h5,
+.like-h5 {
   font-size: 1.25rem;
   line-height: 1.875rem;
   text-transform: none;
@@ -211,7 +106,8 @@ p {
   }
 }
 
-.body-text3 {
+h6,
+.like-h6 {
   font-size: .98375rem;
   line-height: 1.4375rem;
   text-transform: none;
@@ -220,11 +116,4 @@ p {
     font-size: .75rem;
     line-height: 1rem;
   }
-}
-
-.body-text4 {
-  font-size: .6875rem;
-  line-height: 1rem;
-  text-transform: none;
-  font-family: $primary-font-family;
 }

@@ -38,6 +38,7 @@ a:active {
   color: $link-color;
   text-decoration: $link-decoration;
   transition: $transition;
+  opacity: 1;
 
   &:hover {
     color: $link-color-hover;
@@ -47,32 +48,6 @@ a:active {
     &.button {
       text-decoration: none;
     }
-  }
-
-  &.text-link {
-    font-size: .9rem;
-    letter-spacing: .125rem;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-weight: 700;
-  }
-
-  &.view-more {
-    color: black;
-
-    &:hover {
-      color: $blue;
-    }
-
-    @media all and (max-width: $breakpoint-mobile) {
-      font-size: .75rem;
-    }
-  }
-
-  &.learn-more {
-    @extend .subhead5;
-    @extend .caret-right;
-    font-weight: 700;
   }
 }
 
@@ -146,12 +121,6 @@ hr {
   }
 }
 
-.small-text-left {
-  @media all and (max-width: $breakpoint-mobile) {
-    text-align: left;
-  }
-}
-
 //extends foundation xy grid to add 2x margin-x gutters option on desktop
 .grid-margin-2x {
   @media all and (min-width: $breakpoint-tablet+1) {
@@ -165,29 +134,5 @@ hr {
       margin-left: 2rem;
       margin-right: 2rem;
     }
-  }
-}
-
-.border-left {
-  border-left: solid 1px black;
-  padding-left: 1rem;
-}
-
-.play-icon {
-  position: relative;
-  width: fit-content;
-  display: table;
-  color: black;
-
-  &:after {
-    position: absolute;
-    right: -4rem;
-    top: -1rem;
-    bottom: 0;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: '\f144';
-    font-size: 3rem;
-    color: $brown;
   }
 }

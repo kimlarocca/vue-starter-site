@@ -10,8 +10,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const PrerenderSpaPlugin = require('prerender-spa-plugin')
-const HtmlBeautifyPlugin = require('html-beautify-webpack-plugin')
+// const PrerenderSpaPlugin = require('prerender-spa-plugin')
 
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -38,17 +37,17 @@ const webpackConfig = merge(baseWebpackConfig, {
     new webpack.DefinePlugin({
       'process.env': env
     }),
-    new PrerenderSpaPlugin({
-      // Path to compiled app
-      // path.join(__dirname, '../dist'),
-      staticDir: path.join(__dirname, '../dist'),
-      // List of endpoints you wish to prerender
-      routes: [ '/','/HomePage','/Hero','/MiniHero','/EventCard','/CategoryCard','/PersonProfile','/ContentBlade','/ConcertDetail','/MediaBlocks','/Accordions','/AboutPage', '/Carousel' ],
-      postProcess(context) {
-        context.html = context.html.replace('id="app"', 'id="app" data-server-rendered="true"');
-        return context;
-      }
-    }),
+    // new PrerenderSpaPlugin({
+    //   // Path to compiled app
+    //   // path.join(__dirname, '../dist'),
+    //   staticDir: path.join(__dirname, '../dist'),
+    //   // List of endpoints you wish to prerender
+    //   routes: [ '/','/HomePage' ],
+    //   postProcess(context) {
+    //     context.html = context.html.replace('id="app"', 'id="app" data-server-rendered="true"');
+    //     return context;
+    //   }
+    // }),
     new UglifyJsPlugin({
       uglifyOptions: {
         compress: {
@@ -94,8 +93,6 @@ const webpackConfig = merge(baseWebpackConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
     }),
-
-    new HtmlBeautifyPlugin(),
 
     // keep module.id stable when vendor modules does not change
     new webpack.HashedModuleIdsPlugin(),
