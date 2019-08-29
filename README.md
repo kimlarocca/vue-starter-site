@@ -1,6 +1,6 @@
-# san-francisco-symphony
+# Kim's Vue Starter Template
 
-> A Vue.js project
+> A Vue.js project with foundation css and font awesome integrated
 
 ## Build Setup
 
@@ -26,17 +26,3 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-## Staging / Admin Environment
-
-Add the following entry to your host file:
- 
-40.71.218.168   sfs.imediainc.com
- 
-Once you do that, you can get to the admin here:
- 
-http://sfs.imediainc.com/kentico12_admin
- 
-u: administrator
-
-p: (NO PASSWORD)
