@@ -64,16 +64,17 @@
 
       <section class="section-border">
         <p class="subhead5">Buttons</p>
-        <p>.button | .button ghost</p>
+        <p>.button | .button .ghost</p>
         <div class="black-container">
           <p><a class="button">view tickets</a></p>
           <p><a class="button ghost">browse concerts</a></p>
         </div>
-        <p>.button gray | .button blue | .button light-gray | .button ghost-black</p>
+        <p>.button .gray | .button .blue | .button .light-gray | .button .ghost-black | .button .purple</p>
         <p><a class="button gray">learn more</a></p>
         <p><a class="button blue">buy tickets</a></p>
         <p><a class="button light-gray">view tickets</a></p>
         <p><a class="button ghost-black">view tickets</a></p>
+        <p><a class="button purple margin-right-1">Thus, May 10, 8pm</a></p>
       </section>
 
       <h2 class="padding" id="layouts">layouts and examples</h2>

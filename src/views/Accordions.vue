@@ -16,6 +16,9 @@
       mobileOnly - set to true to transform content into accordions appear on mobile only
       closeAll - set to true if all accordions are closed on load (by default the first item is open)
 
+      STYLES:
+      event-blinds - use this class to apply the event blind styles to the accordion
+
       <accordion-item>
       PROPS:
       openOnLoad - set to true if you want this item to be open - only the first item is open by default
@@ -291,11 +294,11 @@
 
       <div class="section-padding-50"></div>
 
-      <accordion class="no-border">
+      <accordion closeAll class="event-blinds">
         <accordion-item>
           <template slot="header">
             <div class="grid-x">
-              <div class="cell large-4 medium-5">
+              <div class="cell large-2 medium-4">
                 <event-card
                   image="assets/images/upcoming-shows-card-image.png"
                   link="http://www.google.com"
@@ -303,14 +306,33 @@
                 >
                 </event-card>
               </div>
-              <div class="cell large-auto medium-auto"></div>
+              <div class="cell large-auto medium-auto padding-2">
+                <p class="body-text1 margin-bottom-2">Gil Shaham and Tchaikovsky's Fourth Symphony</p>
+                <a class="button purple margin-right-1">Thus, May 10, 8pm</a> <a class="button purple margin-right-1">Thus,
+                May 10, 8pm</a> <a class="button purple margin-right-1">Thus, May 10, 8pm</a>
+              </div>
             </div>
           </template>
           <template slot="content">
 
+            <div class="grid-x">
+              <div class="cell large-2 medium-4">
+                <div class="padding-1">
+                  <p>more content</p>
+                </div>
+              </div>
+
+              <div class="cell large-auto medium-auto padding-left-2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur at earum eum eveniet ipsa
+                  iste itaque iusto laborum, maxime minima modi necessitatibus nemo nihil odio quae sapiente sit
+                  unde?</p>
+              </div>
+            </div>
           </template>
         </accordion-item>
       </accordion>
+
+      <div class="section-padding-50"></div>
 
     </div>
 

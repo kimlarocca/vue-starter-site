@@ -27,6 +27,26 @@
       p {
         margin: 0;
       }
+
+      .accordion-icon {
+
+        &:after {
+          content: '' !important;
+          background: url("/assets/images/accordion-icon.png") no-repeat;
+          width: 22px;
+          height: 13px;
+        }
+      }
+
+    }
+
+    .accordion-header-active {
+      .accordion-icon {
+        &:after {
+          content: '' !important;
+          transform: rotate(180deg);
+        }
+      }
     }
 
     .accordion-content {
@@ -94,5 +114,57 @@
 
       }
     }
+  }
+
+  &.event-blinds {
+    @extend .no-border;
+
+    .accordion-item {
+      background: $light-gray;
+      margin-bottom: 20px;
+
+      .accordion-header {
+        padding: 0;
+        align-items: flex-start;
+
+        .accordion-icon {
+          margin: 1.5rem .75rem 0 0;
+
+          &:after {
+            right: 0;
+            top: -.5rem;
+            content: "Expand Details +" !important;
+            font-size: .6875rem;
+            letter-spacing: .01px;
+            color: $purple;
+            text-transform: none;
+            background: none;
+            width: 130px;
+            text-align: right;
+          }
+        }
+      }
+
+      .accordion-header-active {
+        .accordion-icon {
+          &:after {
+            content: "Close Details -" !important;
+            transform: none;
+          }
+        }
+      }
+    }
+
+    .event-card {
+
+      li {
+        padding: 4px 12px 12px;
+
+        .month {
+          line-height: 1.5rem;
+        }
+      }
+    }
+
   }
 }

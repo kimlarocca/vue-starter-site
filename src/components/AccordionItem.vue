@@ -8,15 +8,7 @@
 
       <slot name="header"></slot>
 
-      <div class="accordion-icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="22px" height="13px">
-          <image x="0px" y="0px" width="22px" height="13px"
-                 xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAANCAMAAACae25RAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAe1BMVEUqDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg0qDg3///8cBFVRAAAAJ3RSTlMAvl+9fTM0fIAhf6ALDOvsvN3T1AL1srH0E5OUJngnQFo/WStvl5aaK4PUAAAAAWJLR0QovbC1sgAAAAd0SU1FB+MIDwoxCPEGkk0AAABuSURBVBjTbY9VDoBADESLu7svOve/ISEEdpH+zMtL03RIkukzskIqtLfVYRCZsJ7Wgn2EA1e0HpwTFF/UQXhRFHObRDemWX5hUaZ8pUJ9QoNKPNiiO6JD//xqACNiGN8dJswzpm/jBVjoZ9aN8w4YHwZTxDE/JgAAAABJRU5ErkJggg=="/>
-        </svg>
-      </div>
+      <div class="accordion-icon"></div>
 
     </div>
 
@@ -33,6 +25,7 @@
           <slot name="content"></slot>
         </ul>
       </div>
+
     </transition>
 
   </li>
@@ -160,6 +153,18 @@
       align-items: center;
       cursor: pointer;
 
+      .accordion-icon {
+        position: relative;
+
+        &:after {
+          position: absolute;
+          right: 0;
+          top: -.5rem;
+          content: "\002B";
+          font-size: 2rem;
+        }
+      }
+
       &.mobile-only {
         pointer-events: none;
         cursor: default;
@@ -179,7 +184,9 @@
 
     .accordion-header-active {
       .accordion-icon {
-        transform: rotate(180deg);
+        &:after {
+          content: "\2212";
+        }
       }
     }
 
