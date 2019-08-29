@@ -4,7 +4,7 @@
       <div class="gray-container">
         <div class="grid-x grid-margin-x grid-margin-y align-middle">
           <div class="cell large-2 medium-3">
-            <h3>TeamLogic</h3>
+            <h3>Title</h3>
           </div>
           <div class="cell large-2 medium-3">
             <p class="margin-0">Pattern Library</p>
