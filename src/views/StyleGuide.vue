@@ -79,31 +79,31 @@
       <h2 class="padding" id="layouts">layouts and examples</h2>
 
       <p class="subhead5 padding-smaller">
-        <router-link to="/HomePage">home page with the news mosaic</router-link>
+        <router-link to="HomePage">home page with the news mosaic</router-link>
       </p>
       <p class="subhead5 padding-smaller">
-        <router-link to="/AboutPage">about page</router-link>
+        <router-link to="AboutPage">about page</router-link>
       </p>
       <p class="subhead5 padding-smaller">
-        <router-link to="/ConcertDetail">concert detail page with "at a glance", "concert extras", &amp; "related
+        <router-link to="ConcertDetail">concert detail page with "at a glance", "concert extras", &amp; "related
           content"
         </router-link>
       </p>
       <p class="subhead5 padding-smaller">
-        <router-link to="/MediaBlocks">media blocks</router-link>
+        <router-link to="MediaBlocks">media blocks</router-link>
       </p>
       <p class="subhead5 padding-smaller">
-        <router-link to="/Accordions">content blinds (accordions)</router-link>
+        <router-link to="Accordions">content blinds (accordions)</router-link>
       </p>
       <p class="subhead5 padding-smaller">
-        <router-link to="/Carousel">carousels</router-link>
+        <router-link to="Carousel">carousels</router-link>
       </p>
 
       <h2 class="padding" id="components">components</h2>
 
       <p class="subhead5 padding-smaller">
         Hero Component |
-        <router-link to="/Hero">view examples</router-link>
+        <router-link to="Hero">view examples</router-link>
       </p>
       <p>Used for: standard hero, event detail hero, article hero, statement hero, impact hero, feature widget</p>
 
@@ -113,7 +113,7 @@
 
     <hero
       class="full-screen smallHeader"
-      image="../assets/images/hero1.jpg"
+      image="assets/images/hero1.jpg"
       mobileImage="assets/images/hero1mobile.jpg"
       accentColor="#ff8f2a"
       hasH1="true"
@@ -129,7 +129,7 @@
 
       <p class="subhead5 padding">
         Mini Hero Component |
-        <router-link to="/MiniHero">view examples</router-link>
+        <router-link to="MiniHero">view examples</router-link>
       </p>
 
       <mini-hero
@@ -168,7 +168,7 @@
 
       <p class="subhead5">
         Event Card Component |
-        <router-link to="/EventCard">view examples</router-link>
+        <router-link to="EventCard">view examples</router-link>
       </p>
       <p>Used for: event grid, story grid, event cards widget, calendar grid, calendar cards</p>
 
@@ -190,7 +190,7 @@
 
       <p class="subhead5 padding">
         Category Card Component |
-        <router-link to="/CategoryCard">view in a grid</router-link>
+        <router-link to="CategoryCard">view in a grid</router-link>
       </p>
 
       <div class="category-cards three">
@@ -321,7 +321,7 @@
 
       <p class="subhead5 padding">
         Person Profile Component |
-        <router-link to="/PersonProfile">view examples</router-link>
+        <router-link to="PersonProfile">view examples</router-link>
       </p>
 
       <person-profile
@@ -339,7 +339,7 @@
 
       <p class="subhead5 padding">
         Content Blade Component |
-        <router-link to="/ContentBlade">view examples</router-link>
+        <router-link to="ContentBlade">view examples</router-link>
       </p>
 
     </div>

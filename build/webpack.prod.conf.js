@@ -43,8 +43,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       // path.join(__dirname, '../dist'),
       staticDir: path.join(__dirname, '../dist'),
       // List of endpoints you wish to prerender
-      // [ '/','/HomePage','/Hero','/MiniHero','/EventCard','/CategoryCard','/PersonProfile','/ContentBlade','/ConcertDetail','/MediaBlocks','/Accordions','/AboutPage' ]
-      routes: [ '/','/HomePage','/Hero','/MiniHero','/EventCard','/CategoryCard','/PersonProfile','/ContentBlade','/ConcertDetail','/MediaBlocks','/Accordions','/AboutPage' ],
+      routes: [ '/','/HomePage','/Hero','/MiniHero','/EventCard','/CategoryCard','/PersonProfile','/ContentBlade','/ConcertDetail','/MediaBlocks','/Accordions','/AboutPage', '/Carousel' ],
       postProcess(context) {
         context.html = context.html.replace('id="app"', 'id="app" data-server-rendered="true"');
         return context;
